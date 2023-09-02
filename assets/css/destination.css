@@ -1,0 +1,1928 @@
+/* -------------------- Common Styles ---------------------------- */
+
+
+.bg-black-back {
+  background: #000 !important;
+}
+
+a {
+  scroll-behavior: smooth;
+}
+
+.mobile-photo {
+  display: none;
+}
+
+/* Swiper First Destination Start*/
+
+/* Swiper First Destination End*/
+
+/* ---------------- Home ---------------------------- */
+
+.home {
+  /* padding-bottom: 200px; */
+  background: url('./../images/landing-bg.png') center/cover no-repeat;
+  padding-left: 10%;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  padding: 170px 0;
+  position: relative;
+}
+
+.home-title {
+  text-transform: uppercase;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 550px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.home-title span {
+  color: #E58620;
+}
+
+.home-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 52%;
+  height: 3px;
+  background: #E58620;
+}
+
+.home-scroll {
+  padding-inline: 50px;
+  width: 15%;
+}
+
+
+.button-next-ln {
+  z-index: 555;
+  position: absolute;
+  top: 20px;
+  left: 94%;
+}
+
+
+.button-prev-ln {
+  z-index: 555;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+
+.ln-slider-img {
+  width: 200px;
+  height: 281px;
+}
+
+.button-prev-ln.swiper-button-disabled {
+  visibility: hidden;
+}
+
+.sw-ln-pagination {
+  display: none;
+}
+
+.sw-wrapp {
+  position: relative;
+}
+
+.home-prev {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  z-index: 999;
+}
+
+
+.home-next {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  z-index: 999;
+}
+
+.home-next.swiper-button-disabled {
+  visibility: hidden;
+}
+
+.home-prev.swiper-button-disabled {
+  visibility: hidden;
+}
+
+/* ================= First Slider Start =======================*/
+
+.slider-1-arrows {
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+.first-slider-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  width: 100%;
+}
+
+.first-slider {
+  padding-left: calc(800px - 10%);
+  /* width: 100%; */
+  position: relative;
+}
+
+.fs-slide img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 18/10;
+  object-fit: cover;
+}
+/* ================= First Slider End =======================*/
+
+/* --------------------- Your place -------------------------- */
+
+.your-place {
+  padding-bottom: 150px;
+}
+
+.place-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #E58620;
+}
+
+.your-place h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+
+.your-place h2 span {
+  color: #E58620;
+}
+
+.items-wrapp {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.place-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.place-item span {
+  color: #fff;
+  font-weight: 300;
+}
+
+/* ----------------------- Location --------------------- */
+
+.card-wrapper {
+  padding-inline: 5%;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  gap: 50px;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+   padding-bottom: 20px;
+}
+
+.cards-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-item img {
+   border-radius: 10px;
+   height: auto;
+   width: 100%;
+}
+
+.card-item div h2, .big-card h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.card-item div p, .big-card p {
+  color: rgba(255, 255, 255, 0.427);
+}
+
+.card-item div a {
+  color: #E58620;
+  text-decoration: none;
+}
+
+.location {
+  background: url('../images/map-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 50px;
+}
+
+.location-fs-img {
+  width: 10%;
+  transform: rotate(2deg);
+  margin-left: -10px;
+  margin-top: -680px
+}
+
+.location-sc-img {
+  width: 100%;
+  height: 50%;
+}
+
+.location-map-img {
+  margin-bottom: 90px;
+  width: 90%;
+}
+
+
+
+.location-content {
+  padding-left: 80px;
+  width: 70%;
+  position: relative;
+}
+
+.location-content h2 {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.06em;
+}
+
+
+
+.location-content span {
+  font-size: 40px;
+  color: #fff;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.location span span {
+  color: #E58620;
+}
+
+
+.location-description {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  padding-right: 10%;
+  line-height: 30px;
+}
+
+.best {
+  margin-left: -50px;
+  margin-bottom: 80px;
+}
+
+.best p,
+.best span,
+.best section {
+  white-space: nowrap;
+  font-size: 48px !important;
+  font-weight: 400 !important;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.best p {
+  color: #FFFFFF;
+}
+
+.best span {
+  color: #E58620;
+}
+
+.best section {
+  color: #fff;
+  font-weight: 300 !important;
+}
+
+/* Destination slider start  */
+.about-us.about-us-destination{
+  padding-bottom: 200px;
+}
+.destination{
+  height: 100%;
+  min-height: 300px;
+}
+.journey-arrow-left {
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  left: 7%;
+}
+
+.journey-arrow-right {
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  right: 7%;
+}
+@media (max-width: 768px) {
+  .journey-arrow-right{
+    right: 35%;
+  }
+  .journey-arrow-left{
+    left: 35px;
+  }
+}
+
+
+/* ==================== Journey End =============================== */
+
+/* ==================== Destination Start =============================== */
+
+.mobile-arrows-ds {
+  display: none;
+}
+
+
+.destination {
+  background: url('../images/destination-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.ds-carousel-wrapp {
+  position: relative;
+  top: -200px;
+}
+
+
+.ds-title  {
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ds-title span {
+  color: #E58620;
+}
+
+.destination-slider-img {
+  width: 100% !important;
+  height: 550px !important;
+  margin-bottom: 150px;
+  z-index: -1;
+}
+
+.ds-slider div {
+  position: relative;
+}
+
+.destination-slider-tx {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  z-index: 999;
+  background: #161616;
+  padding: 20px;
+  width: 60%;
+
+
+}
+
+.gallery-collection-content h2 {
+  text-transform: uppercase;
+}
+
+.gallery-collection-content h2 span {
+  color: #E58620;
+}
+
+/* ==================== Destination End =============================== */
+/* Destination slider end  */
+
+/* -------------------------- Stories --------------------------- */
+
+.stories {
+  padding-top: 80px;
+}
+
+
+.stories-description p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.stories-img {
+  height: 600px;
+}
+
+
+.stories-content {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding-inline: 10%;
+}
+
+.stories-info {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.stories-info section {
+  margin-top: -10px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px !important;
+}
+
+.stories-info h3 {
+  font-size: 40px !important;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.stories-info h3 span {
+  color: #E58620;
+}
+
+.stories-fs-image {
+  grid-area: first;
+  width: 90%;
+}
+
+
+.stories-sc-image {
+  grid-area: second;
+  margin-top: -120px;
+  width: 100%;
+  height: 80%;
+  padding-left: 70px;
+}
+
+.st-btn {
+  background: #E58620;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 45px;
+  transition: .3s ease-in-out;
+}
+
+.st-btn:hover {
+ opacity: 0.8;
+}
+
+/* -------------------------- Adventure --------------------------  */
+
+.adventure {
+  padding-bottom: 80px;
+}
+
+.adventure-content {
+  display: flex;
+  gap: 50px;
+  padding-inline: 10%;
+}
+
+.adventure-img {
+  height: 600px;
+}
+
+.adventure-fs-image {
+  width: 550px;
+  height: 800px;
+  grid-area: adventureFs;
+}
+
+.adventure-sc-image {
+  width: 250px;
+  padding-top: 88%;
+  margin-left: 20%;
+  grid-area: adventureSc;
+}
+
+.adventure-sc-image img {
+  width: 250px;
+  margin-left: 20%;
+}
+
+
+
+.adventure-info div {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.adventure-info h3 {
+  font-size: 40px;
+  font-weight: 600;
+line-height: 50px;
+text-transform: uppercase;
+
+color: #000000;
+  padding-block: 10px;
+}
+
+.adventure-info h3 span {
+  color: #E58620;
+}
+
+.adventure-info p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ----------------------------- Tours ----------------------------------  */
+  .tours{
+    top: -200px;
+  }
+  @media (max-width: 992px) {
+    .tours{
+      top: -150px;
+    }
+  }
+  @media (max-width: 768px) {
+    .tours{
+      top: -40px;
+    }
+  }
+.tours-wrapp {
+  /* background: url('../images/tours-bg.png'); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-block: 70px;
+  background-size: cover;
+}
+.learn-more{
+  text-decoration: none;
+  color: #E58620;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tours-title h2 {
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.tours-title h2 span {
+  color: #E58620;
+}
+
+.tours-title p {
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.tours-card {
+  cursor: pointer;
+  background:  url('./../images/tours-1.png') center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  padding: 20px;
+}
+/* Australia Destination Cards start */
+
+.australia-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/melbourne-city.png') center/cover no-repeat;
+}
+
+.australia-tours-card2 {
+  background:  url('./../images/Sydney Bridge - Australia.png') center/cover no-repeat;
+}
+.australia-tours-card3 {
+  background:  url('./../images/Adelaide-beach.png') center/cover no-repeat;
+}
+.australia-tours-card4 {
+  background:  url('./../images/Great Ocean Road- Drive.png') center/cover no-repeat;
+}
+.australia-tours-card5 {
+  background:  url('./../images/Kangaroo Island - Light house.png') center/cover no-repeat;
+}
+.australia-tours-card6 {
+  background:  url('./../images/Uluru rock - Aus.png') center/cover no-repeat;
+}
+.australia-tours-card7 {
+  background:  url('./../images/Gold Coast - Paragliding.png') center/cover no-repeat;
+}
+/* Australia Destination Cards end */
+
+/* bali Destination Cards start */
+
+.bali-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+
+.bali-tours-card2 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+.bali-tours-card3 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+.bali-tours-card4 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+.bali-tours-card5 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+.bali-tours-card6 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+.bali-tours-card7 {
+  background:  url('./../images/Bali_gate-of-heaven.png') center/cover no-repeat;
+}
+/* bali Destination Cards end */
+
+/* india Destination Cards start */
+
+.india-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+
+.india-tours-card2 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+.india-tours-card3 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+.india-tours-card4 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+.india-tours-card5 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+.india-tours-card6 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+.india-tours-card7 {
+  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+}
+/* india Destination Cards end */
+
+/* japan Destination Cards start */
+
+.japan-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+
+.japan-tours-card2 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+.japan-tours-card3 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+.japan-tours-card4 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+.japan-tours-card5 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+.japan-tours-card6 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+.japan-tours-card7 {
+  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+}
+/* japan Destination Cards end */
+
+/* jordan Destination Cards start */
+
+.jordan-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+
+.jordan-tours-card2 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+.jordan-tours-card3 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+.jordan-tours-card4 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+.jordan-tours-card5 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+.jordan-tours-card6 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+.jordan-tours-card7 {
+  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+}
+/* jordan Destination Cards end */
+
+/* morocco Destination Cards start */
+
+.morocco-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+
+.morocco-tours-card2 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+.morocco-tours-card3 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+.morocco-tours-card4 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+.morocco-tours-card5 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+.morocco-tours-card6 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+.morocco-tours-card7 {
+  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+}
+/* morocco Destination Cards end */
+
+/* newzealand Destination Cards start */
+
+.newzealand-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+
+.newzealand-tours-card2 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+.newzealand-tours-card3 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+.newzealand-tours-card4 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+.newzealand-tours-card5 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+.newzealand-tours-card6 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+.newzealand-tours-card7 {
+  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+}
+/* newzealand Destination Cards end */
+
+/* singapore Destination Cards start */
+
+.singapore-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+
+.singapore-tours-card2 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+.singapore-tours-card3 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+.singapore-tours-card4 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+.singapore-tours-card5 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+.singapore-tours-card6 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+.singapore-tours-card7 {
+  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+}
+/* singapore Destination Cards end */
+
+/* africa Destination Cards start */
+
+.africa-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+
+.africa-tours-card2 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+.africa-tours-card3 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+.africa-tours-card4 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+.africa-tours-card5 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+.africa-tours-card6 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+.africa-tours-card7 {
+  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+}
+/* africa Destination Cards end */
+
+/* uae Destination Cards start */
+
+.uae-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+
+.uae-tours-card2 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+.uae-tours-card3 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+.uae-tours-card4 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+.uae-tours-card5 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+.uae-tours-card6 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+.uae-tours-card7 {
+  background:  url('./../images/Uluru-rock.png') center/cover no-repeat;
+}
+/* uae Destination Cards end */
+
+/* vietnam Destination Cards start */
+
+.vietnam-long-card{
+  grid-column: 1/3;
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+
+.vietnam-tours-card2 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+.vietnam-tours-card3 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+.vietnam-tours-card4 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+.vietnam-tours-card5 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+.vietnam-tours-card6 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+.vietnam-tours-card7 {
+  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+}
+/* vietnam Destination Cards end */
+
+
+
+.tours {
+  padding-inline: 5%;
+}
+
+.tours-info {
+  padding-top: 50%;
+}
+
+.tours-info div {
+  font-size: 16px;
+  line-height: 25px;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tours-info h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  padding-bottom: 5px;
+  color: #2B2B2B;
+}
+
+.tours-info p {
+  font-size: 18px;
+  line-height: 30px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tours-fs-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+
+
+.tours-sc-section {
+  padding-top: 30px;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+@media (max-width: 992px) {
+  .tours-fs-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.tours-big {
+  width: 100% !important;
+}
+
+.tours-data {
+
+  padding: 20px;
+}
+
+
+.tours-title,
+.tours-description {
+  color: #fff;
+}
+
+
+.tours-title {
+  font-size: 1.25rem;
+  position: relative;
+}
+
+
+
+.tours-description {
+  display: block;
+  font-size: .75rem;
+}
+
+.tours-img {
+  transition: .3s;
+}
+
+.tours-img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.search-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.search-coutry-name {
+  color: #fff;
+  font-weight: 300;
+  border-bottom: 1px solid #E58620;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+
+.search-content div {
+  gap: 5px;
+  align-items: flex-start;
+  color: #fff;
+}
+
+
+
+.search-content div p {
+  width: 70%;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+
+}
+
+.search-content span {
+  font-weight: 600;
+}
+
+.search-content p {
+  color: #fff;
+}
+
+
+.hover-search {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  height: 90%;
+  position: absolute;
+  inset: 10px;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.hover-search span {
+  color: #fff;
+  letter-spacing: 0;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+
+.hover-search a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border:2px solid #fff;
+  padding: 5px 10px;
+  opacity: 0.4;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+
+/* -------------------- Testimonials ----------------------- */
+
+
+
+.testimonials-turn-place {
+  margin-left: -110px;
+}
+
+.testimonials {
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .testimonials{
+    padding-bottom: 0px;
+  }
+}
+
+.testimonials-info {
+  padding-left: 200px !important;
+}
+
+.sw-testimonials {
+  margin-top: 40px;
+}
+
+
+.testimonials-info div h2 {
+  padding-block: 5px;
+}
+
+.testimonials-info p {
+  line-height: 30px;
+  width: 80%;
+}
+
+
+.testimonials-img {
+  width: 40% !important;
+}
+
+.mobile-left-arrow {
+  display: none;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.test-title {
+  color: #000 !important;
+  text-transform: uppercase;
+font-size: 40px;
+
+}
+
+.test-title span {
+  color: #E58620 !important;
+}
+
+.mobile-05 {
+  display: none;
+}
+
+/* -------------------------- Inspired ----------------------------- */
+
+.inspired {
+  padding-top: 100px;
+  padding-inline: 5%;
+}
+
+
+.inspired-item {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------- Resposive --------------------- */
+
+@media screen and (max-width: 1400px) {
+  .custom-navbar {
+    padding-left: 0;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .home {
+    padding-top: 150px !important;
+  }
+
+  .home-content {
+    padding: 120px 0;
+  }
+
+  .home-title {
+    padding-right: 300px;
+    font-size: 32px;
+  }
+
+  .adventure-turn::before {
+    display: none;
+  }
+
+  .location-content h2::before {
+    top: -21%;
+    left: -70%;
+  }
+
+  .tours-turn::before {
+    display: none;
+  }
+
+
+
+  .tours-info {
+    padding-top: 12%;
+  }
+
+  .adventure-fs-image {
+    width: 400px;
+    height: 600px;
+  }
+
+  .adventure-sc-image {
+    margin-left: 10%;
+  }
+
+  .adventure-sc-image img {
+    width: 200px;
+    margin-left: 10%;
+  }
+
+  .adventure-sc-image::before {
+    top: 45%;
+    left: 60%;
+    width: 20%;
+    height: 50%;
+  }
+
+  .adventure-info div {
+    font-size: 18px;
+  }
+
+  .adventure-info h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .adventure-info p {
+    font-size: 18px;
+  }
+
+  .stories-content {
+    padding-inline: 5%;
+  }
+
+  .stories-img,
+  .adventure-img {
+    height: 500px;
+  }
+
+  .tours-fs-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer {
+    padding-inline: 4%;
+
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .home-title {
+    font-size: 32px;
+  }
+
+  .home-scroll {
+    width: 12%;
+  }
+
+  .home-content {
+    padding-top: 20px;
+  }
+
+  .home-timeline-item {
+    width: 35px;
+    height: 35px;
+  }
+
+
+  .home-tm-content h2 {
+    font-size: 18px;
+  }
+
+  .home-tm-content p {
+    font-size: 16px
+  }
+
+  
+.card-wrapper {
+  flex-direction: column;
+  padding-inline: 5%;
+}
+
+.big-card img {
+   width: 100%;
+}
+
+
+  .ln-slider-img {
+    width: 150px;
+    height: 231px;
+  }
+
+  .slider-1-arrows {
+    left: 32%;
+  }
+  .first-slider {
+    padding-left: 500px;
+  }
+
+ 
+  .location-content h2 {
+    font-size: 14px;
+  }
+
+  .location-content h2::before {
+    top: -19%;
+    left: -71%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .location-content span {
+    font-size: 30px;
+  }
+
+  .location-description {
+    font-size: 16px;
+  }
+
+  .stories-sc-image {
+    height: 60%;
+  }
+
+  .stories-info {
+    padding-left: 50px;
+  }
+
+  .stories-turn::before {
+    top: -280px;
+    left: 6%;
+  }
+
+
+  .tours-info {
+    margin-right: -80%;
+    text-align: center;
+  }
+
+
+
+  .tours-big {
+    width: 85% !important;
+  }
+
+  .tours-fs-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+  .testimonials {
+    padding-top: 0 !important;
+  }
+
+  .testimonials-info p {
+    width: 100%;
+  }
+
+  .button-next-test,
+  .desktop-left-arrow {
+    width: 30px;
+  }
+
+  .testimonials-turn::before {
+    top: -50%;
+    left: 6%;
+    transform: rotate(22deg);
+  }
+
+  .stories-content {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .stories-img,
+  .adventure-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .adventure-content {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .position-mobile {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .desktop-photo {
+    display: none;
+  }
+
+  .mobile-photo {
+    display: block;
+  }
+
+  .custom-navbar {
+    padding-inline: 5%;
+  }
+    .slider-1-arrows {
+      display: none;
+    }
+    .first-slider {
+      padding-left: 200px;
+      margin-top: -10%;
+    }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .nav-item:nth-child(2) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+    padding-block: 20px;
+    text-align: center;
+  }
+
+  .nav-form {
+    display: none !important;
+  }
+
+  .sw-miles::after {
+    display: none;
+  }
+
+  .home {
+    padding-left: 0;
+  }
+
+  .home-title::after {
+    display: none;
+  }
+
+  .home-prev,
+  .home-next {
+    display: none;
+  }
+
+  .home-scroll {
+    display: none;
+  }
+
+  .home-content {
+    display: block !important;
+    text-align: center;
+    padding-bottom: 180px;
+  }
+
+
+  .home-tm-content h2 {
+    font-size: 12px;
+  }
+
+  .home-tm-content p {
+    font-size: 10px;
+  }
+
+
+  .home-title {
+    padding-right: 0;
+  }
+
+
+  .location-content {
+    padding-left: 0;
+  }
+
+  .location-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .location-fs-img {
+    display: none;
+  }
+
+  .location-sc-img {
+    width: 80%;
+    margin-bottom: 150px;
+  }
+
+  .location-map-img {
+    padding-bottom: 50px;
+  }
+  .location-map-img.destination-map-img{
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .location-content h2::before {
+    top: -18.5%;
+    left: -75%;
+  }
+
+
+
+  .location-content h2::before {
+    display: none;
+  }
+
+
+
+  .stories-sc-image {
+    height: 60%;
+    margin-top: -30px;
+
+  }
+
+  .stories {
+    padding-bottom: 10px;
+  }
+
+  .stories-fs-image {
+    margin-top: 50px;
+  }
+
+  .stories-sc-image {
+    height: 70%;
+    padding-left: 35px;
+  }
+
+  .adventure {
+    padding-bottom: 0 !important;
+  }
+
+
+
+
+  .adventure-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 5%;
+  }
+
+  .adventure-fs-image {
+    margin-top: 10%;
+    border: 5px solid white;
+    margin-left: -20%;
+    width: 100%;
+    height: 90%;
+  }
+
+  .adventure-sc-image {
+    z-index: -1;
+    margin-left: 10%;
+    margin-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .adventure-turn::before {
+    top: -22%;
+    left: 35%;
+    background: url('../images/mobile-third.svg');
+    width: 40%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    transform: rotate(1deg);
+  }
+
+  .adventure-sc-image::before {
+    display: none;
+  }
+
+  .adventure-sc-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-left-arrow {
+    display: block;
+  }
+
+  .desktop-left-arrow {
+    display: none;
+  }
+
+  .sw-scroll-tx {
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  
+
+  .tours-turn {
+    padding-top: 0 !important;
+  }
+
+  .long-card {
+    grid-column: 1;
+  }
+
+  .tours-fs-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tours-title h2 {
+    font-size: 25px;
+  }
+
+  .tours-title p {
+    font-size: 16px;
+    padding-top: 0;
+  }
+
+
+  .desktop-05 {
+    display: none;
+  }
+
+  .mobile-05 {
+    display: block;
+  }
+
+
+  .sw-count {
+    padding-inline: 20px;
+  }
+
+  .mobile-title {
+    display: block;
+    padding-block: 15px;
+    padding-top: 40px;
+  }
+
+  .mobile-title span {
+    color: #888888;
+  }
+
+  .mobile-title h2 {
+    color: #0D8A9B;
+    padding-top: 20px;
+  }
+
+  .ln-slider.swiper-slide-active img {
+    width: 150px;
+    height: 221px;
+  }
+
+  .tours-info {
+    text-align: center;
+    margin-right: -170px;
+  }
+
+  .best {
+    display: none;
+  }
+
+  .footer-gr-anchors {
+    flex-direction: column;
+  }
+
+  .button-next-test,
+  .desktop-left-arrow {
+    width: 40px !important;
+  }
+
+
+  .footer-form {
+    flex-direction: column;
+  }
+
+  .footer-input {
+    width: 100%;
+  }
+
+  .copyright {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .jn-title {
+    margin-bottom: -50px;
+    margin-top: 50px;
+  }
+
+  .home-timeline::before {
+    visibility: hidden;
+  }
+
+  .home-item::after {
+    visibility: hidden;
+  }
+
+  .button-prev-ln,
+  .button-next-ln {
+    display: none;
+  }
+
+
+  .sw-ln-pagination {
+    display: block;
+  }
+
+  .button-prev,
+  .button-next {
+    /* display: none; */
+  }
+
+  .sw-mn-pagination {
+    display: block;
+    padding-bottom: 10px;
+
+  }
+
+  .sw-wrapp {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+  .home-content {
+    padding-top: 100px;
+  }
+
+
+
+
+  .card-item div h2 {
+    font-size: 15px;
+  }
+
+
+  .card-item div p {
+    font-size: 14px;
+  }
+
+
+  .ln-swiper-wrapp {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+
+  .sw-wrapp {
+    padding-block: 20px;
+    padding-bottom: 20px;
+  }
+
+  .location-content {
+    padding-left: 0;
+  }
+
+  .location-description {
+    padding-right: 0;
+  }
+
+  .stories-info {
+    padding-inline: 5%;
+  }
+
+  .location-sc-wrapp::before {
+    left: -55%;
+  }
+
+
+  .location-content h2::after {
+    top: -22%;
+    left: 35%;
+  }
+
+  .swiper-slide.ln-slider.swiper-slide-active {
+    transform: scale(1.3);
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .custom-navbar {
+    padding-inline: 0;
+  }
+
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-inputs div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-btn {
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .footer-social div p {
+    font-size: 12px;
+  }
+
+  .search-default {
+    opacity: 1 !important;
+  }
+
+ 
+
+  /* .hover-search {
+    position: initial !important;
+    height: auto;
+    opacity: 1;
+    margin: 0;
+  } */
+
+  .hover-search{
+    /* height: 50%; */
+    margin-top: 10px;
+  }
+
+  .location-content span {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .hover-search span {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .tours-info {
+    text-align: center;
+  }
+
+  .tours-fs-section {
+    gap: 15px;
+  }
+
+    .first-slider {
+      padding-left: 50px;
+    }
+
+
+  .tours-title {
+    font-size: 12px;
+  }
+
+  .tours-description {
+    font-size: 10px;
+  }
+
+  .tours-big {
+    width: 100% !important;
+  }
+
+  .card-item {
+    flex-direction: column;
+  }
+
+  .card-item div:first-child {
+    width: 100%;
+  }
+}

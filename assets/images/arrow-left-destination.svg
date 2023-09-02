@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1767128">
+<g id="Ellipse 306" filter="url(#filter0_b_192_510)">
+<circle r="20" transform="matrix(-1 0 0 1 20 20)" fill="black" fill-opacity="0.2"/>
+<circle r="19.5" transform="matrix(-1 0 0 1 20 20)" stroke="white"/>
+</g>
+<path id="Arrow 1" d="M9.47032 19.4697C9.17743 19.7626 9.17743 20.2374 9.47032 20.5303L14.2433 25.3033C14.5362 25.5962 15.0111 25.5962 15.304 25.3033C15.5968 25.0104 15.5968 24.5355 15.304 24.2426L11.0613 20L15.304 15.7574C15.5968 15.4645 15.5968 14.9896 15.304 14.6967C15.0111 14.4038 14.5362 14.4038 14.2433 14.6967L9.47032 19.4697ZM29.334 19.25L10.0007 19.25V20.75L29.334 20.75V19.25Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_192_510" x="-6" y="-6" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_192_510"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_192_510" result="shape"/>
+</filter>
+</defs>
+</svg>

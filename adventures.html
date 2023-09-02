@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/adventures.css">
+
+  <title>DESIRE TRIP</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      fetch('/components/header/header.html')
+        .then(response => response.text())
+        .then(template => {
+          const compiledTemplate = Handlebars.compile(template);
+          const data = {/* ваші дані для заповнення шаблону */};
+          const renderedTemplate = compiledTemplate(data);
+          document.getElementById('navbar').innerHTML = renderedTemplate;
+        });
+    });
+  </script>
+</head>
+
+<body>
+
+    <include src="/components/header/header.html"></include>
+    <!-- <include src="/components/header/header.html"></include> -->
+
+
+
+    <!---------------------- Landing Start -------------------------->
+    <div class="landing">
+      <h2> Dare to live the life <br> you've <span>always <br> wanted</span></h2>
+    </div>
+    <!--------------------- Landing End ---------------------------->
+
+
+
+    <!---------------------- Adventures Start ---------------------->
+
+    <div class="adventure">
+      <div class="adventure-content">
+        <h2>Find the best adventures for you</h2>
+        <p>Choose the destination activities and time frame for your trip Choose the destination activities and time
+          frame for your trip Choose the destination activities and time frame for your trip Choose the destination
+          activities and time frame for your trip Choose the destination activities and time frame for your trip Choose
+          the destination activities and time frame for your trip </p>
+      </div>
+      <div>
+        <form id="search" class="d-flex justify-content-between align-items-end form-wrapp">
+          <div class="d-flex align-items-center search-wrapp" style="gap: 25px;">
+            <div class="search-item">
+              <h2>Country</h2>
+              <div class="select-input country-wrapp">
+                <img src="assets/images/Location-adventures.svg" alt="Landing">
+                <select name="country" id="state1" data-select2-id="Country"
+                  class="js-example-basic-multiple select-coutries country" multiple>
+                </select>
+              </div>
+            </div>
+            <div class="search-item">
+              <h2>Date</h2>
+              <div class="select-input data-picker">
+                <select name="datatime" id="state1" data-select2-id="Datatime"
+                  class="js-example-basic-multiple select-coutries datatime" multiple>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <img id="date" src="assets/images/Calendar.svg" alt="Calendar">
+              </div>
+            </div>
+            <div class="search-item">
+              <h2>Activities</h2>
+              <div class="select-input">
+                <select name="activity" id="state1" data-select2-id="Activities"
+                  class="js-example-basic-multiple select-coutries activities" multiple>
+                  <option value="Safari">Safari</option>
+                  <option value="Active">Active</option>
+                </select>
+                <img src="assets/images/chevron_down.svg" alt="chevron_down">
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="search-btn">
+              Search
+              <img src="assets/images/Search.svg" alt="Search">
+            </button>
+          </div>
+        </form>
+        <div class="pt-5 search-card-wrapp">
+
+        </div>
+        <div class="d-flex justify-content-center align-items-center pt-5 pb-5">
+          <img id="loadMore" class="loadmore" src="assets/images/more.svg" alt="more">
+        </div>
+      </div>
+    </div>
+    <!---------------------- Adventures End ---------------------->
+
+
+    <!----------------------------- Map Start --------------------------->
+ 
+    <!-- <div class="map">
+      <iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=1bMB8BpmMsxbuH2Kdqjr_vgNCo9lyKOQ&ehbc=2E312F" width="100%" height="480"></iframe>
+
+    </div> -->
+
+    <!--------------------------- Map End ------------------------------->
+
+
+        <!--------------------- Our Partners Start ---------------------------->
+  
+        <div class="partners">
+          <h2 class="partner-title">our <span>partners</span></h2>
+          <div class="partners-group">
+            <div class="d-flex align-items-center pr-images">
+              <div class="vertical-line"></div>
+              <img class="partner-item" src="./assets/images/partners-1.svg" alt="partners-1">
+              <div class="vertical-line"></div>
+              <img class="partner-item" src="./assets/images/partners-2.svg" alt="partners-2">
+              <div class="vertical-line"></div>
+              <img class="partner-item" src="./assets/images/partners-3.svg" alt="partners-3">
+              <div class="vertical-line"></div>
+              <img class="partner-item" src="./assets/images/partners-4.svg" alt="partners-4">
+              <div  class="vertical-line"></div>
+            </div>
+          </div>
+        </div>
+      
+        <!--------------------- Our Partners End ---------------------------->
+
+
+    <!--------------------- Footer Start ---------------------------->
+
+    <footer class="footer">
+      <div class="footer-form">
+        <div class="footer-form-tx">
+          <h2>Questions? <br>
+            Write to us and we will <span>be <br> happy</span> to help you</h2>
+          <p>
+            Our team strives to help you find the best solution for your needs.
+          </p>
+        </div>
+        <div class="footer-inputs">
+          <div class="d-flex">
+            <input class="footer-input" type="text" placeholder="Your name">
+            <input class="footer-input" type="text" placeholder="Your last name">
+          </div>
+          <div class="pt-2 d-flex">
+            <input class="footer-input" type="text" placeholder="Your phone number">
+            <input class="footer-input" type="text" placeholder="Your email">
+          </div>
+          <textarea class="footer-input mt-2" style="width: 100%;" cols="45" rows="5"
+            placeholder="Your message"></textarea>
+          <button class="contact-us-btn footer-btn">Send Message</button>
+        </div>
+      </div>
+      <div class="footer-social">
+        <img src="./assets/images/logo.svg" alt="logo">
+        <div class="d-flex flex-column align-items-end">
+          <p>
+            Follow us in social media
+          </p>
+          <div class="social-media mt-2">
+            <img src="./assets/images/facebook.svg" alt="facebook">
+            <img class="ms-4" src="./assets/images/instagram.svg" alt="instagram">
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 Mfmc Technologies Limited | All right reserved
+        </p>
+        <div class="copyright-links">
+          <a href="#">Terms of service</a>
+          <a href="#" class="ms-5 ps-2">Privacy policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--------------------- Footer End ---------------------------->
+  </div>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+  <script src="assets/js/load-more.js"></script>
+  <script src="assets/js/multi-select-adventures.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/adventures.js"></script>
+  <script src="assets/js/select-adventures.js" type="module"></script>
+</body>
+
+</html>

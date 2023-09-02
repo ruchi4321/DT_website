@@ -1,0 +1,596 @@
+/* ===================== Landing Start ===================== */
+.landing {
+  background: url('../../assets/images/landing-bg-adventures.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.landing h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  font-weight: 200;
+  padding-bottom: 80px;
+  padding-left: 10%;
+}
+
+.landing h2 span {
+  color: #E58620;
+}
+
+.notfound {
+  display: none;
+}
+
+.notfound.active {
+  display: block;
+}
+
+/* ===================== Landing End ====================== */
+
+
+/* ======================== Adventures Start ===================== */
+
+.adventure {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-inline: 10%;
+}
+
+.adventure-content {
+  padding-bottom: 50px;
+}
+
+.adventure-content h2 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+}
+
+.adventure-content p {
+  font-size: 16px;
+  opacity: .5;
+}
+
+
+.select-input {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 10px;
+  gap: 5px;
+  width: 240px;
+}
+
+.select-input .select2 {
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: none !important;
+}
+
+.data-picker input {
+  border: none !important;
+  outline: none !important;
+  font-weight: 300;
+  padding-block: 4.3px;
+}
+
+.search-btn {
+  border: none;
+  background: #E58620;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  padding: 10px 30px;
+  border-radius: 4px;
+
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+}
+
+.search-item {
+  color: #E58620;
+}
+
+.search-item h2 {
+  font-size: 20px;
+}
+
+.search-card-wrapp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  transition: 5s;
+}
+
+
+
+
+.search-card {
+  display: flex;
+  padding: 20px;
+  background: url('../../assets/images/country-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  height: 500px;
+}
+
+.search-card:nth-child(2) {
+  background: url('../../assets/images/country-card-2.svg') !important;
+
+}
+
+.search-card:nth-child(3) {
+  background: url('../../assets/images/country-card-3.svg') !important;
+
+}
+
+.search-card:nth-child(4) {
+  background: url('../../assets/images/country-card-3.svg') !important;
+
+}
+
+.search-card:nth-child(5) {
+  background: url('../../assets/images/country-card-5.svg') !important;
+
+}
+
+.search-card:nth-child(6) {
+  background: url('../../assets/images/country-card-1.svg') !important;
+
+}
+
+
+.search-card-wrapp div:hover .hover-search {
+  top: 10px;
+  opacity: 1;
+}
+
+.search-card-wrapp div:hover .search-default {
+  opacity: 0;
+}
+
+
+.search-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.search-coutry-name {
+  color: #fff;
+  font-weight: 300;
+  border-bottom: 1px solid #E58620;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+
+.search-content div {
+  gap: 5px;
+  align-items: flex-start;  
+  color: #fff;
+}
+
+
+
+.search-content div p {
+   width: 70%;
+   font-size: 18px;
+   line-height: 21px;
+   font-weight: 300;
+
+}
+
+.search-content span {
+  font-weight: 600;
+}
+
+.search-content p {
+  color: #fff;
+}
+
+
+.hover-search {
+  margin: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  height: 90%;
+  position: absolute;
+  top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+.hover-search span {
+  color: #fff;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+
+.hover-search a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border:2px solid #fff;
+  padding: 5px 10px;
+  opacity: 0.4;
+}
+
+.hover-search p {
+  color: #fff;
+  padding-block: 20px;
+}
+
+.hover-search p span {
+  color: #E58620;
+  text-transform: uppercase;
+}
+
+.search-card:nth-child(1), .search-card:nth-child(2), .search-card:nth-child(3) {
+  display: inline-block;
+}
+
+#date {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.js-example-basic-multiple {
+  cursor: pointer;
+}
+
+.select-input:nth-child(1) .select2 {
+  width: 400px;
+}
+
+
+.country-wrapp {
+  width: 330px;
+}
+
+.loadmore {
+  cursor: pointer;
+}
+
+
+.search-wrapp {
+  display: flex;
+  gap: 20px;
+}
+
+.map {
+  width:100%;
+  height:700px;
+  overflow:hidden;
+  margin-bottom: 60px;
+ 
+}
+
+.i4ewOd-pzNkMb-haAclf {
+  display: none !important;
+}
+
+.iframe {
+  width: 100% !important;
+  height: 100%;
+  margin-top:-70px;
+  background:transparent; 
+  position:relative; 
+  pointer-events: none;
+}
+
+/* ======================= Adventures End ========================= */
+
+
+
+/* ==================== Partners Start =============================== */
+
+.partners h2 {
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #242424;
+}
+
+.partners h2 span {
+  color: #E58620;
+}
+
+.partners-group {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-group div {
+  gap: 60px;
+}
+
+.partners-group div img {
+  width: 168px;
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.partners-group div img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.vertical-line {
+  height: 160px;
+  width: 1px;
+  background: #EBEBEB;
+}
+
+/* ==================== Partners End =============================== */
+
+/* ===================== Responsive ==================================*/
+
+@media screen and (max-width: 1400px) {
+  .adventure {
+    padding-inline: 5%;
+  }
+
+  .search-card-wrapp {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-card {
+    height: 400px;
+  }
+
+  .partners-group div img {
+    width: 140px;
+  }
+
+  .footer {
+    padding-inline: 4%;
+
+  }
+
+  .contact-img {
+    top: -280px;
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .form-wrapp {
+     flex-direction: column;
+     align-items: initial !important;
+     gap: 40px;
+  }
+
+  .partners-group div {
+    gap: 50px;
+   
+   }
+
+  .custom-navbar {
+    padding-left: 0;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 1000px) {
+  .custom-navbar {
+    padding-inline: 5%;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .nav-item:nth-child(2) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+    padding-block: 20px;
+    text-align: center;
+  }
+
+  .nav-form {
+    display: none !important;
+  }
+
+  .landing h2 {
+    font-size: 40px;
+  }
+
+  .search-wrapp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-item {
+    width: 100%;
+  }
+
+  .search-card-wrapp {
+    grid-template-columns: 1fr;
+  }
+
+
+  .select-input  {
+    width: 100%;
+  }
+
+  .footer-input {
+    width: 100%;
+  }
+
+  .copyright {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .jn-title {
+    margin-bottom: -50px;
+    margin-top: 50px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .partners-group div img {
+    filter: grayscale(0) !important;
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+  .custom-navbar {
+    padding-inline: 0;
+  }
+
+  .search-card {
+    height: 100%;
+  }
+
+
+  .search-default {
+    height: fit-content;
+  }
+
+  .search-card-wrapp div:hover .search-default {
+     opacity: 1;
+  }
+
+  .landing h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .adventure h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .adventure p {
+    font-size: 14px;
+  }
+  
+  .search-item h2 {
+    font-size: 18px;
+  }
+
+  .map {
+    width:100%;
+    height:350px;
+    overflow:hidden;
+    margin-bottom: 60px;
+  }
+
+
+  
+  
+  .partners h2 {
+    font-size: 30px;
+  }
+
+  .partners-group {
+    padding-bottom: 80px;
+  }
+
+  .pr-images {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partners-group {
+    position: relative;
+  }
+
+  .partners-group div img {
+    width: 140px;
+  }
+  
+
+  .hover-search {
+    position: initial !important;
+    height: auto;
+    opacity: 1;
+    margin: 0;
+  }
+  
+  .hover-search span {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-inputs div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-btn {
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .footer-social div p {
+    font-size: 12px;
+  }
+}

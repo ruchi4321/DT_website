@@ -1,0 +1,17 @@
+<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 48095566">
+<g id="Rectangle 14" filter="url(#filter0_b_192_616)">
+<rect x="1" y="1.02734" width="42" height="42" rx="21" fill="white" fill-opacity="0.18"/>
+<rect x="0.5" y="0.527344" width="43" height="43" rx="21.5" stroke="white" stroke-opacity="0.1"/>
+</g>
+<path id="twitter" d="M33 15.1583C32.1819 15.5196 31.3101 15.7592 30.4013 15.8755C31.3363 15.3133 32.0499 14.43 32.3854 13.3652C31.5136 13.8886 30.5511 14.2583 29.5254 14.4646C28.6976 13.577 27.5179 13.0273 26.2309 13.0273C23.7339 13.0273 21.7236 15.0683 21.7236 17.5703C21.7236 17.9303 21.7539 18.2764 21.8281 18.606C18.0785 18.4218 14.7606 16.6121 12.5318 13.8553C12.1426 14.5352 11.9144 15.3133 11.9144 16.151C11.9144 17.724 12.7188 19.1183 13.9178 19.9255C13.1931 19.9116 12.4823 19.6998 11.88 19.3661C11.88 19.38 11.88 19.398 11.88 19.416C11.88 21.623 13.4434 23.4563 15.4935 23.8786C15.1264 23.9797 14.7263 24.0281 14.311 24.0281C14.0223 24.0281 13.7308 24.0115 13.4571 23.9506C14.0415 25.7492 15.6998 27.0715 17.6715 27.1144C16.137 28.3232 14.1886 29.0515 12.0794 29.0515C11.7095 29.0515 11.3547 29.0349 11 28.9892C12.9979 30.2866 15.3656 31.0273 17.919 31.0273C26.2185 31.0273 30.756 24.1043 30.756 18.1033C30.756 17.9026 30.7491 17.7087 30.7395 17.5163C31.6346 16.8766 32.3867 16.0776 33 15.1583Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_192_616" x="-7" y="-6.97266" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_192_616"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_192_616" result="shape"/>
+</filter>
+</defs>
+</svg>

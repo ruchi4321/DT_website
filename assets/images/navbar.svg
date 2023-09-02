@@ -1,0 +1,30 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 48096427">
+<g id="Group 48096106">
+<g id="Rectangle 3660" filter="url(#filter0_b_230_331)">
+<rect width="30" height="30" rx="5" fill="url(#paint0_linear_230_331)" fill-opacity="0.15"/>
+</g>
+<g id="Group 48096427_2">
+<g id="Group 48096106_2">
+<g id="align-right">
+<path id="Vector" d="M6.75 9.5H24.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6.75 15H17.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M6.75 20.5H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_230_331" x="-6" y="-6" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="3"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_230_331"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_230_331" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_230_331" x1="8.5" y1="7.5" x2="28.5" y2="34.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
