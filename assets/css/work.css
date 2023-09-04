@@ -478,7 +478,8 @@ color: #242424;
 }
 
 .daily-fs-images img {
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     height: auto;
     display: flex;
 }
@@ -621,7 +622,6 @@ color: #242424;
   .your-trip-text{
     font-size: 15px;
     line-height: 150%;
-    text-align: center;
   }
 }
 @media (max-width: 1100px) {
@@ -1247,6 +1247,7 @@ left: 30px;
     gap: 50px;
     margin-top: 70px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
