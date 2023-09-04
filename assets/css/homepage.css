@@ -355,18 +355,20 @@
 }
 
 
-.journey-arrow-left {
-  position: absolute;
-  top: 38%;
-  left: 7%;
-}
 
-.journey-arrow-right {
-  position: absolute;
-  top: 38%;
-  right: 7%;
+@media (min-width: 600px) {
+  .journey-arrow-left {
+    position: absolute;
+    top: 38%;
+    left: 20px;
+  }
+  
+  .journey-arrow-right {
+    position: absolute;
+    top: 38%;
+    right: 20px;
+  }  
 }
-
 
 /* ==================== Journey End =============================== */
 
@@ -548,15 +550,15 @@
 }
 
 .ts-slide p {
-  font-size: 12px;
+  font-size: 10px;
   background: #161616;
   opacity: 0.95;
   border-radius: 4px;
   color: #C7C7C7;
   padding: 15px;
-  line-height: 150%;
+  line-height: 120%;
   width: 250px;
-  height: 185px;
+  /* height: 185px; */
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -728,12 +730,6 @@
     grid-template-columns: 1fr;
   }
 
-
-
-  .journey-arrow-right,
-  .journey-arrow-left {
-    /* display: none; */
-  }
 
 
   .slider-3 {
@@ -1118,4 +1114,42 @@
   
 }
 
-
+@media (max-width: 992px) {
+  .journey-arrow-right,
+  .journey-arrow-left {
+   z-index: 999; 
+  }
+  .ts-slide{
+    width: 100%;
+  }
+  .journey-arrow-left{
+    left: 0;
+  }
+  .journey-arrow-right{
+    right: 0;
+  }
+}
+@media (max-width: 468px) {
+  .journey-arrow-left img {
+    position: absolute;
+    left: 40px !important;
+  }
+  
+  .journey-arrow-right img {
+    position: absolute;
+    right: 40px !important;
+  }
+}
+@media (min-width: 300px) {
+  .journey-arrow-left {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+  }
+  
+  .journey-arrow-right {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+  }  
+}
