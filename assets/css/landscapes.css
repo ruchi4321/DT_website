@@ -329,15 +329,39 @@
 .daily-sc-content {
   width: 60%;
 }
+.daily-sc-images {
+  text-align: center; 
+}
 
 .daily-images-2 {
   gap: 5px;
+  display: flex; 
+  justify-content: center; 
 }
 
 .daily-images-2 img {
-   height: auto;
-   width: 100%;
+  height: auto;
+  width: 100%;
 }
+
+.daily-1 {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .daily-images-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .daily-images-2 img {
+    height: auto;
+    width: 100%; 
+  }
+}
+
+
+
 
 
 /* ===================== Daily End ============================= */
