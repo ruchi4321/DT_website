@@ -83,42 +83,21 @@
     <div class="help-center-form">
       <button id="help-btn" class="help-center">can i <span>help?</span></button>
       <div id="help-center" class="hidden">
-
         <div class="contact-form">
           <div class="contact-form-content">
+            <div class="close" id="close"><svg class="close-form" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 6L18.7279 18.7279" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6 18.728L18.7279 6.00011" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h2>travel carefree again </h2>
             <p>Book your private, custom tour of a <br> lifetime with 100% confidence</p>
-            <div>
-              <span>Step 1</span>
-              <span>Step 2</span>
-            </div>
           </div>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Where do you want to go?
-            </option>
-
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Your Interests?
-
-            </option>
-
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>When?</option>
-
-          </select>
-          <div class="d-flex" style="gap: 10px;">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>No of travelers
-
-              </option>
-            </select>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Budget</option>
-            </select>
-          </div>
-          <button class="contact-us-btn" type="submit">get started</button>
+            <input type="text" placeholder="Name" class="form-control" id="name">
+            <input type="email" placeholder="Email/Whatsapp No:" class="form-control" id="email">
+            <input type="text" placeholder="Where do you want to go" class="form-control" id="place">
+            <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>
+          <button class="contact-us-btn" type="submit">Send us</button>
         </div>
       </div>
     </div>
@@ -322,7 +301,6 @@
   <!--=============== SWIPER JS ===============-->
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/work.js"></script>
 </body>
 

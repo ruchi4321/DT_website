@@ -170,11 +170,16 @@
 .show-top {
   top: 20%;
 }
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
 /* help center */
 
 
 /* ================== Landing End ======================== */
-
 
 /* ==================== Explore Start ========================  */
 

@@ -156,6 +156,22 @@
 .help-center span {
   color: #F78F1E;
 }
+@media (max-width: 768px) {
+  .help-center{
+    transform: rotate(0deg);
+    margin-right: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .help-center-form{
+    right: 35px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+}
 
 .contact-form {
   background: #fff;
@@ -164,7 +180,8 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   height: auto;
   padding-block: 40px;
 }
@@ -212,7 +229,12 @@
 .show-top {
   top: 20%;
 }
-
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
 /* help center */
 
 
@@ -405,7 +427,7 @@ color: #242424;
     padding-bottom: 50px;
   }
   .daily-fs{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 }
 @media (max-width: 661px) {
@@ -490,7 +512,7 @@ color: #242424;
 
 .daily-sc-content {
   width: 60%;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 
@@ -598,7 +620,8 @@ color: #242424;
   }
   .your-trip-text{
     font-size: 15px;
-    line-height: 100%;
+    line-height: 150%;
+    text-align: center;
   }
 }
 @media (max-width: 1100px) {
@@ -618,9 +641,10 @@ color: #242424;
   .your-trip-content{
     padding: 3em;
   }
-  .your-trip-text{
+  .your-trip-text p{  
     font-size: 13px;
-    line-height: 110%;
+    line-height: 130%;
+    text-align: center;
   }
 }
 .st-btn{
@@ -1206,6 +1230,24 @@ left: 30px;
 
 }
 
+@media (min-width: 1700px) {
+  .daily-fs{
+    display: flex;
+    justify-content: center;
+    padding-inline: 8%;
+    align-items: center;
+    gap: 350px;
+    margin-top: 50px;
+  }
+  .daily-sc {
+    display: flex;
+    justify-content: center;
+    padding-inline: 18%;
+    align-items: center;
+    gap: 50px;
+    margin-top: 70px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .custom-navbar {
@@ -1357,21 +1399,7 @@ left: 30px;
 
   .about-us.about-us-destination{
     padding-bottom: 0px;
-  }
- 
-
-
-  .daily-fs{
-    flex-direction: column-reverse;
-    align-items: initial;
-    padding-inline: 5%;
-  }
-  .daily-sc{
-    flex-direction: column;
-    align-items: initial;
-    padding-inline: 5%;
-  }
-  
+  }  
 
   .daily-fs-content {
     width: 100%;
@@ -1751,3 +1779,15 @@ left: 30px;
   }
 }
 
+@media (max-width: 700px) {
+  .daily-fs{
+    flex-direction: column-reverse;
+    align-items: initial;
+    padding-inline: 5%;
+  }
+  .daily-sc{
+    flex-direction: column;
+    align-items: initial;
+    padding-inline: 5%;
+  } 
+}
