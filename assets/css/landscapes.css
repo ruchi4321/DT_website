@@ -335,8 +335,13 @@
 
 .daily-images-2 {
   gap: 5px;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-images-2 div {
+  flex-grow: 1; 
+  flex-basis: 0; 
 }
 
 .daily-images-2 img {
@@ -348,20 +353,12 @@
   width: 100%;
 }
 
+
+
+
 @media (max-width: 992px) {
-  .daily-images-2 {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .daily-images-2 img {
-    height: auto;
-    width: 100%; 
-  }
 }
-
-
-
 
 
 /* ===================== Daily End ============================= */
