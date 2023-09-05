@@ -42,7 +42,7 @@ function displayElements(elements) {
       <div class="hover-search">
         <span>${el.description}</span>
         <a href="#">Experience this</a>
-        <a href="" class="contact-us-btn">LEARN MORE</a>
+        <a href="${el.url}" class="contact-us-btn">LEARN MORE</a>
       </div>
     </div>`;
 
