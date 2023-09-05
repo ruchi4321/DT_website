@@ -133,7 +133,7 @@ loadInitialData();
 (function () {
   let initialElements = []; // Зберігати початковий список елементів
 
-  // Завантажити дані один раз під час ініціалізації
+  //Load data once during initialization
   fetch("assets/data/coutries-card.json")
     .then(function (response) {
       return response.json();
@@ -157,7 +157,7 @@ loadInitialData();
 
     let searchData = {
       country: countries,
-      availableMonths: selectedMonths, // Змінено ім'я поля на availableMonths
+      availableMonths: selectedMonths,
       activities: activities,
     };
 
@@ -169,7 +169,6 @@ loadInitialData();
       );
     }
     if (searchData.availableMonths.length > 0) {
-      // Змінено фільтрацію для врахування доступних місяців
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
           element.availableMonths.includes(month)
@@ -191,7 +190,7 @@ loadInitialData();
 
     let searchData = {
       country: countries,
-      availableMonths: selectedMonths, // Змінено ім'я поля на availableMonths
+      availableMonths: selectedMonths,
       activities: activities,
     };
 
@@ -203,7 +202,7 @@ loadInitialData();
       );
     }
     if (searchData.availableMonths.length > 0) {
-      // Змінено фільтрацію для врахування доступних місяців
+      // Changed filtering to include available months
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
           element.availableMonths.includes(month)
