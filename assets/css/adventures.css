@@ -121,7 +121,6 @@
 
 
 .search-card {
-  display: flex;
   padding: 20px;
   background: url('../../assets/images/country-bg.svg');
   background-repeat: no-repeat;
@@ -130,8 +129,13 @@
   border-radius: 5px;
   position: relative;
   cursor: pointer;
-  display: none;
+  /* display: flex; */
+  /* display: none; */ 
   height: 500px;
+}
+.search-card:nth-child(10),
+.search-card:nth-child(11) {
+  display: none;
 }
 
 .search-card:nth-child(2) {
@@ -156,7 +160,6 @@
 
 .search-card:nth-child(6) {
   background: url('../../assets/images/country-card-1.svg') !important;
-
 }
 
 
@@ -210,23 +213,35 @@
 }
 
 
-.hover-search {
+/* .hover-search {
   margin: 10px;
   background: rgba(0,0,0,0.7);
   padding: 20px;
   height: 90%;
   position: absolute;
   top: 0;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+.hover-search {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  height: 90%;
+  position: absolute;
+  inset: 10px;
   transition: all .5s ease-in-out;
   opacity: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 
 
 
@@ -312,6 +327,39 @@
   background:transparent; 
   position:relative; 
   pointer-events: none;
+}
+.card-description{
+  display: flex;
+  flex-direction: column;
+}
+.learn-more {
+    text-decoration: none;
+    color: #E58620;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: 'Montserrat', sans-serif;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  /* z-index: 999; */
+}
+.time-zone {
+  display: flex;
+  align-items: center;
+}
+
+.time-label {
+  margin-right: 5px;
+}
+
+.time-value {
+  margin: 0;
 }
 
 /* ======================= Adventures End ========================= */
@@ -564,7 +612,7 @@
   .hover-search {
     position: initial !important;
     height: auto;
-    opacity: 1;
+    opacity: 0;
     margin: 0;
   }
   

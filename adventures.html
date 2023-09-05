@@ -18,28 +18,58 @@
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      fetch('/components/header/header.html')
-        .then(response => response.text())
-        .then(template => {
-          const compiledTemplate = Handlebars.compile(template);
-          const data = {/* ваші дані для заповнення шаблону */};
-          const renderedTemplate = compiledTemplate(data);
-          document.getElementById('navbar').innerHTML = renderedTemplate;
-        });
-    });
+    // window.addEventListener('DOMContentLoaded', function() {
+    //   fetch('/components/header/header.html')
+    //     .then(response => response.text())
+    //     .then(template => {
+    //       const compiledTemplate = Handlebars.compile(template);
+    //       const data = {};
+    //       const renderedTemplate = compiledTemplate(data);
+    //       document.getElementById('navbar').innerHTML = renderedTemplate;
+    //     });
+    // });
   </script>
 </head>
 
 <body>
 
-    <include src="/components/header/header.html"></include>
-    <!-- <include src="/components/header/header.html"></include> -->
-
-
-
     <!---------------------- Landing Start -------------------------->
     <div class="landing">
+      <nav class="navbar navbar-expand-lg navbar-dark  custom-navbar fixed-top">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.svg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-img"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto  mb-2 mb-lg-0 " style="margin:0 auto;">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">How we work</a>
+              </li>
+              <li class="nav-item ms-5 me-5">
+                <a class="nav-link" href="#experience">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./adventures.html">Destination</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center d-lg-flex">
+              <div class="d-none d-lg-flex align-items-center">
+                <a href="#">
+                 <img width="20px" src="./assets/images/facebook.svg" alt="facebook">
+                </a>
+                <a href="#">
+                  <img width="20px" class="mx-4" src="./assets/images/instagram.svg" alt="instagram">
+                </a>
+              </div>
+              <a class="contact-us-btn" href="./contact.html">CONTACT US</a>
+            </div>
+          </div>
+        </div>
+      </nav>
       <h2> Dare to live the life <br> you've <span>always <br> wanted</span></h2>
     </div>
     <!--------------------- Landing End ---------------------------->
@@ -117,15 +147,6 @@
     </div>
     <!---------------------- Adventures End ---------------------->
 
-
-    <!----------------------------- Map Start --------------------------->
- 
-    <!-- <div class="map">
-      <iframe class="iframe" src="https://www.google.com/maps/d/embed?mid=1bMB8BpmMsxbuH2Kdqjr_vgNCo9lyKOQ&ehbc=2E312F" width="100%" height="480"></iframe>
-
-    </div> -->
-
-    <!--------------------------- Map End ------------------------------->
 
 
         <!--------------------- Our Partners Start ---------------------------->
@@ -210,9 +231,9 @@
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 
-  <script src="assets/js/load-more.js"></script>
+  <!-- <script src="assets/js/load-more.js"></script> -->
+  <!-- <script src="assets/js/main.js"></script> -->
   <script src="assets/js/multi-select-adventures.js"></script>
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/adventures.js"></script>
   <script src="assets/js/select-adventures.js" type="module"></script>
 </body>
