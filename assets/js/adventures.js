@@ -113,15 +113,44 @@ function loadInitialData() {
 // Call loadInitialData for initial loading
 loadInitialData();
 
-// ======================= Search Start =========================
 const form = document.getElementById("search");
+let initialElements = []; // Зберігати початковий список елементів
+
+// Function for loading initial data
+function loadInitialData() {
+  fetch("assets/data/coutries-card.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (elements) {
+      initialElements = elements;
+    })
+    .catch((err) => console.error(err));
+}
+
+// Call loadInitialData for initial loading
+loadInitialData();
 
 (function () {
+  // Завантажити дані один раз під час ініціалізації
+  fetch("assets/data/coutries-card.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (elements) {
+      initialElements = elements;
+      displayElements(initialElements); // Додайте цей виклик, щоб відобразити елементи при завантаженні сторінки
+    })
+    .catch((err) => console.error(err));
+
+  // Додайте слухача подій на зміни вибору країн
+  $(".country").on("change", function () {
+    updateSelectedCountries();
+  });
+
   form.addEventListener("submit", function (e) {
-    // Prevent default behavior
     e.preventDefault();
 
-    // Create new FormData object
     let countries = $(".country").val();
     let activities = $(".activities").val();
 
@@ -131,33 +160,56 @@ const form = document.getElementById("search");
       activities: $(".activities").val(),
     };
 
-    fetch("assets/data/coutries-card.json")
-      .then(function (response) {
-        // response.json() returns a promise, use the same .then syntax to work with the results
-        response.json().then(async function (elements) {
-          let filteredElements = elements;
+    let filteredElements = initialElements.slice(); // Клонувати початковий список елементів
 
-          // Apply filters if they are not empty
-          if (searchData.country.length > 0) {
-            filteredElements = filteredElements.filter((element) =>
-              searchData.country.includes(element.country)
-            );
-          }
-          if (searchData.date.length > 0) {
-            filteredElements = filteredElements.filter((element) =>
-              searchData.date.includes(element.time)
-            );
-          }
-          if (searchData.activities.length > 0) {
-            filteredElements = filteredElements.filter((element) =>
-              searchData.activities.includes(element.activities)
-            );
-          }
-
-          displayElements(filteredElements);
-        });
-      })
-      .catch((err) => console.error(err));
+    // Застосовувати фільтри, якщо вони не пусті
+    if (searchData.country.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.country.includes(element.country)
+      );
+    }
+    if (searchData.date.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.date.includes(element.month)
+      );
+    }
+    if (searchData.activities.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.activities.includes(element.activities)
+      );
+    }
+    displayElements(filteredElements);
   });
+
+  // Функція для оновлення списку вибраних країн і запуску пошуку
+  function updateSelectedCountries() {
+    let countries = $(".country").val();
+    let activities = $(".activities").val();
+
+    let searchData = {
+      country: countries,
+      date: $(".datatime").val(),
+      activities: $(".activities").val(),
+    };
+
+    let filteredElements = initialElements.slice(); // Клонувати початковий список елементів
+
+    // Застосовувати фільтри, якщо вони не пусті
+    if (searchData.country.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.country.includes(element.country)
+      );
+    }
+    if (searchData.date.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.date.includes(element.month)
+      );
+    }
+    if (searchData.activities.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.activities.includes(element.activities)
+      );
+    }
+    displayElements(filteredElements);
+  }
 })();
-// ======================  Search End ========================
