@@ -33,16 +33,16 @@ function displayElements(elements) {
             <span>Activities:</span>
             <p>${el.activities}</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-description">
             <span>Time:</span>
             <p>${el.time}</p>
+            <a href="${el.url}" class="learn-more">LEARN MORE</a>
           </div>
         </div>
       </div>
       <div class="hover-search">
         <span>${el.description}</span>
         <a href="#">Experience this</a>
-        <a href="${el.url}" class="contact-us-btn">LEARN MORE</a>
       </div>
     </div>`;
 
