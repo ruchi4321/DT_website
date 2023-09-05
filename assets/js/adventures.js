@@ -10,7 +10,6 @@ loadMoreBtn.addEventListener("click", function () {
 
   currentItem += 2;
 
-  // Перевіряємо, чи потрібно приховати кнопку "Load More"
   if (currentItem >= containers.length) {
     loadMoreBtn.setAttribute("style", "display: none;");
   } else {
@@ -139,11 +138,10 @@ loadInitialData();
     })
     .then(function (elements) {
       initialElements = elements;
-      displayElements(initialElements); // Додайте цей виклик, щоб відобразити елементи при завантаженні сторінки
+      displayElements(initialElements);
     })
     .catch((err) => console.error(err));
 
-  // Додайте слухача подій на зміни вибору країн
   $(".country").on("change", function () {
     updateSelectedCountries();
   });
@@ -160,9 +158,8 @@ loadInitialData();
       activities: $(".activities").val(),
     };
 
-    let filteredElements = initialElements.slice(); // Клонувати початковий список елементів
+    let filteredElements = initialElements.slice();
 
-    // Застосовувати фільтри, якщо вони не пусті
     if (searchData.country.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.country.includes(element.country)
@@ -181,7 +178,6 @@ loadInitialData();
     displayElements(filteredElements);
   });
 
-  // Функція для оновлення списку вибраних країн і запуску пошуку
   function updateSelectedCountries() {
     let countries = $(".country").val();
     let activities = $(".activities").val();
@@ -192,9 +188,8 @@ loadInitialData();
       activities: $(".activities").val(),
     };
 
-    let filteredElements = initialElements.slice(); // Клонувати початковий список елементів
+    let filteredElements = initialElements.slice();
 
-    // Застосовувати фільтри, якщо вони не пусті
     if (searchData.country.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.country.includes(element.country)
