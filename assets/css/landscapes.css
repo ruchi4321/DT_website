@@ -170,11 +170,16 @@
 .show-top {
   top: 20%;
 }
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
 /* help center */
 
 
 /* ================== Landing End ======================== */
-
 
 /* ==================== Explore Start ========================  */
 
@@ -324,14 +329,35 @@
 .daily-sc-content {
   width: 60%;
 }
+.daily-sc-images {
+  text-align: center; 
+}
 
 .daily-images-2 {
   gap: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-images-2 div {
+  flex-grow: 1; 
+  flex-basis: 0; 
 }
 
 .daily-images-2 img {
-   height: auto;
-   width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.daily-1 {
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 992px) {
+
 }
 
 
