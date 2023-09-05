@@ -26,8 +26,8 @@ function displayElements(elements) {
 
   elements.forEach((el, index, array) => {
     let div = ` <div class="search-card">
-      <div class="search-default">
-        <span class="search-coutry-name">${el.country}</span>
+    <div class="search-default">
+    <span class="search-coutry-name">${el.country}</span>
         <div class="search-content">
           <div class="d-flex">
             <span>Activities:</span>
