@@ -130,8 +130,12 @@
   border-radius: 5px;
   position: relative;
   cursor: pointer;
-  display: none;
+  /* display: none; */ 
   height: 500px;
+}
+.search-card:nth-child(10),
+.search-card:nth-child(11) {
+  display: none;
 }
 
 .search-card:nth-child(2) {
@@ -156,7 +160,6 @@
 
 .search-card:nth-child(6) {
   background: url('../../assets/images/country-card-1.svg') !important;
-
 }
 
 

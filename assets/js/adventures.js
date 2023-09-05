@@ -1,63 +1,77 @@
 // ==================== Load More Start ===============================
-
 let loadMoreBtn = document.querySelector(".loadmore");
-let currentItem = 3;
+let currentItem = 9;
 loadMoreBtn.addEventListener("click", function () {
   let containers = [...document.querySelectorAll(".search-card")];
 
-  for (let i = currentItem; i < currentItem + 3; i++) {
+  for (let i = currentItem; i < currentItem + 2; i++) {
     containers[i]?.setAttribute("style", "display: inline-block;");
   }
 
-  currentItem += 3;
-  if (currentItem > containers.length) {
+  currentItem += 2;
+
+  // Перевіряємо, чи потрібно приховати кнопку "Load More"
+  if (currentItem >= containers.length) {
     loadMoreBtn.setAttribute("style", "display: none;");
   } else {
     loadMoreBtn.setAttribute("style", "display: block;");
   }
 });
-
 // =================== Load More End ===================================
 
+// Function for displaying elements
+function displayElements(elements) {
+  const searchCardWrapp = document.querySelector(".search-card-wrapp");
+  searchCardWrapp.innerHTML = "";
 
-// ======================== Show Elements Start =======================
-
-fetch("assets/data/coutries-card.json")
-  .then(function (response) {
-    // response.json() returns a promise, use the same .then syntax to work with the results
-    response.json().then(async function (elements) {
-      // users is now our actual variable parsed from the json, so we can use it
-      elements.forEach((element) => {
-        let div = ` <div class="search-card">
-    <div class="search-default">
-      <span class="search-coutry-name">${element.country}</span>
-      <div class="search-content">
-        <div class="d-flex">
-          <span>Activities:</span>
-          <p>${element.activities}</p>
-        </div>
-        <div class="d-flex">
-          <span>Time:</span>
-          <p>${element.time}</p>
+  elements.forEach((el, index, array) => {
+    let div = ` <div class="search-card ">
+      <div class="search-default">
+        <span class="search-coutry-name">${el.country}</span>
+        <div class="search-content">
+          <div class="d-flex">
+            <span>Activities:</span>
+            <p>${el.activities}</p>
+          </div>
+          <div class="d-flex">
+            <span>Time:</span>
+            <p>${el.time}</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hover-search">
-      <span>${element.description}</span>
-      <a href="#">Experience this</a>
-    </div>
-  </div>`;
+      <div class="hover-search">
+        <span>${el.description}</span>
+        <a href="#">Experience this</a>
+        <a href="" class="contact-us-btn">LEARN MORE</a>
+      </div>
+    </div>`;
 
-        document
-          .querySelector(".search-card-wrapp")
-          .insertAdjacentHTML("beforeend", div);
+    searchCardWrapp.insertAdjacentHTML("beforeend", div);
+
+    if (array.length > 3) {
+      loadMoreBtn.setAttribute("style", "display: block;");
+    } else {
+      loadMoreBtn.setAttribute("style", "display: none;");
+    }
+  });
+}
+
+// Function for loading initial data
+function loadInitialData() {
+  fetch("assets/data/coutries-card.json")
+    .then(function (response) {
+      // response.json() returns a promise, use the same .then syntax to work with the results
+      response.json().then(async function (elements) {
+        displayElements(elements);
       });
-    });
-  })
-  .catch((err) => console.error(err));
+    })
+    .catch((err) => console.error(err));
+}
+
+// Call loadInitialData for initial loading
+loadInitialData();
 
 // ======================= Search Start =========================
-
 const form = document.getElementById("search");
 
 (function () {
@@ -75,76 +89,33 @@ const form = document.getElementById("search");
       activities: $(".activities").val(),
     };
 
-    document.querySelector(".search-card-wrapp").innerHTML = "";
-
     fetch("assets/data/coutries-card.json")
       .then(function (response) {
         // response.json() returns a promise, use the same .then syntax to work with the results
         response.json().then(async function (elements) {
-          // users is now our actual variable parsed from the json, so we can use it
-          elements
-            .filter(
-              (element) => {
-                if(searchData.country.includes(element.country) ) {
-                  return element
-                } else if (searchData.country.length === 0) {
-                  return element
-                } 
-              }
-            )
-            .filter(
-              (element) => {
-                if(searchData.date.includes(element.time) ) {
-                  return element
-                } else if (searchData.date.length === 0) {
-                  return element
-                } 
-              }
-            )
-            .filter(
-              (element) => {
-                if(searchData.activities.includes(element.activities) ) {
-                  return element
-                } else if (searchData.activities.length === 0) {
-                  return element
-                }
-              }
-            )
-            .forEach((el, index, array) => {
-              let div = ` <div class="search-card ">
-              <div class="search-default">
-                <span class="search-coutry-name">${el.country}</span>
-                <div class="search-content">
-                  <div class="d-flex">
-                    <span>Activities:</span>
-                    <p>${el.activities}</p>
-                  </div>
-                  <div class="d-flex">
-                    <span>Time:</span>
-                    <p>${el.time}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="hover-search">
-                <span>${el.description}</span>
-                <a href="#">Experience this</a>
-              </div>
-            </div>`;
+          let filteredElements = elements;
 
-              document
-                .querySelector(".search-card-wrapp")
-                .insertAdjacentHTML("beforeend", div);
+          // Apply filters if they are not empty
+          if (searchData.country.length > 0) {
+            filteredElements = filteredElements.filter((element) =>
+              searchData.country.includes(element.country)
+            );
+          }
+          if (searchData.date.length > 0) {
+            filteredElements = filteredElements.filter((element) =>
+              searchData.date.includes(element.time)
+            );
+          }
+          if (searchData.activities.length > 0) {
+            filteredElements = filteredElements.filter((element) =>
+              searchData.activities.includes(element.activities)
+            );
+          }
 
-              if (array.length > 3) {
-                loadMoreBtn.setAttribute("style", "display: block;");
-              } else {
-                loadMoreBtn.setAttribute("style", "display: none;");
-              }
-            });
+          displayElements(filteredElements);
         });
       })
       .catch((err) => console.error(err));
   });
 })();
-
 // ======================  Search End ========================
