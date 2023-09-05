@@ -131,6 +131,8 @@ function loadInitialData() {
 loadInitialData();
 
 (function () {
+  let initialElements = []; // Зберігати початковий список елементів
+
   // Завантажити дані один раз під час ініціалізації
   fetch("assets/data/coutries-card.json")
     .then(function (response) {
@@ -151,11 +153,12 @@ loadInitialData();
 
     let countries = $(".country").val();
     let activities = $(".activities").val();
+    let selectedMonths = $(".datatime").val();
 
     let searchData = {
       country: countries,
-      date: $(".datatime").val(),
-      activities: $(".activities").val(),
+      availableMonths: selectedMonths, // Змінено ім'я поля на availableMonths
+      activities: activities,
     };
 
     let filteredElements = initialElements.slice();
@@ -165,9 +168,12 @@ loadInitialData();
         searchData.country.includes(element.country)
       );
     }
-    if (searchData.date.length > 0) {
+    if (searchData.availableMonths.length > 0) {
+      // Змінено фільтрацію для врахування доступних місяців
       filteredElements = filteredElements.filter((element) =>
-        searchData.date.includes(element.month)
+        searchData.availableMonths.some((month) =>
+          element.availableMonths.includes(month)
+        )
       );
     }
     if (searchData.activities.length > 0) {
@@ -181,11 +187,12 @@ loadInitialData();
   function updateSelectedCountries() {
     let countries = $(".country").val();
     let activities = $(".activities").val();
+    let selectedMonths = $(".datatime").val();
 
     let searchData = {
       country: countries,
-      date: $(".datatime").val(),
-      activities: $(".activities").val(),
+      availableMonths: selectedMonths, // Змінено ім'я поля на availableMonths
+      activities: activities,
     };
 
     let filteredElements = initialElements.slice();
@@ -195,9 +202,12 @@ loadInitialData();
         searchData.country.includes(element.country)
       );
     }
-    if (searchData.date.length > 0) {
+    if (searchData.availableMonths.length > 0) {
+      // Змінено фільтрацію для врахування доступних місяців
       filteredElements = filteredElements.filter((element) =>
-        searchData.date.includes(element.month)
+        searchData.availableMonths.some((month) =>
+          element.availableMonths.includes(month)
+        )
       );
     }
     if (searchData.activities.length > 0) {
