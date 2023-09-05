@@ -25,7 +25,7 @@ function displayElements(elements) {
   searchCardWrapp.innerHTML = "";
 
   elements.forEach((el, index, array) => {
-    let div = ` <div class="search-card ">
+    let div = ` <div class="search-card">
       <div class="search-default">
         <span class="search-coutry-name">${el.country}</span>
         <div class="search-content">
@@ -33,9 +33,11 @@ function displayElements(elements) {
             <span>Activities:</span>
             <p>${el.activities}</p>
           </div>
-          <div class="d-flex card-description">
-            <span>Time:</span>
-            <p>${el.time}</p>
+          <div class="card-description">
+          <div class="time-zone">
+            <span class="time-label">Time:</span>
+            <p class="time-value">${el.time}</p>
+          </div>
             <a href="${el.url}" class="learn-more">LEARN MORE</a>
           </div>
         </div>
@@ -43,6 +45,7 @@ function displayElements(elements) {
       <div class="hover-search">
         <span>${el.description}</span>
         <a href="#">Experience this</a>
+        <img class="close-button" src="./assets/images/close.svg" alt="">
       </div>
     </div>`;
 
@@ -54,7 +57,46 @@ function displayElements(elements) {
       loadMoreBtn.setAttribute("style", "display: none;");
     }
   });
+
+  // Close Button Hover Search
+  const handleCardsHover = () => {
+    const toursCards = document.querySelectorAll(".search-card");
+
+    toursCards.forEach((card) => {
+      const hoverEl = card.querySelector(".hover-search");
+      const defaultEl = card.querySelector(".search-default");
+      const closeBtn = card.querySelector(".close-button");
+      const cardDescription = card.querySelector(".card-description");
+
+      card.addEventListener("mouseenter", () => {
+        defaultEl.style.opacity = 0;
+        defaultEl.style.zIndex = 0;
+        hoverEl.style.opacity = 1;
+        hoverEl.style.zIndex = 10;
+        cardDescription.style.display = "none";
+      });
+
+      card.addEventListener("mouseleave", () => {
+        defaultEl.style.opacity = 1;
+        defaultEl.style.zIndex = 30;
+        hoverEl.style.opacity = 0;
+        hoverEl.style.zIndex = 0;
+        cardDescription.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        defaultEl.style.opacity = 1;
+        defaultEl.style.zIndex = 30;
+        hoverEl.style.opacity = 0;
+        hoverEl.style.zIndex = 0;
+        cardDescription.style.display = "block";
+      });
+    });
+  };
+  handleCardsHover();
 }
+
+// Close Button Hover Search End
 
 // Function for loading initial data
 function loadInitialData() {
