@@ -132,6 +132,7 @@
   /* display: flex; */
   /* display: none; */ 
   height: 500px;
+  width: 100%;
 }
 .search-card:nth-child(10),
 .search-card:nth-child(11) {
@@ -188,20 +189,22 @@
   padding-bottom: 3px;
 }
 
-.search-content div {
+.search-content{
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
-  align-items: flex-start;  
   color: #fff;
+  width: 100%;
+  max-width: 300px;
 }
 
 
 
-.search-content div p {
-   width: 70%;
-   font-size: 18px;
-   line-height: 21px;
+.search-content p {
+   width: 100%;
+   font-size: 15px;
+   line-height: 20px;
    font-weight: 300;
-
 }
 
 .search-content span {
@@ -349,6 +352,11 @@
   background: none;
   /* z-index: 999; */
 }
+.activities{
+  display: flex;
+  gap: 10px;
+}
+
 .time-zone {
   display: flex;
   align-items: center;

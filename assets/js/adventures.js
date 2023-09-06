@@ -28,9 +28,9 @@ function displayElements(elements) {
     <div class="search-default">
     <span class="search-coutry-name">${el.country}</span>
         <div class="search-content">
-          <div class="d-flex">
+          <div class="activities">
             <span>Activities:</span>
-            <p>${el.activities}</p>
+            <div><p>${el.activities}</p></div>
           </div>
           <div class="card-description">
           <div class="time-zone">
@@ -133,7 +133,7 @@ loadInitialData();
 (function () {
   let initialElements = []; // Keep the original list of items
 
-  //Load data once during initialization
+  // Load data once during initialization
   fetch("assets/data/coutries-card.json")
     .then(function (response) {
       return response.json();
@@ -154,11 +154,13 @@ loadInitialData();
     let countries = $(".country").val();
     let activities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
+    let availabelActivities = $("#state1").val();
 
     let searchData = {
       country: countries,
       availableMonths: selectedMonths,
       activities: activities,
+      availabelActivities: availabelActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -177,21 +179,37 @@ loadInitialData();
     }
     if (searchData.activities.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.activities.includes(element.activities)
+        element.activities.some((activity) =>
+          searchData.activities.includes(activity)
+        )
       );
     }
+
+    // Додайте логіку для перевірки, чи не вибрані країни та місяці
+    if (
+      searchData.country.length === 0 &&
+      searchData.availableMonths.length === 0 &&
+      searchData.activities.includes("Desert")
+    ) {
+      // Якщо не вибрано країни та місяці та вибрана активність "Desert",
+      // фільтруйте за активністю "Desert"
+      filteredElements = initialElements.filter((element) =>
+        element.activities.includes("Desert")
+      );
+    }
+
     displayElements(filteredElements);
   });
 
   function updateSelectedCountries() {
     let countries = $(".country").val();
-    let activities = $(".activities").val();
+    let selectedActivities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
 
     let searchData = {
       country: countries,
       availableMonths: selectedMonths,
-      activities: activities,
+      activities: selectedActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -211,9 +229,12 @@ loadInitialData();
     }
     if (searchData.activities.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.activities.includes(element.activities)
+        element.activities.some((activity) =>
+          searchData.activities.includes(activity)
+        )
       );
     }
+
     displayElements(filteredElements);
   }
 })();
