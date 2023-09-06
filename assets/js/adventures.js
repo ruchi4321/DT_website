@@ -26,7 +26,7 @@ function displayElements(elements) {
   elements.forEach((el, index, array) => {
     let div = ` <div class="search-card">
     <div class="search-default">
-    <span class="search-coutry-name">${el.country}</span>
+    <span class="search-coutry-name">${el.name}</span>
         <div class="search-content">
           <div class="activities">
             <span>Activities:</span>
@@ -199,7 +199,7 @@ loadInitialData();
 
     if (searchData.country.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.country.includes(element.country)
+        searchData.country.includes(element.country) || searchData.country.includes(element.name) 
       );
     }
     if (searchData.availableMonths.length > 0) {
@@ -236,7 +236,7 @@ loadInitialData();
 
     if (searchData.country.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.country.includes(element.country)
+        searchData.country.includes(element.country) || searchData.country.includes(element.name) 
       );
     }
     if (searchData.availableMonths.length > 0) {
