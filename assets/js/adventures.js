@@ -30,7 +30,7 @@ function displayElements(elements) {
         <div class="search-content">
           <div class="activities">
             <span>Activities:</span>
-            <div><p>${el.activities}</p></div>
+            <div><p>${el.activities} </p></div>
           </div>
           <div class="card-description">
           <div class="time-zone">
