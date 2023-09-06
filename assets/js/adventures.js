@@ -28,9 +28,9 @@ function displayElements(elements) {
     <div class="search-default">
     <span class="search-coutry-name">${el.country}</span>
         <div class="search-content">
-          <div class="d-flex">
+          <div class="activities">
             <span>Activities:</span>
-            <p>${el.activities}</p>
+            <div><p>${el.activities} </p></div>
           </div>
           <div class="card-description">
           <div class="time-zone">
@@ -113,7 +113,7 @@ function loadInitialData() {
 loadInitialData();
 
 const form = document.getElementById("search");
-let initialElements = []; // Зберігати початковий список елементів
+let initialElements = [];
 
 // Function for loading initial data
 function loadInitialData() {
@@ -131,18 +131,52 @@ function loadInitialData() {
 loadInitialData();
 
 (function () {
-  // Завантажити дані один раз під час ініціалізації
+  let initialElements = []; // Keep the original list of items
+  let availableActivities = []; // Store available activities
+
+  // Load data once during initialization
   fetch("assets/data/coutries-card.json")
     .then(function (response) {
       return response.json();
     })
     .then(function (elements) {
       initialElements = elements;
+      // Extract available activities from the data
+      availableActivities = extractAvailableActivities(initialElements);
+      // Populate the activities select options
+      populateActivitiesSelect(availableActivities);
       displayElements(initialElements);
     })
     .catch((err) => console.error(err));
 
+  // Function to extract available activities from the data
+  function extractAvailableActivities(elements) {
+    let activities = new Set();
+    elements.forEach((element) => {
+      activities = new Set([...activities, ...element.availabelActivities]);
+    });
+    return Array.from(activities);
+  }
+
+  // Function to populate the activities select options
+  function populateActivitiesSelect(activities) {
+    const activitiesSelect = document.querySelector(".activities");
+    activitiesSelect.innerHTML = "";
+    activities.forEach((activity) => {
+      const option = document.createElement("option");
+      option.value = activity;
+      option.text = activity;
+      activitiesSelect.appendChild(option);
+    });
+  }
+
   $(".country").on("change", function () {
+    updateSelectedCountries();
+  });
+  $(".datatime").on("change", function () {
+    updateSelectedCountries();
+  });
+  $(".activities").on("change", function () {
     updateSelectedCountries();
   });
 
@@ -151,11 +185,14 @@ loadInitialData();
 
     let countries = $(".country").val();
     let activities = $(".activities").val();
+    let selectedMonths = $(".datatime").val();
+    let availabelActivities = $("#state1").val();
 
     let searchData = {
       country: countries,
-      date: $(".datatime").val(),
-      activities: $(".activities").val(),
+      availableMonths: selectedMonths,
+      activities: activities,
+      availabelActivities: availabelActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -165,27 +202,34 @@ loadInitialData();
         searchData.country.includes(element.country)
       );
     }
-    if (searchData.date.length > 0) {
+    if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.date.includes(element.month)
+        searchData.availableMonths.some((month) =>
+          element.availableMonths.includes(month)
+        )
       );
     }
     if (searchData.activities.length > 0) {
+      // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
-        searchData.activities.includes(element.activities)
+        searchData.activities.every((activity) =>
+          element.availabelActivities.includes(activity)
+        )
       );
     }
+
     displayElements(filteredElements);
   });
 
   function updateSelectedCountries() {
     let countries = $(".country").val();
-    let activities = $(".activities").val();
+    let selectedActivities = $(".activities").val();
+    let selectedMonths = $(".datatime").val();
 
     let searchData = {
       country: countries,
-      date: $(".datatime").val(),
-      activities: $(".activities").val(),
+      availableMonths: selectedMonths,
+      activities: selectedActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -195,16 +239,31 @@ loadInitialData();
         searchData.country.includes(element.country)
       );
     }
-    if (searchData.date.length > 0) {
+    if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
-        searchData.date.includes(element.month)
+        searchData.availableMonths.some((month) =>
+          element.availableMonths.includes(month)
+        )
       );
     }
     if (searchData.activities.length > 0) {
+      // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
-        searchData.activities.includes(element.activities)
+        searchData.activities.every((activity) =>
+          element.availabelActivities.includes(activity)
+        )
       );
     }
+
     displayElements(filteredElements);
+    // Check if no elements are left after filtering
+    if (filteredElements.length === 0) {
+      // If no elements are found, display "Country not found"
+      $(".results").html("<p>Country not found</p>");
+      $("#loadMore").css("display", "none");
+    } else {
+      // If elements are found, clear the "Country not found" message
+      $(".results").empty();
+    }
   }
 })();

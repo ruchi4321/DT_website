@@ -67,8 +67,13 @@
   width: 240px;
 }
 
+
 .select-input .select2 {
   width: 100% !important;
+}
+
+.select-input .select2 textarea{
+
 }
 
 .select2-container--default .select2-selection--multiple {
@@ -101,6 +106,11 @@
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300;
 }
+.select2-container .select2-search--inline .select2-search__field {
+  height: 22px; /* Змінено height на 20px */
+}
+
+
 
 .search-item {
   color: #E58620;
@@ -132,6 +142,7 @@
   /* display: flex; */
   /* display: none; */ 
   height: 500px;
+  width: 100%;
 }
 .search-card:nth-child(10),
 .search-card:nth-child(11) {
@@ -188,20 +199,36 @@
   padding-bottom: 3px;
 }
 
-.search-content div {
+.search-content{
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
-  align-items: flex-start;  
   color: #fff;
+  width: 100%;
+  max-width: 300px;
+}
+.results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.results p{
+  font-size: 48px;
+  color: #E58620;
+  font-weight: 600;
+  margin-top: 50px;
+  text-transform: capitalize;
 }
 
 
 
-.search-content div p {
-   width: 70%;
-   font-size: 18px;
-   line-height: 21px;
-   font-weight: 300;
 
+.search-content p {
+   width: 100%;
+   font-size: 15px;
+   line-height: 20px;
+   font-weight: 300;
 }
 
 .search-content span {
@@ -349,6 +376,11 @@
   background: none;
   /* z-index: 999; */
 }
+.activities{
+  display: flex;
+  gap: 10px;
+}
+
 .time-zone {
   display: flex;
   align-items: center;
@@ -415,14 +447,12 @@
 
 /* ===================== Responsive ==================================*/
 
+
 @media screen and (max-width: 1400px) {
   .adventure {
     padding-inline: 5%;
   }
 
-  .search-card-wrapp {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .search-card {
     height: 400px;
@@ -464,6 +494,9 @@
     font-size: 12px;
   }
 
+  .search-card-wrapp {
+    grid-template-columns: 1fr 1fr;
+  }
   
 }
 
