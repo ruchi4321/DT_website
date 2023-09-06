@@ -134,7 +134,7 @@ loadInitialData();
   let initialElements = []; // Keep the original list of items
 
   // Load data once during initialization
-  fetch("assets/data/coutries-card.json")
+  fetch("assets/data/countries-card.json")
     .then(function (response) {
       return response.json();
     })
@@ -147,6 +147,12 @@ loadInitialData();
   $(".country").on("change", function () {
     updateSelectedCountries();
   });
+  $(".datatime").on("change", function () {
+    updateSelectedCountries();
+  });
+  $(".activities").on("change", function () {
+    updateSelectedCountries();
+  });
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -154,13 +160,13 @@ loadInitialData();
     let countries = $(".country").val();
     let activities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
-    let availabelActivities = $("#state1").val();
+    let availableActivities = $("#state1").val();
 
     let searchData = {
       country: countries,
       availableMonths: selectedMonths,
       activities: activities,
-      availabelActivities: availabelActivities,
+      availableActivities: availableActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -185,14 +191,14 @@ loadInitialData();
       );
     }
 
-    // Додайте логіку для перевірки, чи не вибрані країни та місяці
+    // Add logic to check if no countries and months are selected
     if (
       searchData.country.length === 0 &&
       searchData.availableMonths.length === 0 &&
       searchData.activities.includes("Desert")
     ) {
-      // Якщо не вибрано країни та місяці та вибрана активність "Desert",
-      // фільтруйте за активністю "Desert"
+      // If no countries and months are selected and "Desert" activity is chosen,
+      // filter by "Desert" activity
       filteredElements = initialElements.filter((element) =>
         element.activities.includes("Desert")
       );
@@ -236,13 +242,13 @@ loadInitialData();
     }
 
     displayElements(filteredElements);
-    // Перевірте, чи не залишилося жодного елемента після фільтрації
+    // Check if no elements are left after filtering
     if (filteredElements.length === 0) {
-      // Якщо не знайдено жодного елемента, відобразіть "Not found"
+      // If no elements are found, display "Country not found"
       $(".results").html("<p>Country not found</p>");
       $("#loadMore").css("display", "none");
     } else {
-      // Якщо знайдено елементи, очистіть повідомлення "Not found"
+      // If elements are found, clear the "Country not found" message
       $(".results").empty();
     }
   }
