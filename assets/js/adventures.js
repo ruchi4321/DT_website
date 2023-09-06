@@ -202,6 +202,7 @@ loadInitialData();
         searchData.country.includes(element.country) || searchData.country.includes(element.name) 
       );
     }
+    console.log(filteredElements)
     if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
