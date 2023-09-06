@@ -194,7 +194,7 @@ loadInitialData();
       activities: activities,
       availabelActivities: availabelActivities,
     };
-
+    
     let filteredElements = initialElements.slice();
 
     if (searchData.country.length > 0) {
@@ -232,7 +232,7 @@ loadInitialData();
       availableMonths: selectedMonths,
       activities: selectedActivities,
     };
-
+    console.log(searchData)
     let filteredElements = initialElements.slice();
 
     if (searchData.country.length > 0) {
