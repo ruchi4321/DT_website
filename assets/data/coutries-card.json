@@ -90,7 +90,7 @@
     },
 
     {   "name": "UAE",
-        "country": "UAE",
+        "country": "United Arab Emirates",
         "activities": ["Safari", "Beaches", "Desert", "Water-sports"],
         "availabelActivities": ["Adventure", "Safari","Beaches","Desert", "Water-sports", "Bustling Cities"],
         "time": "May - December",
