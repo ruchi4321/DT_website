@@ -132,17 +132,43 @@ loadInitialData();
 
 (function () {
   let initialElements = []; // Keep the original list of items
+  let availableActivities = []; // Store available activities
 
   // Load data once during initialization
-  fetch("assets/data/countries-card.json")
+  fetch("assets/data/coutries-card.json")
     .then(function (response) {
       return response.json();
     })
     .then(function (elements) {
       initialElements = elements;
+      // Extract available activities from the data
+      availableActivities = extractAvailableActivities(initialElements);
+      // Populate the activities select options
+      populateActivitiesSelect(availableActivities);
       displayElements(initialElements);
     })
     .catch((err) => console.error(err));
+
+  // Function to extract available activities from the data
+  function extractAvailableActivities(elements) {
+    let activities = new Set();
+    elements.forEach((element) => {
+      activities = new Set([...activities, ...element.availabelActivities]);
+    });
+    return Array.from(activities);
+  }
+
+  // Function to populate the activities select options
+  function populateActivitiesSelect(activities) {
+    const activitiesSelect = document.querySelector(".activities");
+    activitiesSelect.innerHTML = "";
+    activities.forEach((activity) => {
+      const option = document.createElement("option");
+      option.value = activity;
+      option.text = activity;
+      activitiesSelect.appendChild(option);
+    });
+  }
 
   $(".country").on("change", function () {
     updateSelectedCountries();
@@ -160,13 +186,13 @@ loadInitialData();
     let countries = $(".country").val();
     let activities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
-    let availableActivities = $("#state1").val();
+    let availabelActivities = $("#state1").val();
 
     let searchData = {
       country: countries,
       availableMonths: selectedMonths,
       activities: activities,
-      availableActivities: availableActivities,
+      availabelActivities: availabelActivities,
     };
 
     let filteredElements = initialElements.slice();
@@ -184,23 +210,11 @@ loadInitialData();
       );
     }
     if (searchData.activities.length > 0) {
+      // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
-        element.activities.some((activity) =>
-          searchData.activities.includes(activity)
+        searchData.activities.every((activity) =>
+          element.availabelActivities.includes(activity)
         )
-      );
-    }
-
-    // Add logic to check if no countries and months are selected
-    if (
-      searchData.country.length === 0 &&
-      searchData.availableMonths.length === 0 &&
-      searchData.activities.includes("Desert")
-    ) {
-      // If no countries and months are selected and "Desert" activity is chosen,
-      // filter by "Desert" activity
-      filteredElements = initialElements.filter((element) =>
-        element.activities.includes("Desert")
       );
     }
 
@@ -226,7 +240,6 @@ loadInitialData();
       );
     }
     if (searchData.availableMonths.length > 0) {
-      // Changed filtering to include available months
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
           element.availableMonths.includes(month)
@@ -234,9 +247,10 @@ loadInitialData();
       );
     }
     if (searchData.activities.length > 0) {
+      // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
-        element.activities.some((activity) =>
-          searchData.activities.includes(activity)
+        searchData.activities.every((activity) =>
+          element.availabelActivities.includes(activity)
         )
       );
     }
