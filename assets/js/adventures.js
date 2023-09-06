@@ -113,7 +113,7 @@ function loadInitialData() {
 loadInitialData();
 
 const form = document.getElementById("search");
-let initialElements = []; // Зберігати початковий список елементів
+let initialElements = [];
 
 // Function for loading initial data
 function loadInitialData() {
@@ -131,7 +131,7 @@ function loadInitialData() {
 loadInitialData();
 
 (function () {
-  let initialElements = []; // Зберігати початковий список елементів
+  let initialElements = []; // Keep the original list of items
 
   //Load data once during initialization
   fetch("assets/data/coutries-card.json")
