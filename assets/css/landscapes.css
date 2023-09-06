@@ -223,7 +223,7 @@
 }
 
 .explore-slide {
-  background: url('../images/slider-1.svg');
+  /* background: url('../images/slider-1.svg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -473,7 +473,7 @@ color: #242424;
 }
 
 .experience-slide {
-  background: url('../images/instagram-bg.svg');
+  /* background: url('../images/instagram-bg.svg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -924,7 +924,7 @@ color: #242424;
 }
 
 .more-slide {
-  background-image: url('../images/experience-1.svg');
+  /* background-image: url('../images/experience-1.svg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
