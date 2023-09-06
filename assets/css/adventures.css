@@ -437,14 +437,12 @@
 
 /* ===================== Responsive ==================================*/
 
+
 @media screen and (max-width: 1400px) {
   .adventure {
     padding-inline: 5%;
   }
 
-  .search-card-wrapp {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .search-card {
     height: 400px;
@@ -486,6 +484,9 @@
     font-size: 12px;
   }
 
+  .search-card-wrapp {
+    grid-template-columns: 1fr 1fr;
+  }
   
 }
 
