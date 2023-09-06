@@ -197,6 +197,20 @@
   width: 100%;
   max-width: 300px;
 }
+.results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.results p{
+  font-size: 48px;
+  color: #E58620;
+  font-weight: 600;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
 
 
 

@@ -236,5 +236,14 @@ loadInitialData();
     }
 
     displayElements(filteredElements);
+    // Перевірте, чи не залишилося жодного елемента після фільтрації
+    if (filteredElements.length === 0) {
+      // Якщо не знайдено жодного елемента, відобразіть "Not found"
+      $(".results").html("<p>Country not found</p>");
+      $("#loadMore").css("display", "none");
+    } else {
+      // Якщо знайдено елементи, очистіть повідомлення "Not found"
+      $(".results").empty();
+    }
   }
 })();
