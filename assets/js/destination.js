@@ -96,48 +96,6 @@ window.addEventListener("load", initHelpButtonAndSlider);
 
 // ====================== Help Center End =======================
 
-/*==================== First Slider Start  ====================*/
-
-let swiper = new Swiper(".slider-1", {
-  slidesPerView: 2.6,
-  loop: true,
-  spaceBetween: 20,
-  grabCursor: true,
-  autoplay: {
-    delay: 5000,
-  },
-  breakpoints: {
-    300: {
-      spaceBetween: 10,
-      slidesPerView: 1.4,
-    },
-    400: {
-      slidesPerView: 1.4,
-      spaceBetween: 40,
-    },
-    700: {
-      slidesPerView: 2.6,
-    },
-  },
-  navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
-  },
-  on: {
-    slideChange: function () {
-      const activeSlide = this.slides[this.activeIndex];
-      if (activeSlide) {
-        const imageUrl = activeSlide.querySelector("img").src;
-        document.querySelector(
-          ".home"
-        ).style.backgroundImage = `url(${imageUrl})`;
-      }
-    },
-  },
-});
-
-/*==================== First Slider End  ====================*/
-
 /*==================== Second Swiper On Landing Page  ====================*/
 
 let secondLandSwiper = new Swiper(".slider-landing", {
