@@ -44,10 +44,8 @@ function initHelpButtonAndSlider() {
     },
   });
 
-  // Оголошуємо firstSlide після ініціалізації слайдера
   let firstSlide = slider.slides[0];
 
-  // Оголошуємо homeTitle після знаходження елементу
   let homeTitle = document.querySelector(".home-title");
 
   firstSlide.addEventListener("load", function () {
@@ -66,11 +64,17 @@ function initHelpButtonAndSlider() {
 
   helpBtn.style.display = "none";
 
-  // Ініціалізуємо ScrollReveal для .home-title
   ScrollReveal().reveal(homeTitle, {
     delay: 400,
     distance: "50px",
     origin: "left",
+    duration: 1000,
+  });
+
+  ScrollReveal().reveal(".first-slider", {
+    delay: 400,
+    distance: "50px",
+    origin: "right",
     duration: 1000,
   });
 
@@ -265,20 +269,8 @@ const handleCardsHover = () => {
 };
 handleCardsHover();
 
-// Ініціалізуємо ScrollReveal
+// ScrollReveal
 
-// ScrollReveal().reveal(".home-title", {
-//   delay: 400,
-//   distance: "50px",
-//   origin: "left",
-//   duration: 1000,
-// });
-ScrollReveal().reveal(".first-slider", {
-  delay: 400,
-  distance: "50px",
-  origin: "right",
-  duration: 1000,
-});
 ScrollReveal().reveal(".location-map-img", {
   delay: 400,
   distance: "50px",
