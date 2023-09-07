@@ -184,29 +184,31 @@ loadInitialData();
     updateSelectedCountries();
   });
 
-  function updateSelectedCountries() {
-    let destination = $(".country").val().split(",");
-    let selectedActivities = $(".activities").val();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let countries = $(".country").val();
+    let activities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
+    let availabelActivities = $("#state1").val();
 
     let searchData = {
-      destination: destination,
+      country: countries,
       availableMonths: selectedMonths,
-      activities: selectedActivities,
+      activities: activities,
+      availabelActivities: availabelActivities,
     };
 
     let filteredElements = initialElements.slice();
 
-    if (searchData.destination.length > 0) {
-      filteredElements = filteredElements.filter((element) =>
-        searchData.destination.some(
-          (word) =>
-            element.destination.includes(word.trim()) ||
-            element.name.includes(word.trim())
-        )
+    if (searchData.country.length > 0) {
+      filteredElements = filteredElements.filter(
+        (element) =>
+          searchData.country.includes(element.country) ||
+          searchData.country.includes(element.name)
       );
     }
-
+    console.log(filteredElements);
     if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
@@ -214,7 +216,6 @@ loadInitialData();
         )
       );
     }
-
     if (searchData.activities.length > 0) {
       // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
@@ -225,7 +226,50 @@ loadInitialData();
     }
 
     displayElements(filteredElements);
+  });
 
+  function updateSelectedCountries() {
+    let countries = $(".country").val();
+    let selectedActivities = $(".activities").val();
+    let selectedMonths = $(".datatime").val();
+
+    let searchData = {
+      country: countries,
+      availableMonths: selectedMonths,
+      activities: selectedActivities,
+    };
+    console.log(searchData);
+    let filteredElements = initialElements.slice();
+
+    if (searchData.country.length > 0) {
+      filteredElements = filteredElements.filter((element) => {
+        if (Array.isArray(element.country)) {
+          return element.country.some((country) =>
+            searchData.country.includes(country)
+          );
+        } else {
+          return searchData.country.includes(element.country);
+        }
+      });
+    }
+    console.log(filteredElements);
+    if (searchData.availableMonths.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.availableMonths.some((month) =>
+          element.availableMonths.includes(month)
+        )
+      );
+    }
+    if (searchData.activities.length > 0) {
+      // Filter by selected activities
+      filteredElements = filteredElements.filter((element) =>
+        searchData.activities.every((activity) =>
+          element.availabelActivities.includes(activity)
+        )
+      );
+    }
+
+    displayElements(filteredElements);
     // Check if no elements are left after filtering
     if (filteredElements.length === 0) {
       // If no elements are found, display "Country not found"
