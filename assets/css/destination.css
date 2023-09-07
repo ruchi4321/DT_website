@@ -599,11 +599,7 @@ color: #000000;
       top: -150px;
     }
   }
-  @media (max-width: 768px) {
-    .tours{
-      top: -40px;
-    }
-  }
+
 .tours-wrapp {
   /* background: url('../images/tours-bg.png'); */
   background-position: bottom;
@@ -1539,12 +1535,6 @@ font-size: 40px;
     font-size: 10px;
   }
 
-
-  .home-title {
-    padding-right: 0;
-  }
-
-
   .location-content {
     padding-left: 0;
   }
@@ -1862,6 +1852,17 @@ font-size: 40px;
 
 
 }
+
+@media (max-width: 768px) {
+  .tours{
+    top: -40px;
+  }
+  .home-title{
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .container {
