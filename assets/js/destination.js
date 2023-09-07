@@ -66,6 +66,14 @@ function initHelpButtonAndSlider() {
 
   helpBtn.style.display = "none";
 
+  // Ініціалізуємо ScrollReveal для .home-title
+  ScrollReveal().reveal(homeTitle, {
+    delay: 400,
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+  });
+
   window.addEventListener("scroll", () => {
     const scrollPosition =
       window.pageYOffset || document.documentElement.scrollTop;
@@ -259,19 +267,12 @@ handleCardsHover();
 
 // Ініціалізуємо ScrollReveal
 
-window.addEventListener("load", () => {
-  // Видаляємо клас .preload з .home-title після завантаження сторінки
-  const homeTitle = document.querySelector(".home-title");
-  homeTitle.classList.remove("preload");
-
-  // Ініціалізуємо ScrollReveal для .home-title
-  ScrollReveal().reveal(".home-title", {
-    delay: 400,
-    distance: "50px",
-    origin: "left",
-    duration: 1000,
-  });
-});
+// ScrollReveal().reveal(".home-title", {
+//   delay: 400,
+//   distance: "50px",
+//   origin: "left",
+//   duration: 1000,
+// });
 ScrollReveal().reveal(".first-slider", {
   delay: 400,
   distance: "50px",
