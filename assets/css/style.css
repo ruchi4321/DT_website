@@ -9,6 +9,10 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+.sr{
+
+  overflow-x: hidden !important;
+}
 
 body {
   position: relative;
