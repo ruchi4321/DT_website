@@ -1,19 +1,39 @@
 // ====================== Help Center Start =======================
 
-let helpBtn = document.getElementById("help-btn");
-let helpCenter = document.getElementById("help-center");
-let helpCenterForm = document.querySelector(".help-center-form");
-let closeFormSvg = document.querySelector(".close-form");
+function initHelpButton() {
+  let helpBtn = document.getElementById("help-btn");
+  let helpCenter = document.getElementById("help-center");
+  let helpCenterForm = document.querySelector(".help-center-form");
+  let closeFormSvg = document.querySelector(".close-form");
 
-closeFormSvg.addEventListener("click", function () {
-  helpCenter.classList.remove("show");
-  helpCenterForm.classList.remove("show-top");
-});
+  closeFormSvg.addEventListener("click", function () {
+    helpCenter.classList.remove("show");
+    helpCenterForm.classList.remove("show-top");
+  });
 
-helpBtn.addEventListener("click", function () {
-  helpCenter.classList.toggle("show");
-  helpCenterForm.classList.toggle("show-top");
-});
+  helpBtn.addEventListener("click", function () {
+    helpCenter.classList.toggle("show");
+    helpCenterForm.classList.toggle("show-top");
+  });
+
+  helpBtn.style.display = "none";
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    const threshold = 600;
+
+    if (scrollPosition > threshold) {
+      helpBtn.style.display = "block";
+    } else {
+      helpBtn.style.display = "none";
+    }
+  });
+}
+
+window.addEventListener("load", initHelpButton);
+
 // ====================== Help Center End =======================
 
 // ==================== Load More Start ===============================
@@ -35,32 +55,6 @@ loadMoreBtn.addEventListener("click", function () {
   }
 });
 // =================== Load More End ===================================
-
-/* ======================= Scroll button Lets curate  End ========================= */
-
-const scrollButton = document.getElementById("scrollButton");
-
-window.addEventListener("scroll", () => {
-  const scrollPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
-
-  const threshold = 800;
-
-  if (scrollPosition > threshold) {
-    scrollButton.style.display = "block";
-  } else {
-    scrollButton.style.display = "none";
-  }
-});
-
-scrollButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
-/* ======================= Scroll button Lets curate  End ========================= */
 
 // Function for displaying elements
 function displayElements(elements) {
