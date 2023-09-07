@@ -6,9 +6,49 @@ function initHelpButtonAndSlider() {
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
 
-  let slider = document.querySelector(".slider-1");
+  let slider = new Swiper(".slider-1", {
+    slidesPerView: 2.6,
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      300: {
+        spaceBetween: 10,
+        slidesPerView: 1.4,
+      },
+      400: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+      },
+      700: {
+        slidesPerView: 2.6,
+      },
+    },
+    navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
+    },
+    on: {
+      slideChange: function () {
+        const activeSlide = this.slides[this.activeIndex];
+        if (activeSlide) {
+          const imageUrl = activeSlide.querySelector("img").src;
+          document.querySelector(
+            ".home"
+          ).style.backgroundImage = `url(${imageUrl})`;
+        }
+      },
+    },
+  });
 
-  let firstSlide = slider.querySelector(".fs-slide");
+  // Оголошуємо firstSlide після ініціалізації слайдера
+  let firstSlide = slider.slides[0];
+
+  // Оголошуємо homeTitle після знаходження елементу
+  let homeTitle = document.querySelector(".home-title");
 
   firstSlide.addEventListener("load", function () {
     helpBtn.style.display = "block";
@@ -218,11 +258,19 @@ const handleCardsHover = () => {
 handleCardsHover();
 
 // Ініціалізуємо ScrollReveal
-ScrollReveal().reveal(".home-title", {
-  delay: 400,
-  distance: "50px",
-  origin: "left",
-  duration: 1000,
+
+window.addEventListener("load", () => {
+  // Видаляємо клас .preload з .home-title після завантаження сторінки
+  const homeTitle = document.querySelector(".home-title");
+  homeTitle.classList.remove("preload");
+
+  // Ініціалізуємо ScrollReveal для .home-title
+  ScrollReveal().reveal(".home-title", {
+    delay: 400,
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+  });
 });
 ScrollReveal().reveal(".first-slider", {
   delay: 400,
@@ -320,4 +368,9 @@ ScrollReveal().reveal(".experience-slider", {
   origin: "left",
   duration: 1000,
 });
-// ScrollReveal().reveal('.ds-carousel', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal(".ds-carousel", {
+  delay: 500,
+  distance: "50px",
+  origin: "left",
+  duration: 1000,
+});
