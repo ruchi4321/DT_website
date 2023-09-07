@@ -36,13 +36,15 @@ loadMoreBtn.addEventListener("click", function () {
 });
 // =================== Load More End ===================================
 
+/* ======================= Scroll button Lets curate  End ========================= */
+
 const scrollButton = document.getElementById("scrollButton");
 
 window.addEventListener("scroll", () => {
   const scrollPosition =
     window.pageYOffset || document.documentElement.scrollTop;
 
-  const threshold = 400;
+  const threshold = 800;
 
   if (scrollPosition > threshold) {
     scrollButton.style.display = "block";
@@ -57,6 +59,8 @@ scrollButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+/* ======================= Scroll button Lets curate  End ========================= */
 
 // Function for displaying elements
 function displayElements(elements) {

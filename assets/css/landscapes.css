@@ -178,6 +178,30 @@
 }
 /* help center */
 
+/* ======================= Scroll button Lets curate  ========================= */
+.scroll-button {
+  display: none; 
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  z-index: 999;
+  background: #E58620;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 45px;
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-button {
+    visibility: visible; 
+  }
+}
+
+/* ======================= Scroll button Lets curate  End ========================= */
 
 /* ================== Landing End ======================== */
 

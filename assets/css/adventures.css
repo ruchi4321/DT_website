@@ -503,7 +503,7 @@
 
 /* ======================= Scroll button Lets curate  ========================= */
 .scroll-button {
-  display: none; /* По замовчуванню ховаємо кнопку */
+  display: none; 
   position: fixed;
   bottom: 50px;
   right: 0px;
@@ -520,7 +520,7 @@
 
 @media screen and (max-width: 768px) {
   .scroll-button {
-    visibility: visible; /* Показуємо кнопку лише при ширині екрану менше ніж 768 пікселів */
+    visibility: visible; 
   }
 }
 

@@ -18,6 +18,32 @@ helpBtn.addEventListener("click", function () {
 });
 
 // ====================== Help Center End =======================
+
+/* ======================= Scroll button Lets curate  End ========================= */
+
+const scrollButton = document.getElementById("scrollButton");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  const threshold = 5000;
+
+  if (scrollPosition > threshold) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+});
+
+scrollButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+/* ======================= Scroll button Lets curate  End ========================= */
 /*==================== First Slider Start  ====================*/
 
 let swiper = new Swiper(".slider-1", {
