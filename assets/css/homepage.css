@@ -104,7 +104,7 @@
 }
 
 .help-center {
-  display: inline-block;
+  display: none;
   white-space: nowrap;
   text-transform: uppercase;
   background-color: #1E1E1E;

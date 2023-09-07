@@ -1,11 +1,18 @@
 // ====================== Help Center Start =======================
 
-// Оголошуємо функцію для ініціалізації кнопки
-function initHelpButton() {
+function initHelpButtonAndSlider() {
   let helpBtn = document.getElementById("help-btn");
   let helpCenter = document.getElementById("help-center");
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
+
+  let slider = document.querySelector(".slider-1");
+
+  let firstSlide = slider.querySelector(".fs-slide");
+
+  firstSlide.addEventListener("load", function () {
+    helpBtn.style.display = "block";
+  });
 
   closeFormSvg.addEventListener("click", function () {
     helpCenter.classList.remove("show");
@@ -33,36 +40,10 @@ function initHelpButton() {
   });
 }
 
-// Викликаємо функцію після завантаження сторінки
-window.addEventListener("load", initHelpButton);
+window.addEventListener("load", initHelpButtonAndSlider);
 
 // ====================== Help Center End =======================
 
-/* ======================= Scroll button Lets curate  End ========================= */
-
-const scrollButton = document.getElementById("scrollButton");
-
-window.addEventListener("scroll", () => {
-  const scrollPosition =
-    window.pageYOffset || document.documentElement.scrollTop;
-
-  const threshold = 5000;
-
-  if (scrollPosition > threshold) {
-    scrollButton.style.display = "block";
-  } else {
-    scrollButton.style.display = "none";
-  }
-});
-
-scrollButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
-/* ======================= Scroll button Lets curate  End ========================= */
 /*==================== First Slider Start  ====================*/
 
 let swiper = new Swiper(".slider-1", {
