@@ -141,7 +141,7 @@
   cursor: pointer;
   /* display: flex; */
   /* display: none; */ 
-  height: 500px;
+  height: 450px;
   width: 100%;
 }
 .search-coutry-title{
@@ -577,6 +577,37 @@
   }
 
 
+.search-card {
+  position: relative; 
+}
+
+.search-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  gap: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.card-description {
+  flex: 1; 
+}
+
+
+.learn-more {
+  text-decoration: none;
+  color: #E58620;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: auto; 
+  margin-bottom: 20px;
+}
+
   .search-default {
     height: fit-content;
   }
@@ -610,9 +641,6 @@
     margin-bottom: 60px;
   }
 
-
-  
-  
   .partners h2 {
     font-size: 30px;
   }
