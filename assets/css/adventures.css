@@ -32,6 +32,114 @@
 
 /* ===================== Landing End ====================== */
 
+/* help center */
+.help-center-form {
+  position: fixed;
+  top: 45%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  transition: all .5s ease-in-out;
+}
+
+.help-center {
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background-color: #1E1E1E;
+  padding: 10px 35px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transform: rotate(-90deg);
+  margin-right: -66px;
+}
+
+.help-center span {
+  color: #F78F1E;
+}
+@media (max-width: 768px) {
+  .help-center{
+    transform: rotate(0deg);
+    margin-right: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .help-center-form{
+    right: 35px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  padding-block: 40px;
+}
+
+.contact-form-content {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form-content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact-form-content p {
+  color: #D6943C;
+  font-size: 14px;
+}
+
+.contact-form-content div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contact-form-content div span {
+  background-color: #191919;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 45px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.show {
+  display: block !important;
+}
+
+
+.show-top {
+  top: 20%;
+}
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
+/* help center */
 
 /* ======================== Adventures Start ===================== */
 
