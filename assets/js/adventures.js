@@ -36,6 +36,37 @@ loadMoreBtn.addEventListener("click", function () {
 });
 // =================== Load More End ===================================
 
+// Отримайте посилання на кнопку
+const scrollButton = document.getElementById("scrollButton");
+
+// Додаємо подію для відстеження прокручування сторінки
+window.addEventListener("scroll", () => {
+  // Отримайте поточне положення прокрутки сторінки
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  // Встановлюємо поріг, коли кнопка повинна стати видимою
+  const threshold = 400; // Наприклад, 200 пікселів від верху
+
+  // Перевіряємо, чи поточне положення прокрутки більше порогу
+  if (scrollPosition > threshold) {
+    // Показуємо кнопку, коли користувач прокрутив досить далеко
+    scrollButton.style.display = "block";
+  } else {
+    // Ховаємо кнопку, коли користувач не прокручує досить високо
+    scrollButton.style.display = "none";
+  }
+});
+
+// Додаємо обробник події для прокрутки вгору при натисканні на кнопку
+scrollButton.addEventListener("click", () => {
+  // Прокручуємо сторінку вгору, наприклад, за допомоги методу scrollIntoView
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Плавний ефект прокрутки (опціонально)
+  });
+});
+
 // Function for displaying elements
 function displayElements(elements) {
   const searchCardWrapp = document.querySelector(".search-card-wrapp");
