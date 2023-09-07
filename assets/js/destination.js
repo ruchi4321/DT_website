@@ -149,7 +149,6 @@ let thSwiper = new Swiper(".slider-3", {
     prevEl: ".mb-prev",
   },
   breakpoints: {
-    // Додайте breakpoint, при якому буде з'являтися новий елемент при свайпі
     768: {
       slidesPerView: 1,
     },
@@ -322,5 +321,3 @@ ScrollReveal().reveal(".experience-slider", {
   duration: 1000,
 });
 // ScrollReveal().reveal('.ds-carousel', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
-
-// Інші налаштування ScrollReveal можна додати тут

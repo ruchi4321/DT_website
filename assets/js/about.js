@@ -54,8 +54,7 @@ window.addEventListener("load", initHelpButton);
 
 // ====================== Help Center End =======================
 
-// Ініціалізуємо ScrollReveal
-// Ініціалізуємо ScrollReveal
+//  ScrollReveal
 ScrollReveal().reveal(".landing-content", {
   delay: 400,
   distance: "50px",
@@ -106,10 +105,10 @@ ScrollReveal().reveal(".journey__subtext", {
   beforeReveal: function (el) {
     var text = el.innerHTML.trim();
     var textLength = text.length;
-    var interval = 50; // Інтервал між появою кожного символу (в мілісекундах)
+    var interval = 50;
     var newText = "";
 
-    el.innerHTML = ""; // Очистити початковий текст
+    el.innerHTML = "";
 
     for (var i = 0; i < textLength; i++) {
       (function (index) {
@@ -181,5 +180,3 @@ ScrollReveal().reveal(".partner-item-4", {
   origin: "right",
   duration: 1000,
 });
-
-// Інші налаштування ScrollReveal можна додати тут

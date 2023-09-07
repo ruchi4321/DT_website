@@ -44,7 +44,6 @@
 }
 
 .help-center {
-  /* display: inline-block; */
   display: none;
   white-space: nowrap;
   text-transform: uppercase;

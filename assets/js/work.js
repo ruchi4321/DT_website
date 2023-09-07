@@ -163,5 +163,3 @@ ScrollReveal().reveal(".partner-item-4", {
   origin: "right",
   duration: 1000,
 });
-
-// Інші налаштування ScrollReveal можна додати тут

@@ -388,5 +388,3 @@ ScrollReveal().reveal(".ds-carousel ", {
   origin: "left",
   duration: 1000,
 });
-
-// Інші налаштування ScrollReveal можна додати тут
