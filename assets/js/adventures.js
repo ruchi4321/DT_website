@@ -26,7 +26,7 @@ function displayElements(elements) {
   elements.forEach((el, index, array) => {
     let div = ` <div class="search-card">
     <div class="search-default">
-    <span class="search-coutry-name">${el.country}</span>
+    <span class="search-coutry-name">${el.name}</span>
         <div class="search-content">
           <div class="activities">
             <span>Activities:</span>
@@ -198,10 +198,13 @@ loadInitialData();
     let filteredElements = initialElements.slice();
 
     if (searchData.country.length > 0) {
-      filteredElements = filteredElements.filter((element) =>
-        searchData.country.includes(element.country)
+      filteredElements = filteredElements.filter(
+        (element) =>
+          searchData.country.includes(element.country) ||
+          searchData.country.includes(element.name)
       );
     }
+    console.log(filteredElements);
     if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
@@ -231,14 +234,17 @@ loadInitialData();
       availableMonths: selectedMonths,
       activities: selectedActivities,
     };
-
+    console.log(searchData);
     let filteredElements = initialElements.slice();
 
     if (searchData.country.length > 0) {
-      filteredElements = filteredElements.filter((element) =>
-        searchData.country.includes(element.country)
+      filteredElements = filteredElements.filter(
+        (element) =>
+          searchData.country.includes(element.country) ||
+          searchData.country.includes(element.name)
       );
     }
+    console.log(filteredElements);
     if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>

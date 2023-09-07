@@ -1,5 +1,6 @@
 [
-    {
+    {   
+        "name": "Australia",
         "country": "Australia",
         "activities": ["Adventure ", " Beaches", " Water-sports", " Bustling Cities"],
         "availabelActivities": [" Adventure", " Beaches", " Water-sports", " Bustling Cities"],
@@ -9,8 +10,8 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
-        "country": "Bali",
+    {   "name": "Bali",
+        "country": "Indonesia",
         "activities": ["Adventure", " Beaches", " Water-sports"],
         "availabelActivities": ["Adventure", "Beaches", "Water-sports"],
         "time": "May - December",
@@ -19,7 +20,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
+    {   "name": "India",
         "country": "India",
         "activities": ["Adventure", " Water-sports", " Bustling Cities"],
         "availabelActivities": ["Adventure", "Water-sports", "Bustling Cities"],
@@ -29,7 +30,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
+    {   "name": "Japan",
         "country": "Japan",
         "activities": "Adventure",
         "availabelActivities": ["Adventure", " Water-sports", " Bustling Cities"],
@@ -39,7 +40,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
     
-    {
+    {   "name": "Jordan",
         "country": "Jordan",
         "activities": ["Adventure", " Bustling Cities"],
         "availabelActivities": ["Adventure","Bustling Cities"],
@@ -49,7 +50,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
+    {   "name": "Morocco",
         "country": "Morocco",
         "activities": ["Adventure", " Bustling Cities"],
         "availabelActivities": ["Adventure", "Bustling Cities"],
@@ -58,7 +59,7 @@
         "url": "./destination-Morocco.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
-    {
+    {   "name": "New Zeeland",
         "country": "New Zeeland",
         "activities": ["Adventure", " Safari"," Water-sports", " Bustling Cities"],
         "availabelActivities": ["Adventure", "Safari","Water-sports", "Bustling Cities"],
@@ -68,7 +69,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
+    {   "name": "Singapore",
         "country": "Singapore",
         "activities": ["Adventure", " Bustling Cities"],
         "availabelActivities": ["Adventure", "Bustling Cities"],
@@ -78,7 +79,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
+    {   "name": "South Africa",
         "country": "South Africa",
         "activities": ["Adventure", " Safari", " Beaches"," Desert"],
         "availabelActivities": ["Adventure","Safari","Beaches","Desert","Water-sports","Bustling Cities"],
@@ -88,8 +89,8 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
-    {
-        "country": "UAE",
+    {   "name": "UAE",
+        "country": "United Arab Emirates",
         "activities": ["Safari", "Beaches", "Desert", "Water-sports"],
         "availabelActivities": ["Adventure", "Safari","Beaches","Desert", "Water-sports", "Bustling Cities"],
         "time": "May - December",
@@ -98,7 +99,7 @@
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
     
-    {
+    {   "name": "Vietnam",
         "country": "Vietnam",
         "activities": ["Safari", " Beaches", " Desert", " Water-sports"],
         "availabelActivities": ["Adventure", "Safari", "Beaches","Desert", "Water-sports", "Bustling Cities"],

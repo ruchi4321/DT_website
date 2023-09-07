@@ -148,6 +148,11 @@
 .search-card:nth-child(11) {
   display: none;
 }
+@media (max-width: 1200px) {
+  .search-card:nth-child(10){
+    display: inline-block;
+  }
+}
 
 .search-card:nth-child(2) {
   background: url('../../assets/images/country-card-2.svg') !important;
@@ -239,23 +244,6 @@
   color: #fff;
 }
 
-
-/* .hover-search {
-  margin: 10px;
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  transition: all .5s ease-in-out;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-} */
 .hover-search {
   margin: 10px;
   background: rgba(0, 0, 0, 0.7);
@@ -538,10 +526,6 @@
     width: 100%;
   }
 
-  .search-card-wrapp {
-    grid-template-columns: 1fr;
-  }
-
 
   .select-input  {
     width: 100%;
@@ -673,5 +657,10 @@
 
   .footer-social div p {
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .search-card-wrapp {
+    grid-template-columns: 1fr;
   }
 }
