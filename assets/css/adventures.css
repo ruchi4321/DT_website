@@ -147,6 +147,7 @@
 .search-coutry-title{
   font-size: 20px;
   color: #E58620;
+  text-align: center;
 }
 .search-coutry-destination{
   display: flex;

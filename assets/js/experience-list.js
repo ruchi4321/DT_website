@@ -26,7 +26,7 @@ function displayElements(elements) {
   elements.forEach((el, index, array) => {
     let div = ` <div class="search-card">
     <div class="search-default">
-    <h3 class="search-coutry-title">${el.title}</h3>
+    <span class="search-coutry-name">${el.title}</span>
         <div class="search-content">
         <div class="search-coutry-destination">
           <span>Destination:</span>
@@ -184,71 +184,29 @@ loadInitialData();
     updateSelectedCountries();
   });
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let countries = $(".country").val();
-    let activities = $(".activities").val();
-    let selectedMonths = $(".datatime").val();
-    let availabelActivities = $("#state1").val();
-
-    let searchData = {
-      country: countries,
-      availableMonths: selectedMonths,
-      activities: activities,
-      availabelActivities: availabelActivities,
-    };
-
-    let filteredElements = initialElements.slice();
-
-    if (searchData.country.length > 0) {
-      filteredElements = filteredElements.filter(
-        (element) =>
-          searchData.country.includes(element.country) ||
-          searchData.country.includes(element.name)
-      );
-    }
-    console.log(filteredElements);
-    if (searchData.availableMonths.length > 0) {
-      filteredElements = filteredElements.filter((element) =>
-        searchData.availableMonths.some((month) =>
-          element.availableMonths.includes(month)
-        )
-      );
-    }
-    if (searchData.activities.length > 0) {
-      // Filter by selected activities
-      filteredElements = filteredElements.filter((element) =>
-        searchData.activities.every((activity) =>
-          element.availabelActivities.includes(activity)
-        )
-      );
-    }
-
-    displayElements(filteredElements);
-  });
-
   function updateSelectedCountries() {
-    let countries = $(".country").val();
+    let destination = $(".country").val().split(",");
     let selectedActivities = $(".activities").val();
     let selectedMonths = $(".datatime").val();
 
     let searchData = {
-      country: countries,
+      destination: destination,
       availableMonths: selectedMonths,
       activities: selectedActivities,
     };
-    console.log(searchData);
+
     let filteredElements = initialElements.slice();
 
-    if (searchData.country.length > 0) {
-      filteredElements = filteredElements.filter(
-        (element) =>
-          searchData.country.includes(element.country) ||
-          searchData.country.includes(element.name)
+    if (searchData.destination.length > 0) {
+      filteredElements = filteredElements.filter((element) =>
+        searchData.destination.some(
+          (word) =>
+            element.destination.includes(word.trim()) ||
+            element.name.includes(word.trim())
+        )
       );
     }
-    console.log(filteredElements);
+
     if (searchData.availableMonths.length > 0) {
       filteredElements = filteredElements.filter((element) =>
         searchData.availableMonths.some((month) =>
@@ -256,6 +214,7 @@ loadInitialData();
         )
       );
     }
+
     if (searchData.activities.length > 0) {
       // Filter by selected activities
       filteredElements = filteredElements.filter((element) =>
@@ -266,6 +225,7 @@ loadInitialData();
     }
 
     displayElements(filteredElements);
+
     // Check if no elements are left after filtering
     if (filteredElements.length === 0) {
       // If no elements are found, display "Country not found"
