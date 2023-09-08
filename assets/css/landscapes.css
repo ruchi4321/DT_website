@@ -288,6 +288,11 @@
   align-items: center;
   gap: 90px;
 }
+@media (max-width: 992px) {
+  .daily-fs-reverse{
+    flex-direction: column-reverse !important;
+  }
+}
 
 .daily-fs-content {
   width: 60%;
