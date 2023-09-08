@@ -222,7 +222,6 @@
 }
 
 .explore-slide {
-  /* background: url('../images/slider-1.svg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -485,10 +484,12 @@ color: #242424;
 }
 
 .experience-slide img {
+  min-height: 450px;
   width: 100%; 
-  height: auto;
-  max-height: 100%; 
 }
+
+
+
 
 
 
