@@ -488,10 +488,19 @@ color: #242424;
   width: 100%; 
 }
 
+@media (max-width: 1600px) {
+  .experience-slide img {
+    min-height: 380px;
+    width: 100%; 
+  }
+}
 
-
-
-
+@media (max-width: 1300px) {
+  .experience-slide img {
+    min-height: 300px;
+    width: 100%; 
+  }
+}
 
 
 .profile-photo {
@@ -657,8 +666,37 @@ color: #242424;
 }
 
 
-.journey-arrow-right, .journey-arrow-left {
- /* display: none; */
+.button-next {
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  right: 3%;
+}
+.button-prev{
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  left: 3%;
+}
+@media (max-width: 992px) {
+  .button-next {
+    bottom: -70px;
+    right: 3%;
+  }
+  .button-prev{
+    bottom: -70px;
+    left: 3%;
+  }
+}
+@media (max-width: 768px) {
+  .button-next {
+    bottom: -40px;
+    right: 3%;
+  }
+  .button-prev{
+    bottom: -40px;
+    left: 3%;
+  }
 }
 
 
@@ -1084,14 +1122,6 @@ left: 30px;
     grid-template-columns: 1fr;
   }
 
-
-
-  .journey-arrow-right,
-  .journey-arrow-left {
-    /* display: none; */
-  }
-
-
   .home-timeline-wrapp {
     padding-inline: 1%;
   }
@@ -1283,7 +1313,7 @@ left: 30px;
 
   .slider-2 {
     margin-inline: 0 !important;
-    margin-left: 20px !important;
+    margin-left: 10px !important;
   }
 
   .video-arrow-right, .video-arrow-left {
@@ -1475,7 +1505,7 @@ left: 30px;
   }
 
   .daily {
-    padding-bottom: 70px;
+    padding-bottom: 270px;
   }
   .experience-title {
     margin-bottom: -40px;

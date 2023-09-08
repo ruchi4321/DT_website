@@ -147,7 +147,7 @@ let secondSwiper = new Swiper(".slider-2", {
 
 /* ======================  Get Inspired =============== */
 
-/*==================== DestinationSlider Start  ====================*/
+/*==================== Destination Slider Start  ====================*/
 
 let thSwiper = new Swiper(".slider-3", {
   slidesPerView: 1,
@@ -170,7 +170,7 @@ let thSwiper = new Swiper(".slider-3", {
 
 /*==================== DestinationSlider End ====================*/
 
-/*==================== Testimonials End  ====================*/
+/*==================== Testimonials Start  ====================*/
 
 const frSwiper = new Swiper(".slider-4", {
   slidesPerView: 1,
