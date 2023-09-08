@@ -474,33 +474,19 @@ color: #242424;
 }
 
 .experience-slide {
-  padding: 0;
+  padding: 0; 
   border-radius: 5px;
   position: relative;
   margin-bottom: 0; 
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 450px;
 }
 
 .experience-slide img {
   min-height: 450px;
   width: 100%; 
-  max-width: none; 
-}
-
-
-@media (max-width: 1600px) {
-  .experience-slide img {
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .experience-slide img {
-    min-height: 200px;
-    width: 100%; 
-  }
 }
 
 
