@@ -467,7 +467,11 @@ color: #242424;
 .video-section {
   bottom: -190px;
 }
-
+@media (max-width: 768px) {
+  .video-section {
+    padding-bottom: 100px;
+  }
+}
 .video-arrow {
   position: relative;
   top: -120px;
