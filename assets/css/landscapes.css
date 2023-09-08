@@ -193,22 +193,34 @@
   margin-bottom: 110px;
 }
 
-.explore-content {
-  margin-top: -130px;
+.explore-content-2 {
+  margin-bottom: 130px;
+}
+@media (max-width: 992px) {
+  .explore-content-2 {
+    margin-top: -170px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .explore-content-2 {
+    margin-top: -70px;
+    margin-bottom: 0;
+  }
 }
 
-.explore-content h2 {
+.explore-content, .explore-content-2 h2 {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 
   color: #E58620;
 }
 
-.explore-content h2 span {
+.explore-content, .explore-content-2 h2 span {
   color: #fff;
 }
 
-.explore-content p {
+.explore-content, .explore-content-2 p {
   letter-spacing: 0.02em;
 
   color: #C7C7C7;
@@ -444,6 +456,7 @@
  background-repeat: no-repeat;
  background-size: cover;
  background-position-y: bottom;
+ padding-bottom: 100px;
 }
 
 .experience-wrapp {
@@ -465,16 +478,25 @@ color: #242424;
 }
 
 .video-section {
-  bottom: -190px;
+  top: 300px;
+}
+@media (max-width: 768px) {
+  .video-section {
+    top: 400px;
+  }
 }
 @media (max-width: 768px) {
   .video-section {
     padding-bottom: 100px;
+    top: 200px;
+  }
+  .map-section{
+    margin-bottom: 0 !important;
   }
 }
 .video-arrow {
   position: relative;
-  top: -120px;
+  top: 0px;
 }
 
 .experience-slide {
@@ -506,7 +528,18 @@ color: #242424;
 }
 
 /* ================== Experience End ============================*/
-
+.testimonials-experience{
+  padding-right: 5%;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .testimonials-experience{
+    padding-right: 5%;
+    padding-top: 50px !important;
+    padding-bottom: 100px;
+  }
+}
 /* ================= Landing Start ==================== */
 
 .disabled-mute {
@@ -681,11 +714,11 @@ color: #242424;
 }
 @media (max-width: 768px) {
   .button-next {
-    bottom: -40px;
+    bottom: -50px;
     right: 3%;
   }
   .button-prev{
-    bottom: -40px;
+    bottom: -50px;
     left: 3%;
   }
 }
@@ -1331,9 +1364,9 @@ left: 30px;
     gap: 20px;
   }
 
-  .explore-arrow-left, .explore-arrow-right {
+  .explore-arrow-right,.explore-arrow-left{
     display: none;
-   }
+  }
 
    .experience-title {
     font-size: 28px;
@@ -1631,4 +1664,10 @@ left: 30px;
   .map-item{
     grid-column: span 1;
  } 
+}
+@media (max-width: 768px) {
+  .experience-video {
+    margin-block: 0;
+    margin-top: 0 !important;
+  }
 }

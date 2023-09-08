@@ -99,12 +99,12 @@ let videoSwiper = new Swiper(".video-slider", {
   spaceBetween: 15,
   grabCursor: true,
   navigation: {
-    nextEl: ".video-arrow-right",
-    prevEl: ".video-arrow-left",
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
   },
   breakpoints: {
     300: {
-      slidesPerView: 1.3,
+      slidesPerView: 1,
     },
     900: {
       slidesPerView: 1,
@@ -153,8 +153,8 @@ let moreSwiper = new Swiper(".more-slider", {
   spaceBetween: 15,
   grabCursor: true,
   navigation: {
-    nextEl: ".more-arrow-left",
-    prevEl: ".more-arrow-right",
+    nextEl: ".more-arrow-right",
+    prevEl: ".more-arrow-left",
   },
   breakpoints: {
     300: {
