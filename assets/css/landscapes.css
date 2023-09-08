@@ -211,8 +211,6 @@
 
 .explore-content, .explore-content-2 h2 {
   letter-spacing: 0.02em;
-  text-transform: uppercase;
-
   color: #E58620;
 }
 
@@ -222,7 +220,6 @@
 
 .explore-content, .explore-content-2 p {
   letter-spacing: 0.02em;
-
   color: #C7C7C7;
 }
 
@@ -291,6 +288,7 @@
 @media (max-width: 992px) {
   .daily-fs-reverse{
     flex-direction: column-reverse !important;
+    gap: 0;
   }
 }
 
