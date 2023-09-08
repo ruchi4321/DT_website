@@ -475,16 +475,22 @@ color: #242424;
 }
 
 .experience-slide {
-  /* background: url('../images/instagram-bg.svg'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px;
   padding: 20px;
   border-radius: 5px;
   position: relative;
   margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.experience-slide img {
+  width: 100%; 
+  height: auto;
+  max-height: 100%; 
+}
+
+
 
 
 .profile-photo {
