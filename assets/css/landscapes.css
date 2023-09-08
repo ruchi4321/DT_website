@@ -222,9 +222,9 @@
 }
 
 .explore-slide {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
   height: 350px;
   display: flex;
   justify-content: flex-start;
@@ -474,10 +474,10 @@ color: #242424;
 }
 
 .experience-slide {
-  padding: 20px;
+  padding: 0;
   border-radius: 5px;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 0; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,18 +486,19 @@ color: #242424;
 .experience-slide img {
   min-height: 450px;
   width: 100%; 
+  max-width: none; 
 }
+
 
 @media (max-width: 1600px) {
   .experience-slide img {
-    min-height: 380px;
-    width: 100%; 
+    min-height: 300px;
   }
 }
 
 @media (max-width: 1300px) {
   .experience-slide img {
-    min-height: 300px;
+    min-height: 200px;
     width: 100%; 
   }
 }

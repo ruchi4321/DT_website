@@ -99,8 +99,8 @@ let videoSwiper = new Swiper(".video-slider", {
   spaceBetween: 15,
   grabCursor: true,
   navigation: {
-    nextEl: ".video-arrow-left",
-    prevEl: ".video-arrow-right",
+    nextEl: ".video-arrow-right",
+    prevEl: ".video-arrow-left",
   },
   breakpoints: {
     300: {
