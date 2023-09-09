@@ -214,16 +214,12 @@ window.onload = function () {
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 var muted = document.getElementById("muted");
-var fallbackImage = document.getElementById("fallback-image");
 
 function checkScreenSize() {
   if (window.innerWidth <= 992) {
-    video.style.display = "none";
-    fallbackImage.style.display = "block";
+    el.style.display = "none";
   } else {
-    // Десктоп
-    video.style.display = "block";
-    fallbackImage.style.display = "none";
+    el.style.display = "block";
   }
 }
 
@@ -256,8 +252,8 @@ function checkScroll() {
     y = video.offsetTop,
     w = video.offsetWidth,
     h = video.offsetHeight,
-    r = x + w, //right
-    b = y + h, //bottom
+    r = x + w,
+    b = y + h,
     visibleX,
     visibleY,
     visible;

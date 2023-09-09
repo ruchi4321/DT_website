@@ -57,7 +57,13 @@
   grid-template-columns: 3fr .4fr;
   height: 100vh;
 }
-
+@media (max-width: 992px) {
+  .landing{
+    background: url('../images/Australia-12\ Apostles.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .landing-content {
   position: relative;
   display: flex;
