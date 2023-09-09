@@ -83,7 +83,6 @@ if (windowWidth >= 1200) {
       }
     });
 
-    // Змінюємо стиль на видимий після завантаження DOM
     document.querySelector(".slider-1").style.visibility = "visible";
   }
 
@@ -180,7 +179,6 @@ if (windowWidth >= 1200) {
       }
     });
 
-    // Змінюємо стиль на видимий після завантаження DOM
     document.querySelector(".slider-1").style.visibility = "visible";
   }
 

@@ -64,6 +64,11 @@
     background-size: cover;
   }
 }
+@media (max-width: 600px) {
+  .landing {
+    height: 90vh;
+  }
+}
 
 .landing-content {
   position: relative;
@@ -1101,10 +1106,6 @@
 
   .custom-navbar {
     padding-inline: 0;
-  }
-
-  .landing {
-    height: 60vh;
   }
 
   .landing-content div {
