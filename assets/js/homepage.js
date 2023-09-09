@@ -118,7 +118,7 @@ let tsSwiper = new Swiper(".slider-5", {
       spaceBetween: 10,
       slidesPerView: 1,
     },
-    400: {
+    600: {
       slidesPerView: 2,
       spaceBetween: 40,
     },
@@ -214,6 +214,14 @@ window.onload = function () {
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 var muted = document.getElementById("muted");
+function checkScreenSize() {
+  if (window.innerWidth <= 992) {
+    ppbutton.src = "./assets/images/play.svg";
+    el.pause();
+  } else {
+    ppbutton.src = "./assets/images/pause-btn.svg";
+  }
+}
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();

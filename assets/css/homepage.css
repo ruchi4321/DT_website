@@ -625,7 +625,7 @@
 @media (max-width: 480px) {
   .ts-slide p {
     font-size: 15px;
-    line-height: 120%;
+    line-height: 140%;
   }
 }
 
@@ -1222,7 +1222,7 @@
   left: 7%;
 }
 
-.journey-arrow-right {
+.journey-arrow-right{
   position: absolute;
   bottom: 100px;
   right: 7%;
@@ -1237,6 +1237,18 @@
   bottom: 100px;
   right: 7%;
 }
+@media (max-width: 992px) {
+  .testimonials-arrow-left{
+    position: absolute;
+    bottom: 100px;
+    left: 2%;
+  }
+  .testimonials-arrow-right{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+  }
+}
 @media (max-width: 768px) {
   .journey-arrow-right{
     display: none;
@@ -1244,8 +1256,10 @@
   .journey-arrow-left{
     display: none;
   }
+}
+@media (max-width: 600px) {
   .testimonials-arrow-left,
   .testimonials-arrow-right{
-    display: none !important;
+    display: none;
   }
 }
