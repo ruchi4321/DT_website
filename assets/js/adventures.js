@@ -81,6 +81,7 @@ function displayElements(elements) {
       </div>
       <div class="hover-search">
         <span>${el.description}</span>
+        <a href="#">Experience this</a>
         <img class="close-button" src="./assets/images/close.svg" alt="">
       </div>
     </div>`;

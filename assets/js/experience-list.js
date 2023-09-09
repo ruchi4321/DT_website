@@ -78,7 +78,7 @@ function displayElements(elements) {
             <span class="time-label">Time:</span>
             <p class="time-value">${el.time}</p>
           </div>
-            <a href="${el.url}" class="learn-more">LEARN MORE</a>
+          <a href="${el.url}" class="learn__more-link">LEARN MORE</a>
           </div>
         </div>
       </div>
