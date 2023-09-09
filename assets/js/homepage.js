@@ -214,13 +214,16 @@ window.onload = function () {
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 var muted = document.getElementById("muted");
+var fallbackImage = document.getElementById("fallback-image");
 
 function checkScreenSize() {
   if (window.innerWidth <= 992) {
-    ppbutton.src = "./assets/images/play.svg";
-    el.pause();
+    video.style.display = "none";
+    fallbackImage.style.display = "block";
   } else {
-    ppbutton.src = "./assets/images/pause-btn.svg";
+    // Десктоп
+    video.style.display = "block";
+    fallbackImage.style.display = "none";
   }
 }
 
