@@ -6,7 +6,7 @@
         "availabelActivities": [" Adventure", " Beaches", " Water-sports", " Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Australia.html",
+        "url": "../../destination-Australia.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -16,7 +16,7 @@
         "availabelActivities": ["Adventure", "Beaches", "Water-sports"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Bali.html",
+        "url": "../../destination-Bali.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -26,7 +26,7 @@
         "availabelActivities": ["Adventure", "Water-sports", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-India.html",
+        "url": "../../destination-India.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -36,7 +36,7 @@
         "availabelActivities": ["Adventure", " Water-sports", " Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Japan.html",
+        "url": "../../destination-Japan.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
     
@@ -46,7 +46,7 @@
         "availabelActivities": ["Adventure","Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Jordan.html",
+        "url": "../../destination-Jordan.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -56,7 +56,7 @@
         "availabelActivities": ["Adventure", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Morocco.html",
+        "url": "../../destination-Morocco.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
     {   "name": "New Zeeland",
@@ -65,7 +65,7 @@
         "availabelActivities": ["Adventure", "Safari","Water-sports", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-NewZeeland.html",
+        "url": "../../destination-NewZeeland.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -75,7 +75,7 @@
         "availabelActivities": ["Adventure", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Singapore.html",
+        "url": "../../destination-Singapore.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -85,7 +85,7 @@
         "availabelActivities": ["Adventure","Safari","Beaches","Desert","Water-sports","Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-South-Africa.html",
+        "url": "../../destination-South-Africa.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
 
@@ -95,7 +95,7 @@
         "availabelActivities": ["Adventure", "Safari","Beaches","Desert", "Water-sports", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-UAE.html",
+        "url": "../../destination-UAE.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
     
@@ -105,7 +105,7 @@
         "availabelActivities": ["Adventure", "Safari", "Beaches","Desert", "Water-sports", "Bustling Cities"],
         "time": "May - December",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "./destination-Vietnam.html",
+        "url": "../../destination-Vietnam.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     }
 ]

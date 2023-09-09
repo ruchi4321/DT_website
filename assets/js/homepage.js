@@ -218,8 +218,10 @@ var muted = document.getElementById("muted");
 function checkScreenSize() {
   if (window.innerWidth <= 992) {
     el.style.display = "none";
+    ppbutton.style.display = "block";
   } else {
     el.style.display = "block";
+    ppbutton.style.display = "none";
   }
 }
 
@@ -228,10 +230,8 @@ checkScreenSize();
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
-    ppbutton.src = "./assets/images/pause-btn.svg";
-  } else {
-    el.pause();
-    ppbutton.src = "./assets/images/play.svg";
+    ppbutton.style.display = "none";
+    muted.style.display = "block";
   }
 });
 
@@ -278,8 +278,8 @@ function checkScroll() {
   visible = (visibleX * visibleY) / (w * h);
 
   if (visible > fraction) {
-    ppbutton.src = "./assets/images/play.svg";
-    video.pause();
+    ppbutton.style.display = "block";
+    el.pause();
   }
 }
 
