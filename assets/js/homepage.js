@@ -230,8 +230,10 @@ checkScreenSize();
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
-    ppbutton.style.display = "none";
-    muted.style.display = "block";
+    ppbutton.src = "./assets/images/pause-btn.svg";
+  } else {
+    el.pause();
+    ppbutton.src = "./assets/images/play.svg";
   }
 });
 
