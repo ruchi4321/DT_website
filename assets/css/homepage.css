@@ -587,6 +587,7 @@
   align-items: center;
 }
 
+
 .ts-slide p::before {
   content: '';
   position: absolute;
@@ -623,7 +624,7 @@
 }
 @media (max-width: 480px) {
   .ts-slide p {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 120%;
   }
 }
