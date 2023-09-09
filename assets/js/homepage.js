@@ -212,38 +212,41 @@ window.onload = function () {
 //./assets/videos/desire_trip_video_2.mp4
 
 var el = document.querySelector(".active-video");
-var ppbutton = document.getElementById("play-btn");
-var muted = document.getElementById("muted");
+var playButton = document.getElementById("play-btn");
+var muteButton = document.getElementById("muted");
 
 function checkScreenSize() {
   if (window.innerWidth <= 992) {
     el.style.display = "none";
-    ppbutton.style.display = "block";
+    playButton.style.display = "block";
+    playButton.src = "./assets/images/play.svg"; // Встановлюємо зображення "Play"
+    muteButton.style.display = "block";
   } else {
     el.style.display = "block";
-    ppbutton.style.display = "none";
+    playButton.style.display = "none";
+    muteButton.style.display = "none";
   }
 }
 
 checkScreenSize();
 
-ppbutton.addEventListener("click", function () {
+playButton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
-    ppbutton.src = "./assets/images/pause-btn.svg";
+    playButton.src = "./assets/images/pause-btn.svg";
   } else {
     el.pause();
-    ppbutton.src = "./assets/images/play.svg";
+    playButton.src = "./assets/images/play.svg";
   }
 });
 
-muted.addEventListener("click", function () {
+muteButton.addEventListener("click", function () {
   if (el.muted === true) {
     el.muted = false;
-    muted.src = "./assets/images/unmute.svg";
+    muteButton.src = "./assets/images/unmute.svg";
   } else {
     el.muted = true;
-    muted.src = "./assets/images/muted.svg";
+    muteButton.src = "./assets/images/muted.svg";
   }
 });
 
@@ -280,7 +283,7 @@ function checkScroll() {
   visible = (visibleX * visibleY) / (w * h);
 
   if (visible > fraction) {
-    ppbutton.style.display = "block";
+    playButton.style.display = "block";
     el.pause();
   }
 }
