@@ -1,9 +1,5 @@
 /*==================== First Slider Start  ====================*/
-
-// Отримуємо поточну ширину вікна
 const windowWidth = window.innerWidth;
-
-// Визначаємо, який Swiper ініціалізатор використовувати в залежності від ширини вікна
 let swiper;
 
 if (windowWidth >= 1200) {
@@ -37,25 +33,14 @@ if (windowWidth >= 1200) {
         },
       },
       navigation: {
-        nextEl: ".button-next",
-        prevEl: ".button-prev",
-      },
-      on: {
-        slideChange: function () {
-          const activeSlide = this.slides[this.activeIndex];
-          if (activeSlide) {
-            const imageUrl = activeSlide.querySelector("img").src;
-            document.querySelector(
-              ".home"
-            ).style.backgroundImage = `url(${imageUrl})`;
-          }
-        },
+        nextEl: ".button-next-1",
+        prevEl: ".button-prev-1",
       },
     });
 
     let firstSlide = slider.slides[0];
 
-    let homeTitle = document.querySelector(".home-title");
+    let homeTitle = document.querySelector(".landing-tx");
 
     firstSlide.addEventListener("load", function () {
       helpBtn.style.display = "block";
@@ -144,8 +129,7 @@ if (windowWidth >= 1200) {
   });
 }
 
-// Отримуємо перший слайд
-const firstSlide = swiper.slides[0];
+// const firstSlide = swiper.slides[0];
 
 /*==================== First Slider End  ====================*/
 

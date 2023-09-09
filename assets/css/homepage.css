@@ -51,19 +51,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .landing {
   display: grid;
   grid-template-columns: 3fr .4fr;
   height: 100vh;
 }
-@media (max-width: 992px) {
-  .landing{
-    background: url('../images/Australia-12\ Apostles.png');
+@media (max-width: 1200px) {
+  .landing {
+    height: 50vh;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
+
 .landing-content {
   position: relative;
   display: flex;
@@ -97,6 +98,9 @@
 
 .landing-content div p {
   font-size: 20px;
+}
+.help-btn{
+  display: block;
 }
 
 .help-center-form {
@@ -206,7 +210,16 @@
 
 /* ================= First Slider Start =======================*/
 
-
+/* @media (min-width: 1200px) {
+  .slider-sm{
+  display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .slider-{
+  
+  }
+} */
 
 .slider-1-arrows {
   z-index: 999;
