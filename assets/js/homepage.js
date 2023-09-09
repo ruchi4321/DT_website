@@ -3,8 +3,6 @@ const windowWidth = window.innerWidth;
 let swiper;
 
 if (windowWidth >= 1200) {
-  // ====================== Help Center Start =======================
-
   function initHelpButtonAndSlider() {
     let helpBtn = document.getElementById("help-btn");
     let helpCenter = document.getElementById("help-center");
@@ -87,49 +85,101 @@ if (windowWidth >= 1200) {
   }
 
   window.addEventListener("load", initHelpButtonAndSlider);
-
-  // ====================== Help Center End =======================
 } else {
-  swiper = new Swiper(".slider-1", {
-    slidesPerView: 2.6,
-    loop: true,
-    spaceBetween: 20,
-    grabCursor: true,
-    autoplay: {
-      delay: 5000,
-    },
-    breakpoints: {
-      300: {
-        spaceBetween: 10,
-        slidesPerView: 1.4,
-      },
-      400: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
-      },
-      700: {
-        slidesPerView: 2.6,
-      },
-    },
-    navigation: {
-      nextEl: ".button-next-1",
-      prevEl: ".button-prev-1",
-    },
-    on: {
-      slideChange: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        if (activeSlide) {
-          const imageUrl = activeSlide.querySelector("img").src;
-          document.querySelector(
-            ".landing"
-          ).style.backgroundImage = `url(${imageUrl})`;
-        }
-      },
-    },
-  });
-}
+  function initHelpButtonAndSlider() {
+    let helpBtn = document.getElementById("help-btn");
+    let helpCenter = document.getElementById("help-center");
+    let helpCenterForm = document.querySelector(".help-center-form");
+    let closeFormSvg = document.querySelector(".close-form");
 
-// const firstSlide = swiper.slides[0];
+    let slider = new Swiper(".slider-1", {
+      slidesPerView: 2.6,
+      loop: true,
+      spaceBetween: 20,
+      grabCursor: true,
+      autoplay: {
+        delay: 5000,
+      },
+      breakpoints: {
+        300: {
+          spaceBetween: 10,
+          slidesPerView: 1.4,
+        },
+        400: {
+          slidesPerView: 1.4,
+          spaceBetween: 40,
+        },
+        700: {
+          slidesPerView: 2.6,
+        },
+      },
+      navigation: {
+        nextEl: ".button-next-1",
+        prevEl: ".button-prev-1",
+      },
+      on: {
+        slideChange: function () {
+          const activeSlide = this.slides[this.activeIndex];
+          if (activeSlide) {
+            const imageUrl = activeSlide.querySelector("img").src;
+            document.querySelector(
+              ".landing"
+            ).style.backgroundImage = `url(${imageUrl})`;
+          }
+        },
+      },
+    });
+
+    let firstSlide = slider.slides[0];
+
+    let homeTitle = document.querySelector(".landing-tx");
+
+    firstSlide.addEventListener("load", function () {
+      helpBtn.style.display = "block";
+    });
+
+    closeFormSvg.addEventListener("click", function () {
+      helpCenter.classList.remove("show");
+      helpCenterForm.classList.remove("show-top");
+    });
+
+    helpBtn.addEventListener("click", function () {
+      helpCenter.classList.toggle("show");
+      helpCenterForm.classList.toggle("show-top");
+    });
+
+    helpBtn.style.display = "none";
+
+    ScrollReveal().reveal(homeTitle, {
+      delay: 400,
+      distance: "50px",
+      origin: "left",
+      duration: 1000,
+    });
+
+    ScrollReveal().reveal(".first-slider", {
+      delay: 400,
+      distance: "50px",
+      origin: "right",
+      duration: 1000,
+    });
+
+    window.addEventListener("scroll", () => {
+      const scrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      const threshold = 600;
+
+      if (scrollPosition > threshold) {
+        helpBtn.style.display = "block";
+      } else {
+        helpBtn.style.display = "none";
+      }
+    });
+  }
+
+  window.addEventListener("load", initHelpButtonAndSlider);
+}
 
 /*==================== First Slider End  ====================*/
 
@@ -323,12 +373,10 @@ function checkScreenSize() {
   if (window.innerWidth <= 992) {
     el.style.display = "none";
     playButton.style.display = "block";
-    playButton.src = "./assets/images/play.svg"; // Встановлюємо зображення "Play"
+    playButton.src = "./assets/images/play.svg";
     muteButton.style.display = "block";
   } else {
     el.style.display = "block";
-    playButton.style.display = "none";
-    muteButton.style.display = "none";
   }
 }
 

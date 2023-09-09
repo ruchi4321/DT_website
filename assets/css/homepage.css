@@ -210,17 +210,6 @@
 
 /* ================= First Slider Start =======================*/
 
-/* @media (min-width: 1200px) {
-  .slider-sm{
-  display: none;
-  }
-}
-@media (max-width: 1200px) {
-  .slider-{
-  
-  }
-} */
-
 .slider-1-arrows {
   z-index: 999;
   position: absolute;
