@@ -116,13 +116,13 @@ let tsSwiper = new Swiper(".slider-5", {
   breakpoints: {
     300: {
       spaceBetween: 10,
-      slidesPerView: 1.4,
+      slidesPerView: 1,
     },
     400: {
-      slidesPerView: 1.4,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
-    900: {
+    1185: {
       slidesPerView: 3,
     },
   },
