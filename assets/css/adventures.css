@@ -473,6 +473,20 @@
     line-height: 140%;
     font-family: 'Montserrat', sans-serif;
 }
+.learn__more-link{
+  text-align: center;
+  text-decoration: none;
+  color: #E58620;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s all ease;
+}
+.learn__more-link:hover{
+  color: #775939;
+}
 .close-button {
   position: absolute;
   top: 10px;

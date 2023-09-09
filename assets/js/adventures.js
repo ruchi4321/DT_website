@@ -75,13 +75,12 @@ function displayElements(elements) {
             <span class="time-label">Time:</span>
             <p class="time-value">${el.time}</p>
           </div>
-            <a href="${el.url}" class="learn-moreee">LEARN MORE</a>
+            <a href="${el.url}" class="learn__more-link">LEARN MORE</a>
           </div>
         </div>
       </div>
       <div class="hover-search">
         <span>${el.description}</span>
-        <a href="#">Experience this</a>
         <img class="close-button" src="./assets/images/close.svg" alt="">
       </div>
     </div>`;

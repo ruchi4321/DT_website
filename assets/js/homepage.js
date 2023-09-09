@@ -1,31 +1,80 @@
 /*==================== First Slider Start  ====================*/
 
-let swiper = new Swiper(".slider-1", {
-  slidesPerView: 2.6,
-  loop: true,
-  spaceBetween: 20,
-  grabCursor: true,
-  autoplay: {
-    delay: 5000,
-  },
-  breakpoints: {
-    300: {
-      spaceBetween: 10,
-      slidesPerView: 1.4,
+// Отримуємо поточну ширину вікна
+const windowWidth = window.innerWidth;
+
+// Визначаємо, який Swiper ініціалізатор використовувати в залежності від ширини вікна
+let swiper;
+
+if (windowWidth >= 1200) {
+  swiper = new Swiper(".slider-1", {
+    slidesPerView: 2.6,
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
     },
-    400: {
-      slidesPerView: 1.4,
-      spaceBetween: 40,
+    breakpoints: {
+      300: {
+        spaceBetween: 10,
+        slidesPerView: 1.4,
+      },
+      400: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+      },
+      900: {
+        slidesPerView: 2.6,
+      },
     },
-    900: {
-      slidesPerView: 2.6,
+    navigation: {
+      nextEl: ".button-next-1",
+      prevEl: ".button-prev-1",
     },
-  },
-  navigation: {
-    nextEl: ".button-next-1",
-    prevEl: ".button-prev-1",
-  },
-});
+  });
+} else {
+  swiper = new Swiper(".slider-1", {
+    slidesPerView: 2.6,
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      300: {
+        spaceBetween: 10,
+        slidesPerView: 1.4,
+      },
+      400: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+      },
+      700: {
+        slidesPerView: 2.6,
+      },
+    },
+    navigation: {
+      nextEl: ".button-next-1",
+      prevEl: ".button-prev-1",
+    },
+    on: {
+      slideChange: function () {
+        const activeSlide = this.slides[this.activeIndex];
+        if (activeSlide) {
+          const imageUrl = activeSlide.querySelector("img").src;
+          document.querySelector(
+            ".landing"
+          ).style.backgroundImage = `url(${imageUrl})`;
+        }
+      },
+    },
+  });
+}
+
+// Отримуємо перший слайд
+const firstSlide = swiper.slides[0];
 
 /*==================== First Slider End  ====================*/
 
