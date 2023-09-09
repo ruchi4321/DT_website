@@ -82,6 +82,9 @@ if (windowWidth >= 1200) {
         helpBtn.style.display = "none";
       }
     });
+
+    // Змінюємо стиль на видимий після завантаження DOM
+    document.querySelector(".slider-1").style.visibility = "visible";
   }
 
   window.addEventListener("load", initHelpButtonAndSlider);
@@ -176,9 +179,14 @@ if (windowWidth >= 1200) {
         helpBtn.style.display = "none";
       }
     });
+
+    // Змінюємо стиль на видимий після завантаження DOM
+    document.querySelector(".slider-1").style.visibility = "visible";
   }
 
-  window.addEventListener("load", initHelpButtonAndSlider);
+  document.addEventListener("DOMContentLoaded", function () {
+    initHelpButtonAndSlider();
+  });
 }
 
 /*==================== First Slider End  ====================*/
