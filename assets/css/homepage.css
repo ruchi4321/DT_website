@@ -287,8 +287,13 @@
 
 /* ==================== Journey Start =============================== */
 
-.journey {
-  padding-bottom: 350px;
+.journey-main {
+  padding-bottom: 300px;
+}
+@media (max-width: 600px) {
+  .journey-main{
+    padding-bottom: 100px;
+  }
 }
 
 .journey-info {
@@ -356,19 +361,7 @@
 
 
 
-@media (min-width: 600px) {
-  .journey-arrow-left {
-    position: absolute;
-    top: 38%;
-    left: 20px;
-  }
-  
-  .journey-arrow-right {
-    position: absolute;
-    top: 38%;
-    right: 20px;
-  }  
-}
+
 
 /* ==================== Journey End =============================== */
 
@@ -389,6 +382,12 @@
 .ds-carousel-wrapp {
   position: relative;
   top: -200px;
+}
+@media (max-width: 1100px) {
+  .ds-carousel-wrapp {
+    position: relative;
+    top: -200px;
+  }
 }
 
 
@@ -443,12 +442,19 @@
 /* ==================== Gallery Start =============================== */
 
 
-.gallery {
+.gallery{
   display: grid;
   grid-template-columns: 3fr .5fr;
   padding-inline: 10%;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   gap: 50px;
+  position: relative;
+  bottom: 100px;
+}
+@media (max-width: 600px) {
+  .gallery{
+    bottom: 0px;
+  }
 }
 
 .gallery-collection-content {
@@ -526,17 +532,31 @@
 /* ==================== Gallery End =============================== */
 
 /* ==================== Testimonials Start =============================== */
-
-.testimonials h2 {
+.testimonials-experience{
+  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .testimonials-experience{
+    padding-bottom: 0px;
+  }
+}
+.testimonials-experience h2 {
   padding-top: 30px;
   white-space: nowrap;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+@media (max-width: 480px) {
+  .testimonials-experience h2{
+    font-size: 20px;
+  }
+}
 
 
-.testimonials h2 span {
+.testimonials-experience h2 span {
   color: #E58620;
 
 }
@@ -610,7 +630,58 @@
 }
 
 /* ==================== Testimonials End =============================== */
-
+.button-next-1 {
+  position: absolute;
+  top: -50px;
+  right: -100px;
+}
+.button-prev-1{
+  position: absolute;
+  top: -50px;
+  right: 0px;
+}
+.button-next {
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  right: 3%;
+}
+.button-prev{
+  position: absolute;
+  /* top: 38%; */
+  bottom: 100px;
+  left: 3%;
+}
+@media (max-width: 1400px) {
+  .button-next {
+    bottom: 10%;
+    left: 10%;
+  }
+  .button-prev{
+    bottom: 10%;
+    left: 3%;
+  }
+}
+@media (max-width: 992px) {
+  .button-next {
+    bottom: -70px;
+    right: 3%;
+  }
+  .button-prev{
+    bottom: -70px;
+    left: 3%;
+  }
+}
+@media (max-width: 600px) {
+  .button-next {
+    bottom: -50px;
+    left: 90%;
+  }
+  .button-prev{
+    bottom: -50px;
+    left: 3%;
+  }
+}
 /* ==================== Partners Start =============================== */
 
 .partners h2 {
@@ -689,10 +760,6 @@
 
   .button-prev {
     margin-right: auto;
-  }
-
-  .button-next {
-    margin-left: auto;
   }
 
   .mobile-arrows-ds {
@@ -1138,42 +1205,36 @@
   
 }
 
-@media (max-width: 992px) {
-  .journey-arrow-right,
-  .journey-arrow-left {
-   z-index: 999; 
-  }
-  .ts-slide{
-    width: 100%;
+.journey-arrow-left {
+  position: absolute;
+  bottom: 100px;
+  left: 7%;
+}
+
+.journey-arrow-right {
+  position: absolute;
+  bottom: 100px;
+  right: 7%;
+}
+.testimonials-arrow-left{
+  position: absolute;
+  bottom: 100px;
+  left: 7%;
+}
+.testimonials-arrow-right{
+  position: absolute;
+  bottom: 100px;
+  right: 7%;
+}
+@media (max-width: 768px) {
+  .journey-arrow-right{
+    display: none;
   }
   .journey-arrow-left{
-    left: 0;
+    display: none;
   }
-  .journey-arrow-right{
-    right: 0;
+  .testimonials-arrow-left,
+  .testimonials-arrow-right{
+    display: none !important;
   }
-}
-@media (max-width: 468px) {
-  .journey-arrow-left img {
-    position: absolute;
-    left: 40px !important;
-  }
-  
-  .journey-arrow-right img {
-    position: absolute;
-    right: 40px !important;
-  }
-}
-@media (min-width: 300px) {
-  .journey-arrow-left {
-    position: absolute;
-    bottom: 40px;
-    left: 10px;
-  }
-  
-  .journey-arrow-right {
-    position: absolute;
-    bottom: 40px;
-    right: 10px;
-  }  
 }
