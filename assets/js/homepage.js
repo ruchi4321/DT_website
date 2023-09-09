@@ -214,14 +214,23 @@ window.onload = function () {
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 var muted = document.getElementById("muted");
+
+// Функція для перевірки розміру екрану та встановлення відповідної іконки кнопки відтворення
 function checkScreenSize() {
   if (window.innerWidth <= 992) {
-    ppbutton.src = "./assets/images/play.svg";
-    el.pause();
+    // Якщо екран менший або дорівнює 992px (планшети та телефони)
+    ppbutton.src = "./assets/images/play.svg"; // Встановлюємо іконку "Відтворити"
+    el.pause(); // Пауза відео при завантаженні сторінки на планшетах і телефонах
   } else {
-    ppbutton.src = "./assets/images/pause-btn.svg";
+    // Якщо екран більший за 992px (десктоп)
+    ppbutton.src = "./assets/images/pause-btn.svg"; // Встановлюємо іконку "Пауза"
   }
 }
+
+// Виклик функції для перевірки розміру екрану при завантаженні сторінки
+checkScreenSize();
+
+// Обробник кліку по кнопці "Відтворити" або "Пауза"
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
@@ -232,6 +241,7 @@ ppbutton.addEventListener("click", function () {
   }
 });
 
+// Обробник кліку по кнопці "Звук увімкн./вимкн."
 muted.addEventListener("click", function () {
   if (el.muted === true) {
     el.muted = false;
@@ -280,7 +290,6 @@ function checkScroll() {
   }
 }
 
+// Додавання обробників подій для визначення розміру екрану при зміні розміру вікна
+window.addEventListener("resize", checkScreenSize);
 window.addEventListener("scroll", checkScroll, false);
-window.addEventListener("resize", checkScroll, false);
-
-/* ======================= Video Play End  =========================== */
