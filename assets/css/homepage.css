@@ -211,6 +211,9 @@
 
 
 /* ================= First Slider Start =======================*/
+.slider-1{
+  visibility: none;
+}
 
 .slider-1-arrows {
   z-index: 999;
