@@ -166,10 +166,14 @@ window.onload = function () {
 /* ======================= Video Lazy Loading End  =========================== */
 
 /* ======================= Video Play Start =========================== */
-//./assets/videos/desire_trip_video_2.mp4
 
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
+
+// Автоматичне відтворення відео при завантаженні сторінки
+document.addEventListener("DOMContentLoaded", function () {
+  el.play();
+});
 
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
@@ -180,5 +184,7 @@ ppbutton.addEventListener("click", function () {
     ppbutton.src = "./assets/images/play.svg";
   }
 });
+
+/* Решта вашого коду */
 
 /* ======================= Video Play End  =========================== */
