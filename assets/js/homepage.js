@@ -150,7 +150,7 @@ window.onload = function () {
         if (videoElm.paused) {
           videoElm.pause();
         } else {
-          videoSourceElm.src = "./assets/videos/desire_trip_video_2.mp4";
+          videoSourceElm.src = "./assets/videos/desire_trip_video.mp4";
           videoSourceElm.type = "video/mp4";
 
           videoElm.load();
