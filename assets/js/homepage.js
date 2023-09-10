@@ -182,6 +182,4 @@ ppbutton.addEventListener("click", function () {
   }
 });
 
-/* Решта вашого коду */
-
 /* ======================= Video Play End  =========================== */
