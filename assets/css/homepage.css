@@ -56,19 +56,6 @@
   grid-template-columns: 3fr .4fr;
   height: 100vh;
 }
-@media (max-width: 1200px) {
-  .landing {
-    height: 50vh;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media (max-width: 600px) {
-  .landing {
-    height: 90vh;
-  }
-}
 
 .landing-content {
   position: relative;
@@ -224,9 +211,6 @@
 
 
 /* ================= First Slider Start =======================*/
-.slider-1 {
-  visibility: hidden;
-}
 
 .slider-1-arrows {
   z-index: 999;

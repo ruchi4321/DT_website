@@ -22,8 +22,8 @@ let swiper = new Swiper(".slider-1", {
     },
   },
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".button-next-1",
+    prevEl: ".button-prev-1",
   },
 });
 
@@ -170,7 +170,6 @@ window.onload = function () {
 
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
-var muted = document.getElementById("muted");
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
@@ -178,16 +177,6 @@ ppbutton.addEventListener("click", function () {
   } else {
     el.pause();
     ppbutton.src = "./assets/images/play.svg";
-  }
-});
-
-muted.addEventListener("click", function () {
-  if (el.muted === true) {
-    el.muted = false;
-    muted.src = "./assets/images/unmute.svg";
-  } else {
-    el.muted = true;
-    muted.src = "./assets/images/muted.svg";
   }
 });
 
