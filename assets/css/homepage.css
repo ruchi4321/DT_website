@@ -108,6 +108,8 @@
   display: block;
 }
 
+/* help center */
+/* help center */
 .help-center-form {
   position: fixed;
   top: 45%;
@@ -131,14 +133,18 @@
   transform: rotate(-90deg);
   margin-right: -66px;
 }
+
+.help-center span {
+  color: #F78F1E;
+}
 @media (max-width: 768px) {
   .help-center{
     transform: rotate(0deg);
-    /* margin-right: 0px; */
+    margin-right: 0px;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
   .help-center-form{
     right: 35px;
@@ -146,10 +152,6 @@
   .contact-form{
     width: 100%;
   }
-}
-
-.help-center span {
-  color: #F78F1E;
 }
 
 .contact-form {
@@ -208,6 +210,14 @@
 .show-top {
   top: 20%;
 }
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
+/* help center */
+/* help center end */
 
 
 /* ================= Landing End ==================== */
