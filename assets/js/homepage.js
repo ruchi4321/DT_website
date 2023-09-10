@@ -1,101 +1,31 @@
 /*==================== First Slider Start  ====================*/
 
-function initHelpButtonAndSlider() {
-  let helpBtn = document.getElementById("help-btn");
-  let helpCenter = document.getElementById("help-center");
-  let helpCenterForm = document.querySelector(".help-center-form");
-  let closeFormSvg = document.querySelector(".close-form");
-
-  // Add the following line to set the visibility of slider-1 to "visible"
-  document.querySelector(".slider-1").style.visibility = "visible";
-
-  let slider = new Swiper(".slider-1", {
-    slidesPerView: 2.6,
-    loop: true,
-    spaceBetween: 20,
-    grabCursor: true,
-    autoplay: {
-      delay: 5000,
+let swiper = new Swiper(".slider-1", {
+  slidesPerView: 2.6,
+  loop: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    300: {
+      spaceBetween: 10,
+      slidesPerView: 1.4,
     },
-    breakpoints: {
-      300: {
-        spaceBetween: 10,
-        slidesPerView: 1.4,
-      },
-      400: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
-      },
-      700: {
-        slidesPerView: 2.6,
-      },
+    400: {
+      slidesPerView: 1.4,
+      spaceBetween: 40,
     },
-    navigation: {
-      nextEl: ".button-next-1",
-      prevEl: ".button-prev-1",
+    900: {
+      slidesPerView: 2.6,
     },
-    on: {
-      slideChange: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        if (activeSlide) {
-          const imageUrl = activeSlide.querySelector("img").src;
-          document.querySelector(
-            ".home"
-          ).style.backgroundImage = `url(${imageUrl})`;
-        }
-      },
-    },
-  });
-
-  let firstSlide = slider.slides[0];
-
-  let homeTitle = document.querySelector(".home-title");
-
-  firstSlide.addEventListener("load", function () {
-    helpBtn.style.display = "block";
-  });
-
-  closeFormSvg.addEventListener("click", function () {
-    helpCenter.classList.remove("show");
-    helpCenterForm.classList.remove("show-top");
-  });
-
-  helpBtn.addEventListener("click", function () {
-    helpCenter.classList.toggle("show");
-    helpCenterForm.classList.toggle("show-top");
-  });
-
-  helpBtn.style.display = "none";
-
-  ScrollReveal().reveal(homeTitle, {
-    delay: 400,
-    distance: "50px",
-    origin: "left",
-    duration: 1000,
-  });
-
-  ScrollReveal().reveal(".first-slider", {
-    delay: 400,
-    distance: "50px",
-    origin: "right",
-    duration: 1000,
-  });
-
-  window.addEventListener("scroll", () => {
-    const scrollPosition =
-      window.pageYOffset || document.documentElement.scrollTop;
-
-    const threshold = 600;
-
-    if (scrollPosition > threshold) {
-      helpBtn.style.display = "block";
-    } else {
-      helpBtn.style.display = "none";
-    }
-  });
-}
-
-window.addEventListener("load", initHelpButtonAndSlider);
+  },
+  navigation: {
+    nextEl: ".button-next-1",
+    prevEl: ".button-prev-1",
+  },
+});
 
 /*==================== First Slider End  ====================*/
 
