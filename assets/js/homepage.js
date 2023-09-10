@@ -219,6 +219,4 @@ function checkScroll() {
   }
 }
 
-window.addEventListener("scroll", checkScroll, false);
-window.addEventListener("resize", checkScroll, false);
 /* ======================= Video Play End  =========================== */
