@@ -1,10 +1,11 @@
-// ====================== Help Center Start =======================
-
 function initHelpButtonAndSlider() {
   let helpBtn = document.getElementById("help-btn");
   let helpCenter = document.getElementById("help-center");
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
+
+  // Add the following line to set the visibility of slider-1 to "visible"
+  document.querySelector(".slider-1").style.visibility = "visible";
 
   let slider = new Swiper(".slider-1", {
     slidesPerView: 2.6,
@@ -28,8 +29,8 @@ function initHelpButtonAndSlider() {
       },
     },
     navigation: {
-      nextEl: ".button-next",
-      prevEl: ".button-prev",
+      nextEl: ".button-next-1",
+      prevEl: ".button-prev-1",
     },
     on: {
       slideChange: function () {
@@ -93,8 +94,6 @@ function initHelpButtonAndSlider() {
 }
 
 window.addEventListener("load", initHelpButtonAndSlider);
-
-// ====================== Help Center End =======================
 
 /*==================== Second Swiper On Landing Page  ====================*/
 
