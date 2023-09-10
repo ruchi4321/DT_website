@@ -171,11 +171,6 @@ window.onload = function () {
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 
-// Автоматичне відтворення відео при завантаженні сторінки
-document.addEventListener("DOMContentLoaded", function () {
-  el.play();
-});
-
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
