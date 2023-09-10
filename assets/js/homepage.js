@@ -140,48 +140,8 @@ sr.reveal(
 
 /* ======================= Video Lazy Loading Start =========================== */
 
-window.onload = function () {
-  setTimeout(() => {
-    var video = document.querySelector(".active-video");
-    if (video.played) {
-      function playVideo(videoSource, type) {
-        var videoElm = document.querySelector(".active-video");
-        var videoSourceElm = document.getElementById("video-sr");
-        if (videoElm.paused) {
-          videoElm.pause();
-        } else {
-          videoSourceElm.src = "./assets/videos/desire_trip_video_2.mp4";
-          videoSourceElm.type = "video/mp4";
-
-          videoElm.load();
-          videoElm.play();
-        }
-      }
-
-      playVideo();
-    }
-  }, 7000);
-};
-
 /* ======================= Video Lazy Loading End  =========================== */
 
 /* ======================= Video Play Start =========================== */
-
-var el = document.querySelector(".active-video");
-var ppbutton = document.getElementById("play-btn");
-
-// Автоматичне відтворення відео при завантаженні сторінки
-
-ppbutton.addEventListener("click", function () {
-  if (el.paused) {
-    el.play();
-    ppbutton.src = "./assets/images/pause-btn.svg";
-  } else {
-    el.pause();
-    ppbutton.src = "./assets/images/play.svg";
-  }
-});
-
-/* Решта вашого коду */
 
 /* ======================= Video Play End  =========================== */
