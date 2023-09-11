@@ -583,7 +583,7 @@
 }
 
 .ts-slide p {
-  font-size: 12px;
+  font-size: 16px;
   background: #161616;
   opacity: 0.95;
   border-radius: 4px;
@@ -613,25 +613,31 @@
 }
 @media (max-width: 1700px) {
   .ts-slide p {
-    font-size: 13px;
-    line-height: 120%;
+    font-size: 15px;
+    line-height: 150%;
   }
 }
 @media (max-width: 1500px) {
   .ts-slide p {
-    font-size: 12px;
-    line-height: 110%;
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+@media (max-width: 1200px) {
+  .ts-slide p {
+    font-size: 14px;
+    line-height: 150%;
   }
 }
 @media (max-width: 992px) {
   .ts-slide p {
-    font-size: 11px;
-    line-height: 100%;
+    font-size: 13px;
+    line-height: 140%;
   }
 }
 @media (max-width: 768px) {
   .ts-slide p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 120%;
   }
 }
