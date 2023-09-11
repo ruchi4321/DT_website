@@ -546,7 +546,6 @@
 
 /* ==================== Testimonials Start =============================== */
 .testimonials-experience{
-  /* padding-right: 5%; */
   padding-top: 50px;
   padding-bottom: 0px;
 }
@@ -813,9 +812,6 @@
     padding-left: 0;
   }
 
-  .nav-link {
-    font-size: 12px;
-  }
 
   .first-slider {
     padding-left: 500px;
@@ -881,10 +877,6 @@
 
   .custom-navbar {
     padding-inline: 5%;
-  }
-
-  .nav-link {
-    font-size: 15px;
   }
 
   .nav-item:nth-child(2) {
