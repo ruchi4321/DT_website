@@ -148,3 +148,13 @@ sr.reveal(
 );
 
 /*==================== Scroll Reveal Animation End ====================*/
+
+const videoElement = document.getElementById("background-video");
+
+videoElement.addEventListener("click", function () {
+  if (videoElement.paused) {
+    videoElement.play();
+  } else {
+    videoElement.pause();
+  }
+});
