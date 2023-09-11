@@ -37,8 +37,8 @@ let scSwiper = new Swiper(".slider-2", {
   spaceBetween: 30,
   grabCursor: true,
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".journey-arrow-right",
+    prevEl: ".journey-arrow-left",
   },
   breakpoints: {
     300: {
@@ -62,7 +62,16 @@ let scSwiper = new Swiper(".slider-2", {
 });
 
 /*==================== Second Slider End  ====================*/
-
+let expSwiper = new Swiper(".slider-3", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+});
 /*==================== Third Slider Start  ====================*/
 
 let tsSwiper = new Swiper(".slider-5", {
