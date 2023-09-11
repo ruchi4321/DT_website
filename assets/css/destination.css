@@ -120,6 +120,62 @@ a {
 }
 
 /* ================= First Slider Start =======================*/
+/* ==================== About Us Start  ========================  */
+
+.about-us {
+  padding-block: 100px;
+  padding-inline: 12%;
+  align-items: flex-start;
+  gap: 200px;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .about-us {
+
+    /* padding-block: 50px;  */
+  }
+}
+.about-text{
+  font-family: 'Montserrat', sans-serif;
+    color: #C7C7C7;
+    line-height: 150%;
+}
+.about-us h2 {
+  white-space: nowrap;
+}
+
+.about-us h2 span {
+  color: #E58620;
+}
+
+.about-us p{
+  font-family: 'Montserrat', sans-serif;
+  color: #C7C7C7;
+}
+
+.about-us-items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.about-us-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about-us-item h3 {
+  color: #E58620;
+  font-size: 40px;
+}
+
+.about-us-item span {
+  font-size: 14px;
+  color: #797979;
+}
+
+/* ==================== About Us End ============================== */
 
 .slider-1-arrows {
   z-index: 999;
@@ -352,25 +408,80 @@ a {
   height: 100%;
   min-height: 300px;
 }
-.journey-arrow-left {
+.button-next-1 {
   position: absolute;
-  /* top: 38%; */
-  bottom: 100px;
-  left: 7%;
+  top: -50px;
+  right: -100px;
+}
+.button-prev-1{
+  position: absolute;
+  top: -50px;
+  right: 0px;
 }
 
-.journey-arrow-right {
+.journey-arrow-left {
   position: absolute;
-  /* top: 38%; */
-  bottom: 100px;
-  right: 7%;
+  bottom: 50%;
+  z-index: 999;
+  left: 3%;
+}
+
+.journey-arrow-right{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  right: 3%;
+}
+
+.testimonials-arrow-left{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  left: 3%;
+}
+.testimonials-arrow-right{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  right: 3%;
+}
+
+@media (max-width: 1400px) {
+  .journey-arrow-left {
+    position: absolute;
+    bottom: 5%;
+    z-index: 999;
+    left: 7%;
+  }
+  
+  .journey-arrow-right{
+    position: absolute;
+    bottom: 5%;
+    z-index: 999;
+    left: 14%;
+  }
+}
+@media (max-width: 992px) {
+  .testimonials-arrow-left,
+  .testimonials-arrow-right{
+    display: none;
+  }
+  .journey-arrow-right,
+  .journey-arrow-left{
+    /* display: none; */
+    bottom: -50px;
+  }
+}
+.testimonials-arrow-left{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  left: 3%;
 }
 @media (max-width: 768px) {
-  .journey-arrow-right{
-    right: 35%;
-  }
+  .journey-arrow-right,
   .journey-arrow-left{
-    left: 35px;
+    display: none;
   }
 }
 

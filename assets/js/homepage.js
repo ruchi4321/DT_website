@@ -1,33 +1,81 @@
-/*==================== First Slider Start  ====================*/
+function initHelpButtonAndSlider() {
+  let helpBtn = document.getElementById("help-btn");
+  let helpCenter = document.getElementById("help-center");
+  let helpCenterForm = document.querySelector(".help-center-form");
+  let closeFormSvg = document.querySelector(".close-form");
 
-let swiper = new Swiper(".slider-1", {
-  slidesPerView: 2.6,
-  loop: true,
-  spaceBetween: 20,
-  grabCursor: true,
-  autoplay: {
-    delay: 5000,
-  },
-  breakpoints: {
-    300: {
-      spaceBetween: 10,
-      slidesPerView: 1.4,
-    },
-    400: {
-      slidesPerView: 1.4,
-      spaceBetween: 40,
-    },
-    900: {
-      slidesPerView: 2.6,
-    },
-  },
-  navigation: {
-    nextEl: ".button-next-1",
-    prevEl: ".button-prev-1",
-  },
-});
+  // Add the following line to set the visibility of slider-1 to "visible"
+  document.querySelector(".slider-1").style.visibility = "visible";
 
-/*==================== First Slider End  ====================*/
+  let slider = new Swiper(".slider-1", {
+    slidesPerView: 2.6,
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      300: {
+        spaceBetween: 10,
+        slidesPerView: 1.4,
+      },
+      400: {
+        slidesPerView: 1.4,
+        spaceBetween: 40,
+      },
+      700: {
+        slidesPerView: 2.6,
+      },
+    },
+    navigation: {
+      nextEl: ".button-next-1",
+      prevEl: ".button-prev-1",
+    },
+  });
+
+  let firstSlide = slider.slides[0];
+
+  firstSlide.addEventListener("load", function () {
+    helpBtn.style.display = "block";
+  });
+
+  closeFormSvg.addEventListener("click", function () {
+    helpCenter.classList.remove("show");
+    helpCenterForm.classList.remove("show-top");
+  });
+
+  helpBtn.addEventListener("click", function () {
+    helpCenter.classList.toggle("show");
+    helpCenterForm.classList.toggle("show-top");
+  });
+
+  helpBtn.style.display = "none";
+
+  ScrollReveal().reveal(".first-slider", {
+    delay: 400,
+    distance: "50px",
+    origin: "right",
+    duration: 1000,
+  });
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    const threshold = 600;
+
+    if (scrollPosition > threshold) {
+      helpBtn.style.display = "block";
+    } else {
+      helpBtn.style.display = "none";
+    }
+  });
+}
+
+window.addEventListener("load", initHelpButtonAndSlider);
+
+/*==================== Second Swiper On Landing Page  ====================*/
 
 /*==================== Second Slider Start  ====================*/
 
@@ -101,21 +149,6 @@ let tsSwiper = new Swiper(".slider-5", {
   },
 });
 /*==================== Testimonials Slider End  ====================*/
-
-let helpBtn = document.getElementById("help-btn");
-let helpCenter = document.getElementById("help-center");
-let helpCenterForm = document.querySelector(".help-center-form");
-let closeFormSvg = document.querySelector(".close-form");
-
-closeFormSvg.addEventListener("click", function () {
-  helpCenter.classList.remove("show");
-  helpCenterForm.classList.remove("show-top");
-});
-
-helpBtn.addEventListener("click", function () {
-  helpCenter.classList.toggle("show");
-  helpCenterForm.classList.toggle("show-top");
-});
 
 /*==================== Scroll Reveal Animation Start ====================*/
 const sr = ScrollReveal({

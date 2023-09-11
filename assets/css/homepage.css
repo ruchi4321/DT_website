@@ -105,9 +105,6 @@
 .landing-content div p {
   font-size: 20px;
 }
-.help-btn{
-  display: block;
-}
 
 /* help center */
 .help-center-form {
@@ -137,22 +134,38 @@
 .help-center span {
   color: #F78F1E;
 }
-@media (max-width: 768px) {
-  .help-center{
-    transform: rotate(0deg);
-    margin-right: 0px;
+@media (max-width: 600px) {
+  .help-center {
+    transform: rotate(0deg); 
+    margin-right: 0;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: 0; 
+    width: 50vh; 
   }
-  .help-center-form{
-    right: 35px;
+
+  .help-center-form {
+    right: 0; 
+    bottom: 0;
   }
-  .contact-form{
-    width: 100%;
+
+  .contact-form {
+    width: 100%; 
+    max-width: none; 
   }
 }
+@media (max-width: 380px) {
+  .help-center {
+    transform: rotate(0deg); 
+    margin-right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0; 
+    width: 57vh; 
+  }
+}
+
+
 
 .contact-form {
   background: #fff;
@@ -201,30 +214,34 @@
   display: none;
 }
 
-
 .show {
   display: block !important;
 }
-
 
 .show-top {
   top: 20%;
 }
 @media (max-width: 768px) {
   .show-top {
-    top: 10%;
+    bottom: 0;
     left: 0;
   }
 }
-/* help center end */
+/* help center */
+
+
+
 
 
 /* ================= Landing End ==================== */
 
 
 /* ================= First Slider Start =======================*/
+.preload {
+  visibility: hidden;
+}
 .slider-1{
-  visibility: none;
+  visibility: hidden;
 }
 
 .slider-1-arrows {
@@ -576,7 +593,8 @@
 }
 @media (max-width: 480px) {
   .testimonials-experience h2{
-    font-size: 20px;
+    font-size: 25px;
+    white-space: wrap;
   }
 }
 
@@ -682,45 +700,66 @@
   top: -50px;
   right: 0px;
 }
-.button-next {
-  position: absolute;
-  /* top: 38%; */
-  bottom: 100px;
-  right: 3%;
-}
-.button-prev{
-  position: absolute;
-  /* top: 38%; */
-  bottom: 100px;
-  left: 3%;
-}
-@media (max-width: 1400px) {
-  .button-next {
-    bottom: 10%;
-    left: 10%;
+
+@media (min-width: 1700px) {
+  .button-next{
+    z-index: 999;
+    position: absolute;
+    bottom: 380px;
+    right: 150px;
   }
   .button-prev{
-    bottom: 10%;
-    left: 3%;
+    position: absolute;
+    z-index: 999;
+    bottom: 380px;
+    left: 150px;
+  }
+}
+@media (max-width: 1700px) {
+  .button-next{
+    z-index: 999;
+    position: absolute;
+    bottom: 380px;
+    right: 50px;
+  }
+  .button-prev{
+    position: absolute;
+    z-index: 999;
+    bottom: 380px;
+    left: 50px;
+  }
+}
+@media (max-width: 1400px) {
+  .button-next{
+    z-index: 999;
+    position: absolute;
+    bottom: 0px;
+    left: 230px;
+  }
+  .button-prev{
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    left: 130px;
   }
 }
 @media (max-width: 992px) {
   .button-next {
     bottom: -70px;
-    right: 3%;
+    left: 15%;
   }
   .button-prev{
     bottom: -70px;
-    left: 3%;
+    left: 5%;
   }
 }
 @media (max-width: 600px) {
   .button-next {
-    bottom: -50px;
-    left: 90%;
+    bottom: -10px;
+    left: 20%;
   }
   .button-prev{
-    bottom: -50px;
+    bottom: -10px;
     left: 3%;
   }
 }
@@ -1236,50 +1275,69 @@
   
 }
 
+.testimonials-arrow-left{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  left: 3%;
+}
+.testimonials-arrow-right{
+  position: absolute;
+  bottom: 50%;
+  z-index: 999;
+  right: 3%;
+}
+
 .journey-arrow-left {
   position: absolute;
-  bottom: 100px;
-  left: 7%;
+  bottom: 50%;
+  z-index: 999;
+  left: 3%;
 }
 
 .journey-arrow-right{
   position: absolute;
-  bottom: 100px;
-  right: 7%;
+  bottom: 50%;
+  z-index: 999;
+  right: 3%;
 }
-.testimonials-arrow-left{
-  position: absolute;
-  bottom: 100px;
-  left: 7%;
+@media (max-width: 1400px) {
+  .journey-arrow-left {
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    left: 7%;
+  }
+  
+  .journey-arrow-right{
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    right: 7%;
+  }
 }
-.testimonials-arrow-right{
-  position: absolute;
-  bottom: 100px;
-  right: 7%;
+@media (max-width: 1200px) {
+  .journey-arrow-left {
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    left: 3%;
+  }
+  
+  .journey-arrow-right{
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    right: 3%;
+  }
 }
 @media (max-width: 992px) {
-  .testimonials-arrow-left{
-    position: absolute;
-    bottom: 100px;
-    left: 2%;
-  }
-  .testimonials-arrow-right{
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-  }
-}
-@media (max-width: 768px) {
-  .journey-arrow-right{
-    display: none;
-  }
-  .journey-arrow-left{
-    display: none;
-  }
-}
-@media (max-width: 600px) {
   .testimonials-arrow-left,
   .testimonials-arrow-right{
+    display: none;
+  }
+  .journey-arrow-right,
+  .journey-arrow-left{
     display: none;
   }
 }
