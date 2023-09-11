@@ -701,32 +701,45 @@
   right: 0px;
 }
 
-@media (min-width: 1700px) {
+
+.button-next{
+  z-index: 999;
+  position: absolute;
+  bottom: 380px;
+  right: 15%;
+}
+.button-prev{
+  position: absolute;
+  z-index: 999;
+  bottom: 380px;
+  left: 15%;
+}
+@media (max-width: 1900px) {
   .button-next{
     z-index: 999;
     position: absolute;
     bottom: 380px;
-    right: 150px;
+    right: 3%;
   }
   .button-prev{
     position: absolute;
     z-index: 999;
     bottom: 380px;
-    left: 150px;
+    left: 3%;
   }
 }
-@media (max-width: 1700px) {
+@media (max-width: 1500px) {
   .button-next{
     z-index: 999;
     position: absolute;
     bottom: 380px;
-    right: 50px;
+    right: 7%;
   }
   .button-prev{
     position: absolute;
     z-index: 999;
     bottom: 380px;
-    left: 50px;
+    left: 7%;
   }
 }
 @media (max-width: 1400px) {
@@ -763,6 +776,7 @@
     left: 3%;
   }
 }
+
 /* ==================== Partners Start =============================== */
 
 .partners h2 {
@@ -1279,42 +1293,41 @@
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  left: 3%;
+  left: 7%;
 }
 .testimonials-arrow-right{
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  right: 3%;
+  right: 7%;
+}
+@media (max-width: 1200px) {
+  .testimonials-arrow-left{
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    left: 11%;
+  }
+  .testimonials-arrow-right{
+    position: absolute;
+    bottom: 50%;
+    z-index: 999;
+    right: 11%;
+  }
 }
 
 .journey-arrow-left {
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  left: 3%;
+  left: 9%;
 }
 
 .journey-arrow-right{
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  right: 3%;
-}
-@media (max-width: 1400px) {
-  .journey-arrow-left {
-    position: absolute;
-    bottom: 50%;
-    z-index: 999;
-    left: 7%;
-  }
-  
-  .journey-arrow-right{
-    position: absolute;
-    bottom: 50%;
-    z-index: 999;
-    right: 7%;
-  }
+  right: 9%;
 }
 @media (max-width: 1200px) {
   .journey-arrow-left {
