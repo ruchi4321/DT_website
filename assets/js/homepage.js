@@ -149,12 +149,19 @@ sr.reveal(
 
 /*==================== Scroll Reveal Animation End ====================*/
 
-const videoElement = document.getElementById("background-video");
+/*==================== VIDEO PLAY  ====================*/
 
-videoElement.addEventListener("click", function () {
-  if (videoElement.paused) {
+const videoElement = document.getElementById("background-video");
+const playBtn = document.querySelector(".play-btn");
+
+function toggleVideoPlayback() {
+  if (videoElement.paused || videoElement.ended) {
     videoElement.play();
   } else {
     videoElement.pause();
   }
-});
+}
+
+videoElement.addEventListener("click", toggleVideoPlayback);
+
+playBtn.addEventListener("click", toggleVideoPlayback);
