@@ -156,8 +156,20 @@ ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
     ppbutton.src = "./assets/images/pause-btn.svg";
+    ppbutton.alt = "Pause";
   } else {
     el.pause();
     ppbutton.src = "./assets/images/play.svg";
+    ppbutton.alt = "Play";
   }
+});
+
+el.addEventListener("play", function () {
+  ppbutton.src = "./assets/images/pause-btn.svg";
+  ppbutton.alt = "Pause";
+});
+
+el.addEventListener("pause", function () {
+  ppbutton.src = "./assets/images/play.svg";
+  ppbutton.alt = "Play";
 });
