@@ -149,27 +149,12 @@ sr.reveal(
 
 /*==================== Scroll Reveal Animation End ====================*/
 
-var el = document.querySelector(".active-video");
-var ppbutton = document.getElementById("play-btn");
+const videoElement = document.getElementById("background-video");
 
-ppbutton.addEventListener("click", function () {
-  if (el.paused) {
-    el.play();
-    ppbutton.src = "./assets/images/pause-btn.svg";
-    ppbutton.alt = "Pause";
+videoElement.addEventListener("click", function () {
+  if (videoElement.paused) {
+    videoElement.play();
   } else {
-    el.pause();
-    ppbutton.src = "./assets/images/play.svg";
-    ppbutton.alt = "Play";
+    videoElement.pause();
   }
-});
-
-el.addEventListener("play", function () {
-  ppbutton.src = "./assets/images/pause-btn.svg";
-  ppbutton.alt = "Pause";
-});
-
-el.addEventListener("pause", function () {
-  ppbutton.src = "./assets/images/play.svg";
-  ppbutton.alt = "Play";
 });
