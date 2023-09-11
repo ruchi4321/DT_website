@@ -65,31 +65,33 @@ let scSwiper = new Swiper(".slider-2", {
 
 /*==================== Third Slider Start  ====================*/
 
-let thSwiper = new Swiper(".slider-3", {
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 30,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".mb-next",
-    prevEl: ".mb-prev",
-  },
-});
-
-/*==================== Fourth Slider End  ====================*/
-
-let frSwiper = new Swiper(".slider-4", {
-  slidesPerView: 1,
+let tsSwiper = new Swiper(".slider-5", {
+  slidesPerView: 3,
   loop: true,
   spaceBetween: 20,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    300: {
+      spaceBetween: 10,
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1185: {
+      slidesPerView: 3,
+    },
+  },
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".testimonials-arrow-right",
+    prevEl: ".testimonials-arrow-left",
   },
 });
-
-/*==================== Fourth Slider End  ====================*/
+/*==================== Testimonials Slider End  ====================*/
 
 let helpBtn = document.getElementById("help-btn");
 let helpCenter = document.getElementById("help-center");

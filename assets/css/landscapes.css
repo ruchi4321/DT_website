@@ -196,6 +196,9 @@
 .explore-content-2 {
   margin-bottom: 130px;
 }
+.explore-content p{
+  font-size: 14px;
+}
 @media (max-width: 992px) {
   .explore-content-2 {
     margin-top: -170px;
