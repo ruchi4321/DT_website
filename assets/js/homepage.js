@@ -152,7 +152,7 @@ sr.reveal(
 /*==================== VIDEO PLAY  ====================*/
 
 const videoElement = document.getElementById("background-video");
-const playBtn = document.querySelector(".play-btn");
+const playBtn = document.querySelector(".landing-tx");
 
 function toggleVideoPlayback() {
   if (videoElement.paused || videoElement.ended) {
