@@ -5,8 +5,8 @@ function initHelpButtonAndSlider() {
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
 
-  document.querySelector(".slider-1").style.visibility = "visible";
   helpBtn.style.display = "none";
+  document.querySelector(".slider-1").style.visibility = "visible";
 
   let slider = new Swiper(".slider-1", {
     slidesPerView: 2.6,

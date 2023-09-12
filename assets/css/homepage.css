@@ -223,10 +223,10 @@
 
 /* ================= First Slider Start =======================*/
 .preload {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .slider-1{
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .slider-1-arrows {

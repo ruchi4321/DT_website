@@ -1,13 +1,4 @@
-function initHelpButtonAndSlider() {
-  let helpBtn = document.getElementById("help-btn");
-  let helpCenter = document.getElementById("help-center");
-  let helpCenterForm = document.querySelector(".help-center-form");
-  let closeFormSvg = document.querySelector(".close-form");
-
-  // Add the following line to set the visibility of slider-1 to "visible"
-  document.querySelector(".slider-1").style.visibility = "visible";
-  helpBtn.style.display = "none";
-
+document.addEventListener("DOMContentLoaded", function () {
   let slider = new Swiper(".slider-1", {
     slidesPerView: 2.6,
     loop: true,
@@ -34,12 +25,14 @@ function initHelpButtonAndSlider() {
       prevEl: ".button-prev-1",
     },
   });
+});
 
-  let firstSlide = slider.slides[0];
-
-  firstSlide.addEventListener("load", function () {
-    helpBtn.style.display = "block";
-  });
+/*==================== Second Swiper On Landing Page  ====================*/
+function initHelpButton() {
+  let helpBtn = document.getElementById("help-btn");
+  let helpCenter = document.getElementById("help-center");
+  let helpCenterForm = document.querySelector(".help-center-form");
+  let closeFormSvg = document.querySelector(".close-form");
 
   closeFormSvg.addEventListener("click", function () {
     helpCenter.classList.remove("show");
@@ -52,13 +45,6 @@ function initHelpButtonAndSlider() {
   });
 
   helpBtn.style.display = "none";
-
-  ScrollReveal().reveal(".first-slider", {
-    delay: 400,
-    distance: "50px",
-    origin: "right",
-    duration: 1000,
-  });
 
   window.addEventListener("scroll", () => {
     const scrollPosition =
@@ -74,10 +60,7 @@ function initHelpButtonAndSlider() {
   });
 }
 
-window.addEventListener("load", initHelpButtonAndSlider);
-
-/*==================== Second Swiper On Landing Page  ====================*/
-
+window.addEventListener("load", initHelpButton);
 /*==================== Second Slider Start  ====================*/
 
 let scSwiper = new Swiper(".slider-2", {
