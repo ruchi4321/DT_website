@@ -135,7 +135,7 @@
 .help-center span {
   color: #F78F1E;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .help-center{
     display: block;
     transform: rotate(0deg);
