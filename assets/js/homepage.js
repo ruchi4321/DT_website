@@ -164,7 +164,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.landing-tx, .help-center-form, .first-slider, .about-us-item, .journey-sc-slider, .ds-title, .gallery-card-big, .testimonials-title, .partner-title, .footer-social, .copyright`,
+  `.landing-tx, .first-slider, .about-us-item, .journey-sc-slider, .ds-title, .gallery-card-big, .testimonials-title, .partner-title, .footer-social, .copyright`,
   {
     origin: "top",
     interval: 100,
