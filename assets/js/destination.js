@@ -5,7 +5,6 @@ function initHelpButtonAndSlider() {
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
 
-  // Add the following line to set the visibility of slider-1 to "visible"
   document.querySelector(".slider-1").style.visibility = "visible";
   helpBtn.style.display = "none";
 
