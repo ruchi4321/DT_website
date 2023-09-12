@@ -1,11 +1,12 @@
+// ====================== Help Center Start =======================
 function initHelpButtonAndSlider() {
   let helpBtn = document.getElementById("help-btn");
   let helpCenter = document.getElementById("help-center");
   let helpCenterForm = document.querySelector(".help-center-form");
   let closeFormSvg = document.querySelector(".close-form");
 
-  // Add the following line to set the visibility of slider-1 to "visible"
   document.querySelector(".slider-1").style.visibility = "visible";
+  helpBtn.style.display = "none";
 
   let slider = new Swiper(".slider-1", {
     slidesPerView: 2.6,
@@ -32,9 +33,29 @@ function initHelpButtonAndSlider() {
       nextEl: ".button-next-1",
       prevEl: ".button-prev-1",
     },
+    on: {
+      slideChange: function () {
+        const activeSlide = this.slides[this.activeIndex];
+        if (activeSlide) {
+          const imageUrl = activeSlide.querySelector("img").src;
+          document.querySelector(
+            ".home"
+          ).style.backgroundImage = `url(${imageUrl})`;
+        }
+      },
+    },
   });
 
   let firstSlide = slider.slides[0];
+
+  let homeTitle = document.querySelector(".home-title");
+
+  ScrollReveal().reveal(homeTitle, {
+    delay: 400,
+    distance: "50px",
+    origin: "left",
+    duration: 1000,
+  });
 
   firstSlide.addEventListener("load", function () {
     helpBtn.style.display = "block";
@@ -74,8 +95,6 @@ function initHelpButtonAndSlider() {
 }
 
 window.addEventListener("load", initHelpButtonAndSlider);
-
-/*==================== Second Swiper On Landing Page  ====================*/
 
 // ====================== Help Center End =======================
 
@@ -138,8 +157,8 @@ let thSwiper = new Swiper(".slider-3", {
   spaceBetween: 30,
   grabCursor: true,
   navigation: {
-    nextEl: ".mb-next",
-    prevEl: ".mb-prev",
+    nextEl: ".journey-arrow-right",
+    prevEl: ".journey-arrow-left",
   },
   breakpoints: {
     768: {
@@ -161,12 +180,12 @@ const frSwiper = new Swiper(".slider-4", {
   spaceBetween: 20,
   grabCursor: true,
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".testimonials-arrow-right",
+    prevEl: ".testimonials-arrow-left",
   },
   breakpoints: {
     768: {
-      slidesPerView: 2, // Змінити на 1 слайд
+      slidesPerView: 2,
     },
   },
 });
