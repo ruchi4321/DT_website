@@ -84,6 +84,9 @@ let scSwiper = new Swiper(".slider-2", {
   loop: true,
   spaceBetween: 30,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".journey-arrow-right",
     prevEl: ".journey-arrow-left",
@@ -115,6 +118,9 @@ let expSwiper = new Swiper(".slider-3", {
   loop: true,
   spaceBetween: 30,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",

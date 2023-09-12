@@ -126,7 +126,7 @@
   color: #fff;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 16px;
   transform: rotate(-90deg);
   margin-right: -66px;
 }
@@ -134,38 +134,22 @@
 .help-center span {
   color: #F78F1E;
 }
-@media (max-width: 600px) {
-  .help-center {
-    transform: rotate(0deg); 
-    margin-right: 0;
+@media (max-width: 768px) {
+  .help-center{
+    transform: rotate(0deg);
+    margin-right: 0px;
     position: fixed;
     bottom: 0;
-    right: 0; 
-    width: 50vh; 
+    left: 0;
+    width: 100%;
   }
-
-  .help-center-form {
-    right: 0; 
-    bottom: 0;
+  .help-center-form{
+    right: 35px;
   }
-
-  .contact-form {
-    width: 100%; 
-    max-width: none; 
+  .contact-form{
+    width: 100%;
   }
 }
-@media (max-width: 380px) {
-  .help-center {
-    transform: rotate(0deg); 
-    margin-right: 0;
-    position: fixed;
-    bottom: 0;
-    right: 0; 
-    width: 57vh; 
-  }
-}
-
-
 
 .contact-form {
   background: #fff;
@@ -223,12 +207,11 @@
 }
 @media (max-width: 768px) {
   .show-top {
-    bottom: 0;
+    top: 10%;
     left: 0;
   }
 }
 /* help center */
-
 
 
 
@@ -468,8 +451,6 @@
   background: #161616;
   padding: 20px;
   width: 60%;
-
-
 }
 
 .gallery-collection-content h2 {
@@ -504,6 +485,11 @@
   color: #fff;
   text-align: left !important;
 }
+.gallery-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
 
 .gallery-collection-content h2 {
   text-align: left !important;
@@ -511,9 +497,9 @@
   line-height: 140%;
 }
 
-.gallery-collection-content p {
+.gallery-collection-content {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #C7C7C7;
@@ -586,7 +572,6 @@
 }
 .testimonials-experience h2 {
   padding-top: 30px;
-  white-space: nowrap;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -594,7 +579,6 @@
 @media (max-width: 480px) {
   .testimonials-experience h2{
     font-size: 25px;
-    white-space: wrap;
   }
 }
 
