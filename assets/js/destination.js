@@ -138,8 +138,8 @@ let thSwiper = new Swiper(".slider-3", {
   spaceBetween: 30,
   grabCursor: true,
   navigation: {
-    nextEl: ".mb-next",
-    prevEl: ".mb-prev",
+    nextEl: ".journey-arrow-right",
+    prevEl: ".journey-arrow-left",
   },
   breakpoints: {
     768: {
@@ -161,12 +161,12 @@ const frSwiper = new Swiper(".slider-4", {
   spaceBetween: 20,
   grabCursor: true,
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".testimonials-arrow-right",
+    prevEl: ".testimonials-arrow-left",
   },
   breakpoints: {
     768: {
-      slidesPerView: 2, // Змінити на 1 слайд
+      slidesPerView: 2,
     },
   },
 });

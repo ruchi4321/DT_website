@@ -1,6 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   initHelpButtonAndSlider();
-// });
 function initHelpButtonAndSlider() {
   let helpBtn = document.getElementById("help-btn");
   let helpCenter = document.getElementById("help-center");
