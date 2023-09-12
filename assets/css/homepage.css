@@ -63,6 +63,7 @@
   background: url('../images/banner-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .landing {
   display: grid;
@@ -134,7 +135,7 @@
 .help-center span {
   color: #F78F1E;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .help-center{
     transform: rotate(0deg);
     margin-right: 0px;
