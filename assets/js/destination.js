@@ -32,22 +32,9 @@ function initHelpButtonAndSlider() {
       nextEl: ".button-next-1",
       prevEl: ".button-prev-1",
     },
-    on: {
-      slideChange: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        if (activeSlide) {
-          const imageUrl = activeSlide.querySelector("img").src;
-          document.querySelector(
-            ".home"
-          ).style.backgroundImage = `url(${imageUrl})`;
-        }
-      },
-    },
   });
 
   let firstSlide = slider.slides[0];
-
-  let homeTitle = document.querySelector(".home-title");
 
   firstSlide.addEventListener("load", function () {
     helpBtn.style.display = "block";
@@ -64,13 +51,6 @@ function initHelpButtonAndSlider() {
   });
 
   helpBtn.style.display = "none";
-
-  ScrollReveal().reveal(homeTitle, {
-    delay: 400,
-    distance: "50px",
-    origin: "left",
-    duration: 1000,
-  });
 
   ScrollReveal().reveal(".first-slider", {
     delay: 400,
@@ -94,6 +74,10 @@ function initHelpButtonAndSlider() {
 }
 
 window.addEventListener("load", initHelpButtonAndSlider);
+
+/*==================== Second Swiper On Landing Page  ====================*/
+
+// ====================== Help Center End =======================
 
 /*==================== Second Swiper On Landing Page  ====================*/
 
@@ -154,8 +138,8 @@ let thSwiper = new Swiper(".slider-3", {
   spaceBetween: 30,
   grabCursor: true,
   navigation: {
-    nextEl: ".journey-arrow-right",
-    prevEl: ".journey-arrow-left",
+    nextEl: ".mb-next",
+    prevEl: ".mb-prev",
   },
   breakpoints: {
     768: {
@@ -177,8 +161,8 @@ const frSwiper = new Swiper(".slider-4", {
   spaceBetween: 20,
   grabCursor: true,
   navigation: {
-    nextEl: ".testimonials-arrow-right",
-    prevEl: ".testimonials-arrow-left",
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
   },
   breakpoints: {
     768: {

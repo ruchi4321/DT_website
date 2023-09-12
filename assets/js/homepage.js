@@ -1,3 +1,6 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//   initHelpButtonAndSlider();
+// });
 function initHelpButtonAndSlider() {
   let helpBtn = document.getElementById("help-btn");
   let helpCenter = document.getElementById("help-center");
@@ -6,6 +9,7 @@ function initHelpButtonAndSlider() {
 
   // Add the following line to set the visibility of slider-1 to "visible"
   document.querySelector(".slider-1").style.visibility = "visible";
+  helpBtn.style.display = "none";
 
   let slider = new Swiper(".slider-1", {
     slidesPerView: 2.6,
