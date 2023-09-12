@@ -431,7 +431,8 @@
 
 .destination-slider-img {
   width: 100% !important;
-  height: 550px !important;
+  /* height: 550px !important; */
+  height: 100%;
   margin-bottom: 150px;
   z-index: -1;
 }
