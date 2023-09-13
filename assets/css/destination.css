@@ -136,9 +136,8 @@ a {
 }
 
 .map-img {
-  max-width: 100%; 
-  width: 600px;
-  padding-left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .map-wrapp {
@@ -1435,7 +1434,15 @@ font-size: 40px;
   .home-title {
     font-size: 32px;
   }
-
+  .map-img{
+    display: none;
+  }
+  .mobile-map{
+    display: block;
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+  }
   .home-scroll {
     width: 12%;
   }
@@ -1980,6 +1987,13 @@ font-size: 40px;
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: row-reverse;
+  }
+
+  .mobile-map{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 350px;
+    height: 350px;
   }
 
   .custom-navbar {

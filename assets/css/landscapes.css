@@ -207,6 +207,11 @@
 .explore-content{
   padding-bottom: 120px;
 }
+@media (max-width: 1200px) {
+  .explore-content{
+    padding-bottom: 20px;
+  }
+}
 .explore-content h2{
   text-transform: uppercase;
 }
@@ -251,6 +256,17 @@
 .explore-content, .explore-content-2 p {
   letter-spacing: 0.02em;
   color: #C7C7C7;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .explore-content-2 p {
+    text-align: center;
+  }
+  .explore-content-2 h2 {
+    text-align: center;
+  }
 }
 
 .explore-slider-wrapp {
@@ -258,6 +274,12 @@
   display: flex;
   align-items: flex-end;
   gap: 20px;
+}
+@media (max-width: 1200px) {
+  .explore-slider{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
 }
 
 .explore-slide {
@@ -434,6 +456,11 @@
   gap: 50px;
   /* padding-inline: 5%; */
 }
+@media (max-width: 1200px) {
+  .map-section {
+    gap: 0px;
+  }
+}
 .map-section.map-destination{
   margin-top: 150px;
 }
@@ -506,7 +533,7 @@
  background-repeat: no-repeat;
  background-size: cover;
  background-position-y: bottom;
- padding-bottom: 100px;
+ padding-bottom: 200px;
 }
 
 .experience-wrapp {
@@ -528,17 +555,16 @@ color: #242424;
 }
 
 .video-section {
-  top: 200px;
+  top: 300px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .video-section {
-    top: 400px;
+    top: 200px;
   }
 }
 @media (max-width: 768px) {
   .video-section {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     top: 200px;
   }
   .map-section{
@@ -584,11 +610,11 @@ color: #242424;
   padding-top: 250px;
   padding-bottom: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .testimonials-experience{
     padding-right: 5%;
-    padding-top: 50px !important;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 0px;
   }
 }
 /* ================= Landing Start ==================== */
@@ -1193,20 +1219,10 @@ left: 30px;
   }
   
   .map-img {
-    display: none;
-  }
-
-  .mobile-map {
-    display: block;
-    width: 100%;
-  }
-  .mobile-map{
     height: 400px;
     width: 400px;
     margin: 0 auto;
   }
- 
-
 
   .daily-fs, .daily-sc {
     padding-inline: 5%;
@@ -1238,9 +1254,6 @@ left: 30px;
     padding-inline: 2%;
   }
 
-  .experience-video {
-    margin-block: 0;
-  }
 
   .journey-info {
     padding-inline: 5%;
@@ -1297,11 +1310,6 @@ left: 30px;
    
   .video-slider {
     margin-inline: 100px !important;
-  }
-
-
-  .map-section {
-    margin-bottom: 80px;
   }
 
   .slider-3 {
@@ -1361,13 +1369,6 @@ left: 30px;
   .slider-1-arrows {
     display: none;
   }
-
-  /* .map-section {
-    flex-direction: column;
-    padding-top: 0;
-  } */
-
-  
 
   .map-wrapp {
     width: 100%;
@@ -1503,10 +1504,7 @@ left: 30px;
    margin-top: -50px;
   }
 
-  .experience-video {
-    margin-block: 0;
-    margin-top: -110px;
-  }
+
 
   .more-arrow-left, .more-arrow-right {
     display: none;
@@ -1771,6 +1769,9 @@ left: 30px;
 }
 
 @media screen and (max-width: 716px) {
+  .map-section {
+    padding-top: 0;
+  }
   .map-items-wrapp{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1779,10 +1780,4 @@ left: 30px;
   .map-item{
     grid-column: span 1;
  } 
-}
-@media (max-width: 768px) {
-  .experience-video {
-    margin-block: 0;
-    margin-top: 0 !important;
-  }
 }
