@@ -81,7 +81,7 @@ let scSwiper = new Swiper(".slider-2", {
   },
   breakpoints: {
     300: {
-      slidesPerView: 1,
+      slidesPerView: 1.4,
     },
     450: {
       slidesPerView: 2,
