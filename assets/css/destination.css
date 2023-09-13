@@ -166,6 +166,11 @@ a {
     padding-inline: 0
   }
 }
+@media (max-width: 1200px) {
+  .about-us {
+    padding-block: 0px;
+  }
+}
 .about-text{
   font-family: 'Montserrat', sans-serif;
     color: #C7C7C7;
