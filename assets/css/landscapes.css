@@ -1127,6 +1127,9 @@ left: 30px;
     display: block;
     width: 100%;
   }
+  .mobile-map{
+    height: 600px;
+  }
  
   .map-items-wrapp {
     /* flex-wrap: wrap; */
