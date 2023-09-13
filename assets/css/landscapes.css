@@ -192,21 +192,40 @@
   bottom: -80px;
   margin-bottom: 50px;
   justify-content: space-between; /* Додали це, щоб займати рівну ширину */
+  width: 100%;
 }
 @media (max-width: 1800px) {
   .explore{
-    padding-left: 20px;
+    padding-left: 70px;
   }
+}
+@media (max-width: 992px) {
+  .explore{
+    padding-left: 10px;
+  }
+}
+.explore-content{
+  padding-bottom: 120px;
+}
+.explore-content h2{
+  text-transform: uppercase;
 }
 
 .explore-content-2 {
   margin-bottom: 130px;
-  /* width: 50% !important; */
+  padding-left: 70px;
+}
+
+@media (max-width: 1200px) {
+  .explore-content-2 {
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 992px) {
   .explore-content-2 {
-    margin-top: -170px;
-    margin-bottom: 0;
+    padding: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -252,11 +271,14 @@
   text-transform: uppercase;
   padding: 20px;
   border-radius: 5px;
-  width: 200px;
+  width: 5%; 
+  min-width: 150px;
 }
-.explore-slide img{
-  width: 200px;
+
+.explore-slide img {
+  /* width: 50px;  */
 }
+
 
 
 .explore-slide h2 {
@@ -950,7 +972,7 @@ color: #242424;
 }
 
 .ts-slide p {
-  font-size: 12px;
+  font-size: 16px;
   background: #161616;
   opacity: 0.95;
   border-radius: 4px;
@@ -965,6 +987,54 @@ color: #242424;
   top: -90px;
   display: flex;
   align-items: center;
+}
+
+
+.ts-slide p::before {
+  content: '';
+  position: absolute;
+  top: -15%;
+  left: 40%;
+  background: url('../images/testimonials-66.svg');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1700px) {
+  .ts-slide p {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 1500px) {
+  .ts-slide p {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+@media (max-width: 1200px) {
+  .ts-slide p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) {
+  .ts-slide p {
+    font-size: 13px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 768px) {
+  .ts-slide p {
+    font-size: 13px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 480px) {
+  .ts-slide p {
+    font-size: 15px;
+    line-height: 140%;
+  }
 }
 
 .ts-slide p::before {
