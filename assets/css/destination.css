@@ -126,22 +126,27 @@ a {
 }
 .map-section {
   display: flex;
-  align-items: center; /* Вирівнювання по вертикалі */
+  align-items: center;
 }
 
 .map-part {
   flex: 1;
   text-align: center;
-  min-width: 50%; /* Встановлюємо мінімальну ширину на 50% */
+  min-width: 50%; 
 }
 
 .map-img {
-  max-width: 100%; /* Зробить зображення адаптивним до ширини батьківського контейнера */
+  max-width: 100%; 
 }
 
 .map-wrapp {
-  flex: 1; /* Займе 50% ширини батьківського контейнера */
-  padding: 0 20px; /* Додайте бажаний відступ, щоб відокремити текст від зображення */
+  flex: 1; 
+  padding: 0 150px 0 20px;
+}
+@media (max-width: 1200px) {
+  .map-wrapp{
+    padding: 20px;
+  }
 }
 
 /* ================= First Slider Start =======================*/
