@@ -42,6 +42,9 @@ let exploreSwiper = new Swiper(".explore-slider", {
   loop: true,
   spaceBetween: 15,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".explore-arrow-right",
     prevEl: ".explore-arrow-left",
@@ -69,9 +72,12 @@ let scSwiper = new Swiper(".slider-2", {
   loop: true,
   spaceBetween: 15,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".button-next-1",
+    prevEl: ".button-prev-1",
   },
   breakpoints: {
     300: {
@@ -98,6 +104,9 @@ let videoSwiper = new Swiper(".video-slider", {
   loop: true,
   spaceBetween: 15,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
@@ -117,13 +126,16 @@ let videoSwiper = new Swiper(".video-slider", {
 /*==================== Fourth Slider End  ====================*/
 
 let frSwiper = new Swiper(".slider-4", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   loop: true,
   spaceBetween: 20,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
-    nextEl: ".button-next",
-    prevEl: ".button-prev",
+    nextEl: ".journey-arrow-right",
+    prevEl: ".journey-arrow-left",
   },
   breakpoints: {
     300: {
@@ -138,7 +150,7 @@ let frSwiper = new Swiper(".slider-4", {
       spaceBetween: 30,
     },
     1300: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   },
 });
@@ -152,6 +164,9 @@ let moreSwiper = new Swiper(".more-slider", {
   loop: true,
   spaceBetween: 15,
   grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".more-arrow-right",
     prevEl: ".more-arrow-left",

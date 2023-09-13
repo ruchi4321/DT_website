@@ -16,7 +16,10 @@ a {
 /* Swiper First Destination Start*/
 
 /* Swiper First Destination End*/
-
+.map-img {
+  /* width: 100%; */
+  /* max-width: 350px; */
+}
 /* ---------------- Home ---------------------------- */
 
 .home {
@@ -118,6 +121,28 @@ a {
 .home-prev.swiper-button-disabled {
   visibility: hidden;
 }
+.map-part{
+  /* min-width: 400px; */
+}
+.map-section {
+  display: flex;
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.map-part {
+  flex: 1;
+  text-align: center;
+  min-width: 50%; /* Встановлюємо мінімальну ширину на 50% */
+}
+
+.map-img {
+  max-width: 100%; /* Зробить зображення адаптивним до ширини батьківського контейнера */
+}
+
+.map-wrapp {
+  flex: 1; /* Займе 50% ширини батьківського контейнера */
+  padding: 0 20px; /* Додайте бажаний відступ, щоб відокремити текст від зображення */
+}
 
 /* ================= First Slider Start =======================*/
 /* ==================== About Us Start  ========================  */
@@ -129,10 +154,16 @@ a {
   gap: 200px;
   color: #fff;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1800px) {
   .about-us {
-
-    /* padding-block: 50px;  */
+    padding-block: 100px;
+    padding-inline: 0
+  }
+}
+@media (max-width: 1400px) {
+  .about-us {
+    padding-block: 100px;
+    padding-inline: 0
   }
 }
 .about-text{
@@ -141,7 +172,7 @@ a {
     line-height: 150%;
 }
 .about-us h2 {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .about-us h2 span {
@@ -408,79 +439,39 @@ a {
   height: 100%;
   min-height: 300px;
 }
-.button-next-1 {
-  position: absolute;
-  top: -50px;
-  right: -100px;
-}
-.button-prev-1{
-  position: absolute;
-  top: -50px;
-  right: 0px;
-}
-
-.journey-arrow-left {
+.button-prev-1, .button-prev, .journey-arrow-left {
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  left: 3%;
+  left: 5%;
 }
 
-.journey-arrow-right{
+.button-next-1,.button-next, .journey-arrow-right{
   position: absolute;
   bottom: 50%;
   z-index: 999;
-  right: 3%;
+  right: 5%;
 }
-
-.testimonials-arrow-left{
-  position: absolute;
-  bottom: 50%;
-  z-index: 999;
-  left: 3%;
-}
-.testimonials-arrow-right{
-  position: absolute;
-  bottom: 50%;
-  z-index: 999;
-  right: 3%;
-}
-
-@media (max-width: 1400px) {
-  .journey-arrow-left {
+@media (max-width: 1500px) {
+  .button-prev-1,.button-prev,.journey-arrow-left {
     position: absolute;
-    bottom: 5%;
+    bottom: 50%;
     z-index: 999;
-    left: 7%;
+    left: 9%;
   }
   
-  .journey-arrow-right{
+  .button-next-1,.button-next,.journey-arrow-right{
     position: absolute;
-    bottom: 5%;
+    bottom: 50%;
     z-index: 999;
-    left: 14%;
+    right: 9%;
   }
 }
-@media (max-width: 992px) {
-  .testimonials-arrow-left,
-  .testimonials-arrow-right{
-    display: none;
-  }
-  .journey-arrow-right,
-  .journey-arrow-left{
-    /* display: none; */
-    bottom: -50px;
-  }
-}
-.testimonials-arrow-left{
-  position: absolute;
-  bottom: 50%;
-  z-index: 999;
-  left: 3%;
-}
-@media (max-width: 768px) {
-  .journey-arrow-right,
-  .journey-arrow-left{
+@media (max-width: 1200px) {
+  .button-next-1,
+  .button-prev-1,
+  .button-next,
+  .button-prev,.journey-arrow-left,.journey-arrow-right{
     display: none;
   }
 }
