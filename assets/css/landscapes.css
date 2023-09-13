@@ -1,6 +1,6 @@
 /* ================== Landing Start ======================== */
 
-.about-us {
+.about-us, .about-us-experience {
   background: url('../images/about-us-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +190,7 @@
   padding-left: 5%;
   position: relative;
   bottom: -80px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
   justify-content: space-between; /* Додали це, щоб займати рівну ширину */
 }
 @media (max-width: 1800px) {
@@ -220,8 +220,10 @@
   letter-spacing: 0.02em;
   color: #E58620;
 }
-.explore-arrow-right,.explore-arrow-left{
-  display: none;
+@media (max-width: 1200px) {
+  .explore-arrow-right,.explore-arrow-left{
+    display: none;
+  }
 }
 .explore-content, .explore-content-2 h2 span {
   color: #fff;
@@ -250,10 +252,10 @@
   text-transform: uppercase;
   padding: 20px;
   border-radius: 5px;
-
+  width: 200px;
 }
 .explore-slide img{
-
+  width: 200px;
 }
 
 
@@ -504,8 +506,9 @@ color: #242424;
 }
 
 .video-section {
-  top: 300px;
+  top: 200px;
 }
+
 @media (max-width: 768px) {
   .video-section {
     top: 400px;

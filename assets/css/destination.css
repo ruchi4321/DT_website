@@ -137,11 +137,13 @@ a {
 
 .map-img {
   max-width: 100%; 
+  width: 600px;
+  padding-left: 50px;
 }
 
 .map-wrapp {
   flex: 1; 
-  padding: 0 150px 0 20px;
+  padding: 0 60px 0 20px;
 }
 @media (max-width: 1200px) {
   .map-wrapp{
@@ -185,9 +187,10 @@ a {
   /* white-space: nowrap; */
 }
 
-.about-us h2 span {
+.about-us h2 span, .about-us-experience h2 span {
   color: #E58620;
 }
+
 
 .about-us p{
   font-family: 'Montserrat', sans-serif;
