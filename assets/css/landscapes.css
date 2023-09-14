@@ -468,7 +468,11 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  /* padding-inline: 5%; */
+}
+@media (max-width: 1500px) {
+  .map-section{
+    padding-top: 50px;
+  }
 }
 @media (max-width: 1200px) {
   .map-section {
