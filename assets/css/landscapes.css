@@ -793,6 +793,16 @@ color: #242424;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
 }
+.journey-slide img{
+  height: 10% !important;
+}
+
+@media (max-width: 1200px) {
+  .journey-slide img{
+    height: 380px !important;
+    width: 100%;
+  }
+}
 
 .journey-slide p {
   font-family: 'Montserrat', sans-serif;
@@ -1333,9 +1343,12 @@ left: 30px;
   }
 
   .explore-slide {
-    height: 450px;
+    height: 340px;
   }
-   
+  .experience-slide {
+    height: 400px;
+    
+  }
   .video-slider {
     margin-inline: 100px !important;
   }
