@@ -547,7 +547,17 @@
  background-repeat: no-repeat;
  background-size: cover;
  background-position-y: bottom;
- padding-bottom: 200px;
+ padding-bottom: 0px;
+}
+@media (max-width: 1200px) {
+  .experience {
+    padding-bottom: 250px;
+   }
+}
+@media (max-width: 600px) {
+  .experience {
+    padding-bottom: 150px;
+   }
 }
 
 .experience-wrapp {
@@ -569,7 +579,7 @@ color: #242424;
 }
 
 .video-section {
-  top: 300px;
+  top: 100px;
 }
 @media (max-width: 1200px) {
   .video-section {
@@ -621,8 +631,8 @@ color: #242424;
 /* ================== Experience End ============================*/
 .testimonials-experience{
   padding-right: 5%;
-  padding-top: 250px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 @media (max-width: 1200px) {
   .testimonials-experience{
@@ -1232,11 +1242,11 @@ left: 30px;
     width: 100%;
   }
   
-  .map-img {
+  /* .map-img {
     height: 400px;
     width: 400px;
     margin: 0 auto;
-  }
+  } */
 
   .daily-fs, .daily-sc {
     padding-inline: 5%;
