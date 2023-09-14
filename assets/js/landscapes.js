@@ -61,7 +61,7 @@ let exploreSwiper = new Swiper(".explore-slider", {
       slidesPerView: 4,
     },
     990: {
-      slidesPerView: 5,
+      slidesPerView: 4.5,
     },
     1200: {
       slidesPerView: 2.6,
