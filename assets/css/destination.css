@@ -14,6 +14,16 @@ a {
 }
 
 /* Swiper First Destination Start*/
+.destination-page{
+  background: url('../images/destination-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  .destination.destination-page {
+    height: 1900px;
+  }
+}
 
 /* Swiper First Destination End*/
 .map-img {
@@ -373,7 +383,12 @@ a {
   margin-bottom: 90px;
   width: 90%;
 }
-
+@media (min-width: 1600px) {
+  .location-map-img {
+    height: 500px;
+    padding-top: 100px;
+  }
+}
 
 
 .location-content {
@@ -718,6 +733,11 @@ color: #000000;
   background-repeat: no-repeat;
   padding-block: 70px;
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  .tours-wrapp.tours_wrapp-destination{
+    padding-block: 0;
+  } 
 }
 .learn-more{
   text-decoration: none;

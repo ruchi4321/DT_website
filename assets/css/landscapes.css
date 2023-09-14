@@ -1245,7 +1245,6 @@ left: 30px;
     padding-top: 0;
   }
   .map-section.destination-map{
-    /* padding-top: 200px; */
     flex-direction: column;
     margin-bottom: 0;
   }
