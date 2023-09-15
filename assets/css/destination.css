@@ -421,6 +421,7 @@ a {
   .about-us.about-us-destination{
     padding-block: 50px;
     padding-inline: 4%;
+    height: 800px;
   }
 }
 @media (max-width: 1200px) {
@@ -1344,6 +1345,9 @@ color: #000000;
   padding-right: 5%;
   padding-top: 30px;
   padding-bottom: 100px;
+}
+.testimonials-experience.testimonials-experience-destination{
+  padding-right: 0;
 }
 @media (max-width: 992px) {
   .testimonials{

@@ -174,25 +174,30 @@ let thSwiper = new Swiper(".slider-3", {
 
 /*==================== Testimonials Start  ====================*/
 
-const frSwiper = new Swiper(".slider-4", {
-  slidesPerView: 1,
+const frSwiper = new Swiper(".testimonials-swiper", {
+  slidesPerView: 3,
   loop: true,
   spaceBetween: 20,
   grabCursor: true,
-  navigation: {
-    nextEl: ".testimonials-arrow-right",
-    prevEl: ".testimonials-arrow-left",
+  autoplay: {
+    delay: 5000,
   },
   breakpoints: {
     300: {
+      spaceBetween: 10,
       slidesPerView: 1,
     },
-    768: {
+    600: {
       slidesPerView: 2,
+      spaceBetween: 40,
     },
-    1200: {
+    1185: {
       slidesPerView: 3,
     },
+  },
+  navigation: {
+    nextEl: ".testimonials-arrow-right",
+    prevEl: ".testimonials-arrow-left",
   },
 });
 
