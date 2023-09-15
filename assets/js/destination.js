@@ -184,8 +184,14 @@ const frSwiper = new Swiper(".slider-4", {
     prevEl: ".testimonials-arrow-left",
   },
   breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
     768: {
       slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
     },
   },
 });

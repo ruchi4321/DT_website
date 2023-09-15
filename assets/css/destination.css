@@ -19,9 +19,29 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .destination.destination-page {
     height: 1900px;
+  }
+}
+@media (min-width: 1200px) {
+  .destination.destination-page {
+    height: 1750px;
+  }
+}
+@media (max-width: 1200px) {
+  .destination.destination-page {
+    height: 1600px;
+  }
+}
+@media (max-width: 1000px) {
+  .destination.destination-page {
+    height: 2300px;
+  }
+}
+@media (max-width: 600px) {
+  .destination.destination-page {
+    height: 3800px;
   }
 }
 
@@ -381,12 +401,34 @@ a {
 
 .location-map-img {
   margin-bottom: 90px;
-  width: 90%;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
 }
 @media (min-width: 1600px) {
   .location-map-img {
     height: 500px;
     padding-top: 100px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-us.about-us-destination{
+    padding-block: 150px !important;
+    padding-inline: 4%;
+  }
+}
+@media (min-width: 1201px) {
+  .about-us.about-us-destination{
+    padding-block: 50px;
+    padding-inline: 4%;
+  }
+}
+@media (max-width: 1200px) {
+  .location-map-img {
+    margin-bottom: 90px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%
   }
 }
 
@@ -720,6 +762,21 @@ color: #000000;
 /* ----------------------------- Tours ----------------------------------  */
   .tours{
     top: -200px;
+  }
+  @media (max-width: 1200px) {
+    .tours.tours-destination{
+      top: -300px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .tours.tours-destination{
+      top: -320px;
+    }
+  }
+  @media (max-width: 992px) {
+    .tours.tours-destination{
+      top: -240px;
+    }
   }
   @media (max-width: 992px) {
     .tours{
@@ -1996,6 +2053,9 @@ font-size: 40px;
 @media (max-width: 768px) {
   .tours{
     top: -40px;
+  }
+  .tours.tours-destination{
+    top: -130px;
   }
   .home-title{
     padding: 10px;

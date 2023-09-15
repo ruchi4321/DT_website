@@ -502,6 +502,7 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  text-align: center;
 }
 
 .map-item span {
@@ -539,9 +540,16 @@
   letter-spacing: 0.02em;
   font-family: 'Montserrat', sans-serif;
   color: #C7C7C7;
-
+  text-align: justify; 
+  text-justify: inter-word;
 }
-
+@media (max-width: 600px) {
+  .map-desc p{
+    letter-spacing: 0;
+    text-align: center;
+    text-align: justify; 
+  }
+}
 /* ================== Map Section End ======================== */
 
 /* ================== Experience Start ======================== */
@@ -1245,8 +1253,8 @@ left: 30px;
     padding-top: 0;
   }
   .map-section.destination-map{
-    flex-direction: column;
-    margin-bottom: 0;
+    /* flex-direction: column; */
+    /* margin-bottom: 0; */
   }
 
 
@@ -1280,7 +1288,7 @@ left: 30px;
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .slider-1-arrows {
@@ -1682,6 +1690,9 @@ left: 30px;
 
   .daily {
     padding-bottom: 270px;
+  }
+  .daily.daily-destination{
+    padding-bottom: 50px;
   }
   .experience-title {
     margin-bottom: -40px;
