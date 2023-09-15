@@ -438,6 +438,30 @@ a {
   }
 }
 @media (max-width: 1200px) {
+  .about-us.about-us-destination{
+    height: 1100px !important;
+    padding-top: 30px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .about-us.about-us-destination{
+    height: 1200px !important;
+    padding-top: 30px !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-us.about-us-destination{
+    height: 1300px !important;
+    padding-top: 30px !important;
+  }
+}
+@media (max-width: 320) {
+  .about-us.about-us-destination{
+    height: 1500px !important;
+    padding-top: 30px !important;
+  }
+}
+@media (max-width: 1200px) {
   .location-map-img {
     margin-bottom: 90px;
     width: 100%;
