@@ -1,375 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet" />
 
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/destination.css" />
 
-  <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="assets/css/destination.css">
+    <title>DESIRE TRIP</title>
+  </head>
 
-  <title>DESIRE TRIP</title>
-</head>
+  <body>
+    <div class="content">
+      <!---------------------- Navbar Start ----------------------------->
 
-<body>
-
-  <div class="content">
-    <!---------------------- Navbar Start ----------------------------->
-
-    <nav class="navbar navbar-expand-lg navbar-dark  custom-navbar fixed-top">
-      <div class="container-fluid justify-content-between">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./assets/images/logo.svg" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="navbar-img"></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto  mb-2 mb-lg-0 " style="margin:0 auto;">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html#about">How we work</a>
-            </li>
-            <li class="nav-item ms-5 me-5">
-              <a class="nav-link" href="./index.html#experience">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html#destination">Destination</a>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center d-lg-flex">
-            <div class="d-none d-lg-flex align-items-center">
-              <a href="#">
-               <img width="20px" src="./assets/images/facebook.svg" alt="facebook">
-              </a>
-              <a href="#">
-                <img width="20px" class="mx-4" src="./assets/images/instagram.svg" alt="instagram">
-              </a>
-            </div>
-            <a class="contact-us-btn" href="./contact.html">CONTACT US</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!---------------------- Navbar End ----------------------------->
-
-
-    <!--------------------- Landing Start ------------------------------>
-
-    <div class="main-landing">
-      <div class="landing">
-        <div class="landing-content">
-
-          <div class="landing-tx">
-            <h2>Desire Trip</h2>
-            <p>We Provide Our Expertise to Cater to All your travel needs</p>
-
-          </div>
-        </div>
-    <!-- Can i help -->
-    <div class="help-center-form">
-      <button id="help-btn" class="help-center">can i <span>help?</span></button>
-      <div id="help-center" class="hidden">
-        <div class="contact-form">
-          <div class="contact-form-content">
-            <div class="close" id="close"><svg class="close-form" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6L18.7279 18.7279" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M6 18.728L18.7279 6.00011" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h2>travel carefree again </h2>
-            <p>Book your private, custom tour of a <br> lifetime with 100% confidence</p>
-          </div>
-            <input type="text" placeholder="Name" class="form-control" id="name">
-            <input type="email" placeholder="Email/Whatsapp No:" class="form-control" id="email">
-            <input type="text" placeholder="Where do you want to go" class="form-control" id="place">
-            <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>
-          <button class="contact-us-btn" type="submit">Send us</button>
-        </div>
-      </div>
-    </div>
-    <!-- Can i help -->
-      </div>
-
-    </div>
-
-    <!--------------------- Landing End ------------------------------>
-
-    <!--------------------- Landing Contact Us Start -------------------->
-    <div class="reach-us">
-      <h2>WANT TO <span>REACH US</span></h2>
-      <div>
-       <div class="reach-us-social">
-        <span>+91 99209 38675</span>
-        <span>into@desiretrip.com</span>
-       </div>
-       <a class="email-us" href="mailto:into@desiretrip.com">
-           Email <span>Us</span>
-       </a>
-      </div>
-    </div>
-
-
-    <!-------------------- Landing Contatc Us End --------------------------->
-
-
-    <!----------------------- Contact Us Start ----------------------->
-
-
-    <div class="contact-us d-flex justify-content-center">
-      <div class="journey-img-groups">
-        <img class="journey-fs-img" src="./assets/images/journey-1.png" alt="journey-1">
-        <img class="journey-sc-img" src="./assets/images/journey-2.png" alt="journey-2">
-      </div>
-      <div class="tabs">
-      
-
-        <div class="tabs-content ">
-          <div class="content-1 content-one active-tab">
-            <h2 class="contact-us-title">Create My <span>Trip</span></h2>
-            <div class="d-flex justify-content-between align-items-center pb-5">
-              <div class="tab-naming">
-                <span>1.</span> Trip Details
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="navbar-img"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 0 auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html#about"
+                  >How we work</a
+                >
+              </li>
+              <li class="nav-item ms-5 me-5">
+                <a class="nav-link" href="./index.html#experience"
+                  >Experiences</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#destination"
+                  >Destination</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center d-lg-flex">
+              <div class="d-none d-lg-flex align-items-center">
+                <a href="#">
+                  <img
+                    width="20px"
+                    src="./assets/images/facebook.svg"
+                    alt="facebook" />
+                </a>
+                <a href="#">
+                  <img
+                    width="20px"
+                    class="mx-4"
+                    src="./assets/images/instagram.svg"
+                    alt="instagram" />
+                </a>
               </div>
-              <div class="tab-labels" >
-                <label style="margin-right: -2px;" >1</label>/
-                <label  class="tab-2" style="margin-left: -2px;">2</label>
-               </div>
+              <a class="contact-us-btn" href="./contact.html">CONTACT US</a>
             </div>
+          </div>
+        </div>
+      </nav>
 
+      <!---------------------- Navbar End ----------------------------->
 
-            <div class="select-country">
-              <select id="state1" data-select2-id="Country" class="js-example-basic-multiple select-coutries country" multiple>
-              </select>
-              <img src="assets/images/selecy.svg" alt="select">
+      <!--------------------- Landing Start ------------------------------>
+
+      <div class="main-landing">
+        <div class="landing">
+          <div class="landing-content">
+            <div class="landing-tx">
+              <h2>Desire Trip</h2>
+              <p>We Provide Our Expertise to Cater to All your travel needs</p>
             </div>
-
-            <div class="select-country mt-4">
-              <select id="state1" data-select2-id="Interst" class="js-example-basic-multiple select-coutries interest" multiple>
-                <option value="Cruise">Cruise</option>
-                <option value="Safari">Safari</option>
-                <option value="Culture">Culture</option>
-                <option value="Heritage">Heritage</option>
-                <option value="Adventure">Adventure</option>
-                <option value="Theme Park">Theme Park</option>
-                <option value="Hiking">Hiking</option>
-                <option value="Water Sports">Water Sports</option>
-              </select>
-              <img src="assets/images/selecy.svg" alt="select">
+          </div>
+          <!-- Can i help -->
+          <div class="help-center-form">
+            <button id="help-btn" class="help-center">
+              can i <span>help?</span>
+            </button>
+            <div id="help-center" class="hidden">
+              <div class="contact-form">
+                <div class="contact-form-content">
+                  <div class="close" id="close">
+                    <svg
+                      class="close-form"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6 6L18.7279 18.7279"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <path
+                        d="M6 18.728L18.7279 6.00011"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <h2>travel carefree again</h2>
+                  <p>
+                    Book your private, custom tour of a <br />
+                    lifetime with 100% confidence
+                  </p>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="form-control"
+                  id="name" />
+                <input
+                  type="email"
+                  placeholder="Email/Whatsapp No:"
+                  class="form-control"
+                  id="email" />
+                <input
+                  type="text"
+                  placeholder="Where do you want to go"
+                  class="form-control"
+                  id="place" />
+                <textarea
+                  placeholder="Message"
+                  class="form-control"
+                  id="message"
+                  rows="5"></textarea>
+                <button class="contact-us-btn" type="submit">Send us</button>
+              </div>
             </div>
-            <div class="group-inputs">
-              <div class="contact-us-input select-currency">
-                <select>
-                 <option value="" disabled selected hidden>Choose Currency</option>
-                  <option value="USD">USD</option>
-                  <option value="GBP">GBP</option>
-                  <option value="EUR">EUR</option>
-                  <option value="JYP">JYP</option>
-                  <option value="INR">INR</option>
+          </div>
+          <!-- Can i help -->
+        </div>
+      </div>
+
+      <!--------------------- Landing End ------------------------------>
+
+      <!--------------------- Landing Contact Us Start -------------------->
+      <div class="reach-us">
+        <h2>WANT TO <span>REACH US</span></h2>
+        <div>
+          <div class="reach-us-social">
+            <span>+91 99209 38675</span>
+            <span>into@desiretrip.com</span>
+          </div>
+          <a class="email-us" href="mailto:into@desiretrip.com">
+            Email <span>Us</span>
+          </a>
+        </div>
+      </div>
+
+      <!-------------------- Landing Contatc Us End --------------------------->
+
+      <!----------------------- Contact Us Start ----------------------->
+
+      <div class="contact-us d-flex justify-content-center">
+        <div class="journey-img-groups">
+          <img
+            class="journey-fs-img"
+            src="./assets/images/journey-1.png"
+            alt="journey-1" />
+          <img
+            class="journey-sc-img"
+            src="./assets/images/journey-2.png"
+            alt="journey-2" />
+        </div>
+        <div class="tabs">
+          <div class="tabs-content">
+            <div class="content-1 content-one active-tab">
+              <h2 class="contact-us-title">Create My <span>Trip</span></h2>
+              <div
+                class="d-flex justify-content-between align-items-center pb-5">
+                <div class="tab-naming"><span>1.</span> Trip Details</div>
+                <div class="tab-labels">
+                  <label style="margin-right: -2px">1</label>/
+                  <label class="tab-2" style="margin-left: -2px">2</label>
+                </div>
+              </div>
+
+              <div class="select-country">
+                <select
+                  id="state1"
+                  data-select2-id="Country"
+                  class="js-example-basic-multiple select-coutries country"
+                  multiple></select>
+                <img src="assets/images/selecy.svg" alt="select" />
+              </div>
+
+              <div class="select-country mt-4">
+                <select
+                  id="state1"
+                  data-select2-id="Interst"
+                  class="js-example-basic-multiple select-coutries interest"
+                  multiple>
+                  <option value="Cruise">Cruise</option>
+                  <option value="Safari">Safari</option>
+                  <option value="Culture">Culture</option>
+                  <option value="Heritage">Heritage</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="Theme Park">Theme Park</option>
+                  <option value="Hiking">Hiking</option>
+                  <option value="Water Sports">Water Sports</option>
                 </select>
-                 <img src="assets/images/selecy.svg" alt="select">
-               </div>
-              <div class="contact-us-input select-currency">
-                <input type="text" placeholder="Budget / person">
+                <img src="assets/images/selecy.svg" alt="select" />
+              </div>
+              <div class="group-inputs">
+                <div class="contact-us-input select-currency">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      Choose Currency
+                    </option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JYP">JYP</option>
+                    <option value="INR">INR</option>
+                  </select>
+                  <img src="assets/images/selecy.svg" alt="select" />
+                </div>
+                <div class="contact-us-input select-currency">
+                  <input type="text" placeholder="Budget / person" />
+                </div>
+              </div>
 
+              <div class="group-inputs">
+                <div class="contact-us-input select-currency">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      No. of Adults
+                    </option>
+                    <option value="1">1</option>
+
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                  <img src="assets/images/selecy.svg" alt="select" />
+                </div>
+                <div class="contact-us-input select-currency">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      No. of Children
+                    </option>
+                    <option value="1">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                  <img src="assets/images/selecy.svg" alt="select" />
+                </div>
+              </div>
+
+              <div class="group-inputs">
+                <div class="contact-us-input select-currency">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      Trip duration in days
+                    </option>
+                    <option value="1-3">1-3 days</option>
+                    <option value="4-6">4 days-6 days</option>
+                    <option value="7-9">7 days-9 days</option>
+                    <option value="10-12">10 days -12 days</option>
+                    <option value="13-15">13 days - 15 days</option>
+                    <option value="13-15">> 15 days</option>
+                  </select>
+                  <img src="assets/images/selecy.svg" alt="select" />
+                </div>
+                <div class="contact-us-input">
+                  <input
+                    class="datatime"
+                    type="datetime-local"
+                    placeholder="When?" />
+                  <img src="assets/images/selecy.svg" alt="select" />
+                </div>
+              </div>
+
+              <textarea
+                class="contact-textarea"
+                placeholder="Any Additional Information"
+                cols="30"
+                rows="10"></textarea>
+
+              <div
+                class="d-flex justify-content-center flex-column align-items-center mt-4"
+                style="gap: 20px">
+                <button class="orrange-btn">Next: your info</button>
+                <div class="lock">
+                  <img src="assets/images/lock.svg" alt="lock" />
+                  <span>
+                    *Required fields. Your personal data is securely transmitted
+                    and never shared with 3rd parties.
+                  </span>
+                </div>
               </div>
             </div>
 
-            <div class="group-inputs">
-              <div class="contact-us-input select-currency">
-                <select>
-                 <option value="" disabled selected hidden>No. of Adults</option>
-                  <option value="1">1</option>
-                
-                  <option value="3">2</option>
-                  <option value="4">3</option>
-                  <option value="5">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                 <img src="assets/images/selecy.svg" alt="select">
-               </div>
-               <div class="contact-us-input select-currency">
-                <select>
-                 <option value="" disabled selected hidden>No. of Children</option>
-                 <option value="1">1</option>
-                 <option value="3">2</option>
-                 <option value="4">3</option>
-                 <option value="5">4</option>
-                 <option value="5">5</option>
-                 <option value="6">6</option>
-                 <option value="7">7</option>
-                 <option value="8">8</option>
-                 <option value="9">9</option>
-                </select>
-                 <img src="assets/images/selecy.svg" alt="select">
-               </div>
-            </div>
-
-            <div class="group-inputs">
-              <div class="contact-us-input select-currency">
-                <select>
-                 <option value="" disabled selected hidden>Trip duration in days</option>
-                 <option value="1-3">1-3 days</option>
-                 <option value="4-6">4 days-6 days</option>
-                 <option value="7-9">7 days-9 days</option>
-                 <option value="10-12">10 days -12 days</option>
-                 <option value="13-15">13 days - 15 days</option>
-                 <option value="13-15"> > 15 days</option>
-                </select>
-                 <img src="assets/images/selecy.svg" alt="select">
-               </div>
-              <div class="contact-us-input">
-                <input class="datatime" type="datetime-local" placeholder="When?">
-                <img src="assets/images/selecy.svg" alt="select">
+            <div class="content-1 content-2">
+              <h2 class="contact-us-title">Create My <span>Trip</span></h2>
+              <div
+                class="d-flex justify-content-between align-items-center pb-4">
+                <div class="tab-naming"><span>2.</span> Your Info</div>
+                <div class="tab-labels">
+                  <span style="margin-right: -2px">2</span>/
+                  <span class="tab-2" style="margin-left: -2px">2</span>
+                </div>
               </div>
-            </div>
-            
-            <div class="contact-us-input select-currency">
-              <select>
-               <option value="" disabled selected hidden>What Stage of Planning are you in?</option>
-                <option>Just a very initial thought but still exploring</option>
-                <option>Finalised the destination</option>
-                <option>Crafted the perfect itinerary</option>
-                <option>Started with Booking</option>
-              </select>
-               <img src="assets/images/selecy.svg" alt="select">
-             </div>
-
-             <textarea class='contact-textarea' placeholder="Any Additional Information" cols="30" rows="10"></textarea>
-
-            <div class="d-flex justify-content-center flex-column align-items-center mt-4" style="gap: 20px;">
-              <button class="orrange-btn">Next: your info</button>
-              <div class="lock">
-                <img src="assets/images/lock.svg" alt="lock">
-                <span>
-                  *Required fields. Your personal data is securely transmitted and never shared with 3rd parties.
-                </span>
+              <div class="contact-input-sc-group">
+                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Email Address" />
+                <input type="text" placeholder="Your Phone" />
               </div>
-            </div>
-          </div>
-
-          <div class="content-1 content-2">
-            <h2 class="contact-us-title">Create My <span>Trip</span></h2>
-            <div class="d-flex justify-content-between align-items-center pb-4">
-              <div class="tab-naming">
-                <span>2.</span> Your Info
-              </div>
-              <div class="tab-labels" >
-                <span style="margin-right: -2px;">2</span>/
-                <span class="tab-2" style="margin-left: -2px;">2</span>
-               </div>
-            </div>
-            <div class="contact-input-sc-group">
-              <input type="text" placeholder="Full Name">
-              <input type="text" placeholder="Email Address">
-              <input type="text" placeholder="Your Phone">
-            </div>
-            <div class="d-flex flex-column" style="gap: 10px;">
-              <div class="contatc-btn-group-sc">
-                <button>Submit</button>
-                <button class="mt-3 back">Back to trip details</button>
-              </div>
-              <div class="lock">
-                <img src="assets/images/lock.svg" alt="lock">
-                <span>*Required fields. Your personal data is securely transmitted and never shared with 3rd
-                  parties.</span>
+              <div class="d-flex flex-column" style="gap: 10px">
+                <div class="contatc-btn-group-sc">
+                  <button>Submit</button>
+                  <button class="mt-3 back">Back to trip details</button>
+                </div>
+                <div class="lock">
+                  <img src="assets/images/lock.svg" alt="lock" />
+                  <span
+                    >*Required fields. Your personal data is securely
+                    transmitted and never shared with 3rd parties.</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+
+      <!---------------------- Contact Us End --------------------->
+
+      <!--------------------- Footer Start ---------------------------->
+
+      <footer class="footer">
+        <div class="footer-form">
+          <div class="footer-form-tx">
+            <h2>
+              Questions? <br />
+              Write to us and we will <br />
+              <span>be happy</span> to help you
+            </h2>
+            <p>
+              Our team strives to help you find the best solution for your
+              needs.
+            </p>
+          </div>
+          <div class="footer-inputs">
+            <div class="d-flex">
+              <input class="footer-input" type="text" placeholder="Your name" />
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Your last name" />
+            </div>
+            <div class="pt-2 d-flex">
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Your phone number" />
+              <input
+                class="footer-input"
+                type="text"
+                placeholder="Your email" />
+            </div>
+            <textarea
+              class="footer-input mt-2"
+              style="width: 100%"
+              cols="45"
+              rows="5"
+              placeholder="Your message"></textarea>
+            <button class="contact-us-btn footer-btn">Send Message</button>
+          </div>
+        </div>
+        <div class="footer-social">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <div class="d-flex flex-column align-items-end">
+            <p>Follow us in social media</p>
+            <div class="social-media mt-2">
+              <img src="./assets/images/facebook.svg" alt="facebook" />
+              <img
+                class="ms-4"
+                src="./assets/images/instagram.svg"
+                alt="instagram" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2022 Mfmc Technologies Limited | All right reserved</p>
+          <div class="copyright-links">
+            <a href="#">Terms of service</a>
+            <a href="#" class="ms-5 ps-2">Privacy policy</a>
+          </div>
+        </div>
+      </footer>
+
+      <!--------------------- Footer End ---------------------------->
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <!---------------------- Contact Us End --------------------->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <!--------------------- Footer Start ---------------------------->
-
-    <footer class="footer">
-      <div class="footer-form">
-        <div class="footer-form-tx">
-          <h2>Questions? <br>
-            Write to us and we will <br> <span>be happy</span> to help you</h2>
-          <p>
-            Our team strives to help you find the best solution for your needs.
-          </p>
-        </div>
-        <div class="footer-inputs">
-          <div class="d-flex">
-            <input class="footer-input" type="text" placeholder="Your name">
-            <input class="footer-input" type="text" placeholder="Your last name">
-          </div>
-          <div class="pt-2 d-flex">
-            <input class="footer-input" type="text" placeholder="Your phone number">
-            <input class="footer-input" type="text" placeholder="Your email">
-          </div>
-          <textarea class="footer-input mt-2" style="width: 100%;" cols="45" rows="5"
-            placeholder="Your message"></textarea>
-          <button class="contact-us-btn footer-btn">Send Message</button>
-        </div>
-      </div>
-      <div class="footer-social">
-        <img src="./assets/images/logo.svg" alt="logo">
-        <div class="d-flex flex-column align-items-end">
-          <p>
-            Follow us in social media
-          </p>
-          <div class="social-media mt-2">
-            <img src="./assets/images/facebook.svg" alt="facebook">
-            <img class="ms-4" src="./assets/images/instagram.svg" alt="instagram">
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          Copyright © 2022 Mfmc Technologies Limited | All right reserved
-        </p>
-        <div class="copyright-links">
-          <a href="#">Terms of service</a>
-          <a href="#" class="ms-5 ps-2">Privacy policy</a>
-        </div>
-      </div>
-    </footer>
-
-    <!--------------------- Footer End ---------------------------->
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-  <!-- Optional JavaScript; choose one of the two! -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!--=============== MAIN JS ===============-->
-  <script>
-     flatpickr('.datatime', {
-      disableMobile: "true"
-     });
-  </script>
-  <script src="assets/js/multi-select.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/select.js" type="module"></script>
-  <script src="assets/js/contact.js" type="module"></script>
-</body>
-
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script>
+      flatpickr(".datatime", {
+        disableMobile: "true",
+      });
+    </script>
+    <script src="assets/js/multi-select.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/select.js" type="module"></script>
+    <script src="assets/js/contact.js" type="module"></script>
+  </body>
 </html>
