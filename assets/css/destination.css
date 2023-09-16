@@ -583,6 +583,24 @@ a {
     right: 9%;
   }
 }
+@media (min-width: 1500px) {
+  .journey-arrow-left {
+    left: 3% !important;
+  }
+  
+  .journey-arrow-right{
+    right: 3% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .journey-arrow-left {
+    left: 2% !important;
+  }
+  
+  .journey-arrow-right{
+    right: 2% !important;
+  }
+}
 @media (max-width: 1200px) {
   .button-next-1,
   .button-prev-1,
