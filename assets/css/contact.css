@@ -32,7 +32,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-left: 100px;
+  padding-left: 10%;
 }
 .landing-content h2 {
   letter-spacing: 0.02em;
