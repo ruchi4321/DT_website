@@ -252,7 +252,7 @@
 
 .search-card {
   padding: 20px;
-  background: url('../../assets/images/country-bg.svg');
+  background: url('../../assets/images/Australia-Sydney.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -282,27 +282,27 @@
 }
 
 .search-card:nth-child(2) {
-  background: url('../../assets/images/Australia-Sydney.webp') !important;
+  background: url('../../assets/images/Bali-travel.webp') !important;
 
 }
 
 .search-card:nth-child(3) {
-  background: url('../../assets/images/country-card-3.svg') !important;
+  background: url('../../assets/images/India-Culture.webp') !important;
 
 }
 
 .search-card:nth-child(4) {
-  background: url('../../assets/images/country-card-3.svg') !important;
+  background: url('../../assets/images/Japan-travel.webp') !important;
 
 }
 
 .search-card:nth-child(5) {
-  background: url('../../assets/images/country-card-5.svg') !important;
+  background: url('../../assets/images/Jordan-Travel.webp') !important;
 
 }
 
 .search-card:nth-child(6) {
-  background: url('../../assets/images/country-card-1.svg') !important;
+  background: url('../../assets/images/Morocco-Marrakech.webp') !important;
 }
 
 
