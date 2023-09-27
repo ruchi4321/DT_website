@@ -13,7 +13,7 @@
     {   "name": "Bali",
         "country": "Indonesia",
         "activities": ["Adventure", " Beaches", " Water-sports"],
-        "availabelActivities": ["Beaches", "Culture", "Wellness", "Adventure",],
+        "availabelActivities": ["Beaches", "Culture", "Wellness", "Adventure"],
         "time": "April - November",
         "description": "Beautiful beaches, lush rice paddies, historic temples, and many cultures await you here. Explore Bali and experience its remarkable harmony of natural beauty and spiritual calm.",
         "url": "./destination-Bali.html",
@@ -84,9 +84,7 @@
         "activities": ["Adventure", " Safari", " Beaches"," Desert"],
         "availabelActivities": ["Wildlife","Adventure","Wine","Culture"],
         "time": "June - October",
-        "description": "South Africa is a magical place full of rich history, unique fauna, and breathtaking
-        landscapes. South Africa has a lot to offer tourists of all ages and interests. It has
-        beautiful scenery to exciting interactions with wild animals.",
+        "description": "South Africa is a magical place full of rich history, unique fauna, and breathtakinglandscapes. South Africa has a lot to offer tourists of all ages and interests. It has beautiful scenery to exciting interactions with wild animals.",
         "url": "./destination-South-Africa.html",
         "availableMonths": ["May", "June", "July", "August", "September", "October", "November", "December"]
     },
