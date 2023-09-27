@@ -306,11 +306,24 @@
 }
 
 .search-card:nth-child(7) {
-  background: url('../../assets/images/India-Culture.webp') !important;
+  background: url('../../assets/images/NewZealand-Adventure.webp') !important;
 }
 
+.search-card:nth-child(8) {
+  background: url('../../assets/images/Singapore-Garden.webp') !important;
+}
 
+.search-card:nth-child(9) {
+  background: url('../../assets/images/SouthAfrica-Travel.webp') !important;
+}
 
+.search-card:nth-child(9) {
+  background: url('../../assets/images/Dubai-City.webp') !important;
+}
+
+.search-card:nth-child(9) {
+  background: url('../../assets/images/Vietnam-Hanoi.webp') !important;
+}
 .search-card-wrapp div:hover .hover-search {
   top: 10px;
   opacity: 1;
