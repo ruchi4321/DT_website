@@ -305,6 +305,11 @@
   background: url('../../assets/images/Morocco-Marrakech.webp') !important;
 }
 
+.search-card:nth-child(7) {
+  background: url('../../assets/images/India-Culture.webp') !important;
+}
+
+
 
 .search-card-wrapp div:hover .hover-search {
   top: 10px;
