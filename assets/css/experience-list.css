@@ -1,0 +1,899 @@
+/* ===================== Landing Start ===================== */
+.landing {
+  background: url('../../assets/images/Destination-card.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.landing h2 {
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 140%;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 150px;
+  padding-left: 10%;
+}
+@media (max-width: 1200px) {
+  .landing h2 {
+    font-size: 40px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 40px;
+  }
+}
+.landing h2 span {
+  color: #E58620;
+}
+
+.notfound {
+  display: none;
+}
+
+.notfound.active {
+  display: block;
+}
+
+/* ===================== Landing End ====================== */
+
+/* help center */
+.help-center-form {
+  position: fixed;
+  top: 45%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  transition: all .5s ease-in-out;
+}
+
+.help-center {
+  display: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background-color: #1E1E1E;
+  padding: 10px 35px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transform: rotate(-90deg);
+  margin-right: -66px;
+}
+
+.help-center span {
+  color: #F78F1E;
+}
+@media (max-width: 768px) {
+  .help-center{
+    transform: rotate(0deg);
+    margin-right: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .help-center-form{
+    right: 35px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  padding-block: 40px;
+}
+
+.contact-form-content {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form-content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.contact-form-content p {
+  color: #D6943C;
+  font-size: 14px;
+}
+
+.contact-form-content div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contact-form-content div span {
+  background-color: #191919;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 45px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.show {
+  display: block !important;
+}
+
+
+.show-top {
+  top: 20%;
+}
+@media (max-width: 768px) {
+  .show-top {
+    top: 10%;
+    left: 0;
+  }
+}
+/* help center */
+
+/* ======================== Adventures Start ===================== */
+
+.adventure {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-inline: 10%;
+}
+
+.adventure-content {
+  padding-bottom: 50px;
+}
+
+.adventure-content h2 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+}
+
+.adventure-content p {
+  font-size: 16px;
+  opacity: .5;
+}
+
+
+.select-input {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 10px;
+  gap: 5px;
+  width: 240px;
+}
+
+
+.select-input .select2 {
+  width: 100% !important;
+}
+
+.select-input .select2 textarea{
+
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: none !important;
+}
+
+.data-picker input {
+  border: none !important;
+  outline: none !important;
+  font-weight: 300;
+  padding-block: 4.3px;
+}
+
+.search-btn {
+  border: none;
+  background: #E58620;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  padding: 10px 30px;
+  border-radius: 4px;
+
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300;
+}
+.select2-container .select2-search--inline .select2-search__field {
+  height: 22px; /* Змінено height на 20px */
+}
+
+
+
+.search-item {
+  color: #E58620;
+}
+
+.search-item h2 {
+  font-size: 20px;
+}
+
+.search-card-wrapp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  transition: 5s;
+}
+
+
+
+
+.search-card {
+  padding: 20px;
+  background: url('../../assets/images/Australia-Sydney.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  height: 450px;
+  width: 100%;
+}
+.search-coutry-title{
+  font-size: 20px;
+  color: #E58620;
+  text-align: center;
+}
+.search-coutry-destination{
+  display: flex;
+  gap: 10px;
+}
+.search-card:nth-child(10),
+.search-card:nth-child(11) {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .search-card:nth-child(10){
+    display: inline-block;
+  }
+}
+
+.search-card:nth-child(2) {
+  background: url('../../assets/images/Bali-travel.webp') !important;
+
+}
+
+.search-card:nth-child(3) {
+  background: url('../../assets/images/India-Culture.webp') !important;
+
+}
+
+.search-card:nth-child(4) {
+  background: url('../../assets/images/Japan-travel.webp') !important;
+
+}
+
+.search-card:nth-child(5) {
+  background: url('../../assets/images/Jordan-Travel.webp') !important;
+
+}
+
+.search-card:nth-child(6) {
+  background: url('../../assets/images/Morocco-Marrakech.webp') !important;
+}
+
+.search-card:nth-child(7) {
+  background: url('../../assets/images/NewZealand-Adventure.webp') !important;
+}
+
+.search-card:nth-child(8) {
+  background: url('../../assets/images/Singapore-Garden.webp') !important;
+}
+
+.search-card:nth-child(9) {
+  background: url('../../assets/images/SouthAfrica-Travel.webp') !important;
+}
+
+.search-card:nth-child(10) {
+  background: url('../../assets/images/Dubai-City.webp') !important;
+}
+
+.search-card:nth-child(11) {
+  background: url('../../assets/images/Vietnam-Hanoi.webp') !important;
+}
+.search-card-wrapp div:hover .hover-search {
+  top: 10px;
+  opacity: 1;
+}
+
+.search-card-wrapp div:hover .search-default {
+  opacity: 0;
+}
+
+
+.search-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.search-coutry-name {
+  color: #fff;
+  font-weight: 300;
+  border-bottom: 1px solid #E58620;
+  width: fit-content;
+  padding-bottom: 3px;
+}
+
+.search-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+}
+.results{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.results p{
+  font-size: 48px;
+  color: #E58620;
+  font-weight: 600;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.search-content p {
+   width: 100%;
+   font-size: 15px;
+   line-height: 20px;
+   font-weight: 300;
+}
+
+.search-content span {
+  font-weight: 600;
+}
+
+.search-content p {
+  color: #fff;
+}
+
+.hover-search {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  height: 85%;
+  position: absolute;
+  inset: 10px;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1300px) {
+  .hover-search{
+    height: 70%;
+  }
+}
+
+.hover-search span {
+  color: #fff;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+
+.hover-search a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border:2px solid #fff;
+  padding: 5px 10px;
+  opacity: 0.4;
+}
+
+.hover-search p {
+  color: #fff;
+  padding-block: 20px;
+}
+@media (max-width: 1500px) {
+  .hover-search span {
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 12px;
+    line-height: 180%;
+  }
+}
+@media (max-width: 1300px) {
+  .hover-search span {
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 992px) {
+  .hover-search span {
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
+.hover-search p span {
+  color: #E58620;
+  text-transform: uppercase;
+}
+
+.search-card:nth-child(1), .search-card:nth-child(2), .search-card:nth-child(3) {
+  display: inline-block;
+}
+
+#date {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.js-example-basic-multiple {
+  cursor: pointer;
+}
+
+.select-input:nth-child(1) .select2 {
+  width: 400px;
+}
+
+
+.country-wrapp {
+  width: 330px;
+}
+
+.loadmore {
+  cursor: pointer;
+}
+
+
+.search-wrapp {
+  display: flex;
+  gap: 20px;
+}
+
+.map {
+  width:100%;
+  height:700px;
+  overflow:hidden;
+  margin-bottom: 60px;
+ 
+}
+
+.i4ewOd-pzNkMb-haAclf {
+  display: none !important;
+}
+
+.iframe {
+  width: 100% !important;
+  height: 100%;
+  margin-top:-70px;
+  background:transparent; 
+  position:relative; 
+  pointer-events: none;
+}
+.card-description{
+  display: flex;
+  flex-direction: column;
+}
+.learn-more {
+    text-decoration: none;
+    color: #E58620;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: 'Montserrat', sans-serif;
+}
+.learn__more-link {
+  position: relative;
+  text-decoration: none;
+  color: #E58620;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s all ease;
+  display: inline-block;
+  padding-bottom: 2px; /* Додали відступ для лінії */
+  font-weight: bold;
+}
+
+.learn__more-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Товщина лінії */
+  background-color: #E58620;
+  transform: scaleX(0); /* З початку лінія невидима */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.learn__more-link:hover::before {
+  transform: scaleX(1); /* При наведенні лінія виїжджає від початку до кінця */
+}
+
+.learn__more-link:hover {
+  color: #ee520f;
+  transform: scale(1.05); /* Трохи збільшуємо розмір кнопки при наведенні */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  /* z-index: 999; */
+}
+.activities{
+  display: flex;
+  gap: 10px;
+}
+
+.time-zone {
+  display: flex;
+  align-items: center;
+}
+
+.time-label {
+  margin-right: 5px;
+}
+
+.time-value {
+  margin: 0;
+}
+
+/* ======================= Adventures End ========================= */
+
+
+/* ==================== Partners Start =============================== */
+
+.partners h2 {
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #242424;
+}
+
+.partners h2 span {
+  color: #E58620;
+}
+
+.partners-group {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-group div {
+  gap: 60px;
+}
+
+.partners-group div img {
+  width: 168px;
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.partners-group div img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.vertical-line {
+  height: 160px;
+  width: 1px;
+  background: #EBEBEB;
+}
+
+/* ==================== Partners End =============================== */
+
+/* ===================== Responsive ==================================*/
+
+
+@media screen and (max-width: 1400px) {
+  .adventure {
+    padding-inline: 5%;
+  }
+
+
+  .search-card {
+    height: 400px;
+  }
+
+  .partners-group div img {
+    width: 140px;
+  }
+
+  .footer {
+    padding-inline: 4%;
+
+  }
+
+  .contact-img {
+    top: -280px;
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .form-wrapp {
+     flex-direction: column;
+     align-items: initial !important;
+     gap: 40px;
+  }
+
+  .partners-group div {
+    gap: 50px;
+   
+   }
+
+  .custom-navbar {
+    padding-left: 0;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .search-card-wrapp {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+
+@media screen and (max-width: 1000px) {
+  .custom-navbar {
+    padding-inline: 5%;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .nav-item:nth-child(2) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-nav {
+    gap: 15px;
+    padding-block: 20px;
+    text-align: center;
+  }
+
+  .nav-form {
+    display: none !important;
+  }
+
+  .landing h2 {
+    font-size: 40px;
+  }
+
+  .search-wrapp {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-item {
+    width: 100%;
+  }
+
+
+  .select-input  {
+    width: 100%;
+  }
+
+  .footer-input {
+    width: 100%;
+  }
+
+  .copyright {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .jn-title {
+    margin-bottom: -50px;
+    margin-top: 50px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .partners-group div img {
+    filter: grayscale(0) !important;
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+  .custom-navbar {
+    padding-inline: 0;
+  }
+
+  .search-card {
+    height: 100%;
+    min-height: 460px;
+  }
+
+
+.search-card {
+  position: relative; 
+}
+
+.search-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  gap: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.card-description {
+  flex: 1; 
+}
+
+
+.learn-more {
+  text-decoration: none;
+  color: #E58620;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: auto; 
+  margin-bottom: 20px;
+}
+
+  .search-default {
+    height: fit-content;
+  }
+
+  .search-card-wrapp div:hover .search-default {
+     opacity: 1;
+  }
+
+  .landing h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .adventure h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .adventure p {
+    font-size: 14px;
+  }
+  
+  .search-item h2 {
+    font-size: 18px;
+  }
+
+  .map {
+    width:100%;
+    height:350px;
+    overflow:hidden;
+    margin-bottom: 60px;
+  }
+
+  .partners h2 {
+    font-size: 30px;
+  }
+
+  .partners-group {
+    padding-bottom: 80px;
+  }
+
+  .pr-images {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partners-group {
+    position: relative;
+  }
+
+  .partners-group div img {
+    width: 140px;
+  }
+  
+
+  .hover-search {
+    position: initial !important;
+    height: auto;
+    opacity: 0;
+    margin: 0;
+  }
+  
+  .hover-search span {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-inputs div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-btn {
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .footer-social div p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .search-card-wrapp {
+    grid-template-columns: 1fr;
+  }
+}
