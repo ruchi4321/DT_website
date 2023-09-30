@@ -931,7 +931,7 @@ color: #000000;
 
 .bali-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Seminyak-bali beach.png') center/cover no-repeat;
+  background:  url('./../images/Seminyak-bali\ beach.webp') center/cover no-repeat;
 }
 
 .bali-tours-card2 {
