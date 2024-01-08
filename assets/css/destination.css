@@ -1012,26 +1012,26 @@ color: #000000;
 
 .jordan-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Amman.webp') center/cover no-repeat;
 }
 
 .jordan-tours-card2 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Petra.webp') center/cover no-repeat;
 }
 .jordan-tours-card3 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/WadiRum.webp') center/cover no-repeat;
 }
 .jordan-tours-card4 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/DanaBiosphere.webp') center/cover no-repeat;
 }
 .jordan-tours-card5 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/DeadSea.webp') center/cover no-repeat;
 }
 .jordan-tours-card6 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Aqaba.webp') center/cover no-repeat;
 }
 .jordan-tours-card7 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/WadiMujib.webp') center/cover no-repeat;
 }
 /* jordan Destination Cards end */
 
