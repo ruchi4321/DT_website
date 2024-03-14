@@ -115,7 +115,7 @@ let expSwiper = new Swiper(".slider-3", {
 let tsSwiper = new Swiper(".slider-5", {
   slidesPerView: 3,
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 0,
   grabCursor: true,
   autoplay: {
     delay: 5000,
