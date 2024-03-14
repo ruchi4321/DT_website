@@ -931,26 +931,26 @@ color: #000000;
 
 .bali-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Seminyak-bali beach.png') center/cover no-repeat;
+  background:  url('./../images/Seminyak-bali\ beach.webp') center/cover no-repeat;
 }
 
 .bali-tours-card2 {
-  background:  url('./../images/Nusadua-beach.png') center/cover no-repeat;
+  background:  url('./../images/Nusadua-beach.webp') center/cover no-repeat;
 }
 .bali-tours-card3 {
-  background:  url('./../images/Baliswing-ubud.png') center/cover no-repeat;
+  background:  url('./../images/Baliswing-ubud.webp') center/cover no-repeat;
 }
 .bali-tours-card4 {
-  background:  url('./../images/NusaPeninda-island.png') center/cover no-repeat;
+  background:  url('./../images/NusaPeninda-island.webp') center/cover no-repeat;
 }
 .bali-tours-card5 {
-  background:  url('./../images/NusaLemobongan-Bali.png') center/cover no-repeat;
+  background:  url('./../images/NusaLemobongan-Bali.webp') center/cover no-repeat;
 }
 .bali-tours-card6 {
-  background:  url('./../images/Sidemen-Bali.png') center/cover no-repeat;
+  background:  url('./../images/Sidemen-Bali.webp') center/cover no-repeat;
 }
 .bali-tours-card7 {
-  background:  url('./../images/Batur-Bali.png') center/cover no-repeat;
+  background:  url('./../images/Batur-Bali.webp') center/cover no-repeat;
 }
 /* bali Destination Cards end */
 
@@ -958,26 +958,26 @@ color: #000000;
 
 .india-long-card{
   grid-column: 1/3;
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/HumayunTomb-Delhi.webp') center/cover no-repeat;
 }
 
 .india-tours-card2 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/AmarFort-Rajasthan.webp') center/cover no-repeat;
 }
 .india-tours-card3 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/Munnar-Kerala.webp') center/cover no-repeat;
 }
 .india-tours-card4 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/Goa-Beaches.webp') center/cover no-repeat;
 }
 .india-tours-card5 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/Agra-Taj.webp') center/cover no-repeat;
 }
 .india-tours-card6 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/Meghalaya-India.webp') center/cover no-repeat;
 }
 .india-tours-card7 {
-  background:  url('./../images/India-Varanasi.png') center/cover no-repeat;
+  background:  url('./../images/Gangotri-India.webp') center/cover no-repeat;
 }
 /* india Destination Cards end */
 
@@ -985,26 +985,26 @@ color: #000000;
 
 .japan-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Lake\ Ashi-\ Hakone.webp') center/cover no-repeat;
 }
 
 .japan-tours-card2 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Hemiji\ Castle.webp') center/cover no-repeat;
 }
 .japan-tours-card3 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Mt.\ Fujji.webp') center/cover no-repeat;
 }
 .japan-tours-card4 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Tokyo-Disneyland.webp') center/cover no-repeat;
 }
 .japan-tours-card5 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Todaji\ Temple.webp') center/cover no-repeat;
 }
 .japan-tours-card6 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Arashiayama-Bamboo.webp') center/cover no-repeat;
 }
 .japan-tours-card7 {
-  background:  url('./../images/Japan-culture.png') center/cover no-repeat;
+  background:  url('./../images/Hiroshima.webp') center/cover no-repeat;
 }
 /* japan Destination Cards end */
 
@@ -1012,26 +1012,26 @@ color: #000000;
 
 .jordan-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Amman.webp') center/cover no-repeat;
 }
 
 .jordan-tours-card2 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Petra.webp') center/cover no-repeat;
 }
 .jordan-tours-card3 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/WadiRum.webp') center/cover no-repeat;
 }
 .jordan-tours-card4 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/DanaBiosphere.webp') center/cover no-repeat;
 }
 .jordan-tours-card5 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/DeadSea.webp') center/cover no-repeat;
 }
 .jordan-tours-card6 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/Aqaba.webp') center/cover no-repeat;
 }
 .jordan-tours-card7 {
-  background:  url('./../images/Aqaba-Jordan.jpg') center/cover no-repeat;
+  background:  url('./../images/WadiMujib.webp') center/cover no-repeat;
 }
 /* jordan Destination Cards end */
 
@@ -1039,26 +1039,26 @@ color: #000000;
 
 .morocco-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Casablanca.webp') center/cover no-repeat;
 }
 
 .morocco-tours-card2 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Fez-Tannery.webp') center/cover no-repeat;
 }
 .morocco-tours-card3 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Merzouga-desert.webp') center/cover no-repeat;
 }
 .morocco-tours-card4 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Ouirgane-Valley.webp') center/cover no-repeat;
 }
 .morocco-tours-card5 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Marrakech-Morocco.webp') center/cover no-repeat;
 }
 .morocco-tours-card6 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Ouarzazate-Morocco.webp') center/cover no-repeat;
 }
 .morocco-tours-card7 {
-  background:  url('./../images/Morocco-Desert.png') center/cover no-repeat;
+  background:  url('./../images/Ifrane-Morocco.webp') center/cover no-repeat;
 }
 /* morocco Destination Cards end */
 
@@ -1066,26 +1066,26 @@ color: #000000;
 
 .newzealand-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Wellington-Tram.webp') center/cover no-repeat;
 }
 
 .newzealand-tours-card2 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Auckland-NewZealand.webp') center/cover no-repeat;
 }
 .newzealand-tours-card3 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Christchurch-AvonRiver.webp') center/cover no-repeat;
 }
 .newzealand-tours-card4 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Fiordland-NewZealand.webp') center/cover no-repeat;
 }
 .newzealand-tours-card5 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Queenstown-NewZealand.webp') center/cover no-repeat;
 }
 .newzealand-tours-card6 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/Rotorua-mudbath.webp') center/cover no-repeat;
 }
 .newzealand-tours-card7 {
-  background:  url('./../images/Zealand-peak.jpg') center/cover no-repeat;
+  background:  url('./../images/FranzJosef-Glacierhike.webp') center/cover no-repeat;
 }
 /* newzealand Destination Cards end */
 
@@ -1093,26 +1093,26 @@ color: #000000;
 
 .singapore-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Marina-Bay-Lower.webp') center/cover no-repeat;
 }
 
 .singapore-tours-card2 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/MandaiBirdPark.webp') center/cover no-repeat;
 }
 .singapore-tours-card3 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Singapore-Cruise.webp') center/cover no-repeat;
 }
 .singapore-tours-card4 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Jewel_SingaporeAirport.webp') center/cover no-repeat;
 }
 .singapore-tours-card5 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Universal-Studio.webp') center/cover no-repeat;
 }
 .singapore-tours-card6 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Singapore-Zoo.webp') center/cover no-repeat;
 }
 .singapore-tours-card7 {
-  background:  url('./../images/Singapore.jpg') center/cover no-repeat;
+  background:  url('./../images/Clarkey-Quay.webp') center/cover no-repeat;
 }
 /* singapore Destination Cards end */
 
@@ -1120,26 +1120,26 @@ color: #000000;
 
 .africa-long-card{
   grid-column: 1/3;
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Capetown_City.webp') center/cover no-repeat;
 }
 
 .africa-tours-card2 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Hermanus.webp') center/cover no-repeat;
 }
 .africa-tours-card3 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Stellenbosch.webp') center/cover no-repeat;
 }
 .africa-tours-card4 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Oudtshoorn.webp') center/cover no-repeat;
 }
 .africa-tours-card5 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Knysna.webp') center/cover no-repeat;
 }
 .africa-tours-card6 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Johannesberg.webp') center/cover no-repeat;
 }
 .africa-tours-card7 {
-  background:  url('./../images/South\ Africa-Safari.png') center/cover no-repeat;
+  background:  url('./../images/Pilanesberg-Giraffe.webp') center/cover no-repeat;
 }
 /* africa Destination Cards end */
 
@@ -1174,26 +1174,26 @@ color: #000000;
 
 .vietnam-long-card{
   grid-column: 1/3;
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/Hanoi_HalongBayCruise.webp') center/cover no-repeat;
 }
 
 .vietnam-tours-card2 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/DaNang-BaNaHills.webp') center/cover no-repeat;
 }
 .vietnam-tours-card3 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/HoiAn-Lanterns.webp') center/cover no-repeat;
 }
 .vietnam-tours-card4 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/HoChiMinhCity.webp') center/cover no-repeat;
 }
 .vietnam-tours-card5 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/PhuQuoc.webp') center/cover no-repeat;
 }
 .vietnam-tours-card6 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/NhaTrang.webp') center/cover no-repeat;
 }
 .vietnam-tours-card7 {
-  background:  url('./../images/Trang\ An\,\ Hoa\ Lu\,\ Ninh\ Binh\,\ Vietnam.png') center/cover no-repeat;
+  background:  url('./../images/Hue_Vietnam.webp') center/cover no-repeat;
 }
 /* vietnam Destination Cards end */
 
