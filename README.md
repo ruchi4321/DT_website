@@ -2,6 +2,7 @@
 🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴
 
 Welcome to Desire Trip project! This repository contains a simple HTML/CSS/JS website dedicated to exploring various countries, with a special focus on Indonesia and other exotic destinations.
+
 🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴
 
 ### Installation:
