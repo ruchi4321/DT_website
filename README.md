@@ -1,9 +1,11 @@
-### README
+### README 
+🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴
 
 Welcome to Desire Trip project! This repository contains a simple HTML/CSS/JS website dedicated to exploring various countries, with a special focus on Indonesia and other exotic destinations.
+🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴
 
 ### Installation:
-
+🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴🎉📸🌴
 1. Clone the repository to your local machine:
    ```
    git clone https://github.com/your-username/your-repository.git
