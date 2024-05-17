@@ -131,6 +131,7 @@ let tsSwiper = new Swiper(".slider-5", {
     },
     1185: {
       slidesPerView: 3,
+      spaceBetween: 20,
     },
   },
   navigation: {
